@@ -1,0 +1,92 @@
+{% include head-artist.html %}
+
+<body>
+    <!--[if lt IE 9]>
+        <p class="chromeframe">You are using an outdated browser. <a href="/mwmhttp://browsehappy.com/">Upgrade your browser today</a> or <a href="/mwmhttp://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <div class="header-container">
+        <header class="clearfix">
+            <nav>
+                <ul>
+                    <!-- <li><a href="../">Home</a></li> -->
+                    <li><a href="../about">About</a></li>
+                    <li class="selected"><a href="../artists">Artists</a></li>
+                </ul>
+            </nav>
+            <div class="logo-container">
+                <a href="/">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Middle West Management" class="logo">
+                        <!-- <h1 class="title">Middle West</h1> -->
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <div class="main-container">
+            <article>
+                <a href="../artists/{{ page.artist }}" class="header-image">
+                    <h2 class="caption">{{ page.artist }}</h2>
+                    <div data-picture data-alt="Bon Iver">
+                        <div data-src="{{ page.header-image-s }}"></div>
+                        <div data-src="{{ page.header-image-m }}"     data-media="(min-width: 480px)"></div>
+                        <div data-src="{{ page.header-image-l }} "     data-media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"></div>
+                    </div>
+                    <noscript>
+                        <img src="{{ page.header-image-s }}" alt="{{ page.artist }}">
+                    </noscript>
+                </a>
+
+                <span class="social">
+                    <a data-icon="&#xe000;" aria-hidden="true" href="{{ page.website }}" target="_blank"></a>
+                    <a href="{{ page.facebook }}"  target="_blank">facebook</a>
+                    <a href="{{ page.twitter }}"  target="_blank">twitter</a>
+                    <a href="{{ page.instagram }}"  target="_blank">instagram</a>
+                </span>
+
+            </article>
+
+            <div class="main wrapper clearfix">
+
+                <div class="col1of2">
+                    <article>
+                        <h2>News</h2>
+                        <hr>
+                        <div class="">
+                            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                            <script>
+                                new TWTR.Widget({version: 2, type: 'profile', rpp: 10, interval: 6000, width: 'auto', height: 400, theme: {shell: {background: 'transparent', color: '#141414'}, tweets: {background: 'transparent', color: '#000000', links: '#2495c0'} }, features: {scrollbar: false, loop: true, live: true, hashtags: true, timestamp: true, avatars: false, behavior: 'default'} }).render().setUser('{{ page.twitter-widget }}').start();
+                            </script>   
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col2of2">
+                    <article>
+                        <h2>Shows</h2>
+                        <hr>
+                        <div class="scroll">
+                            <div id="shows" class="shows">
+                                {{ page.bandsintown-widget }}
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="discography">
+                    <article>
+                        <h2>Discography</h2>
+                        <hr>
+
+                        {% for album in page.albums %}
+                        <div class="row">
+                            <div class="album_thumb col{% cycle '1', '2' %}of2">
+                                <div id="card-container">
+                                    <a class="group colorbox-inline" href="#{{ album.hash }}">
+                                        <img class="album-cover" src="{{ album.thumb-image }}" alt="{{ album.name }}" height="300" width="300" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+

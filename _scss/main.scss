@@ -1,0 +1,1335 @@
+@import "compass";
+
+/* ==========================================================================
+   Fontsercize
+   ========================================================================== */
+
+@font-face {
+    font-family: 'rondo';
+    src: url('../fonts/rondo.eot?#') format('eot'),
+         url('../fonts/rondo.svg#rondo') format('svg'),
+         url('../fonts/rondo.woff') format('woff'),
+         url('../fonts/rondo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   H5BP
+   ========================================================================== */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html{
+     -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font: 16px/26px "futura-pt", Arial;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid #222;
+    margin: .2em 0 .5em 0;
+    padding: 0;
+    clear:both;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===================
+    ALL: Main Theme
+   =================== */
+
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size:28px;
+    text-decoration:none;
+}
+
+h1, h2, h3, h4{
+    font-family: "bebas-neue", Helvetica, Helvetica Neue, Arial;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+h2{
+    margin: .7em 0 .2em 0;
+}
+
+h3{
+    margin: .7em 0 .1em 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a, a:visited{
+    color: #0989b8;
+    text-decoration: none;
+    @include transition(color 200ms);
+}
+
+a:hover{
+    text-decoration:none;
+    color:#065977;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.home-wrapper {
+    width:100%;
+}
+
+.header-container .title{
+    text-align: center;
+}
+
+.readm-more{
+    display: block;
+    padding: 1.5em 0 1em 0;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.readm-more:hover{
+    color: #ccc;
+}
+
+/* --------------------=Discography */
+.album_thumb {
+    
+
+}
+
+.album-label {
+    position:relative;
+    top:-5px;
+}
+
+.album-cover {
+    border:1px solid #d9d9d9;
+    border-radius:3px;
+}
+
+.album-container {
+    text-align:center;
+}
+
+
+.album-links {
+    //margin: 1em 0;
+}
+
+.album-links a {
+    @include transition(color 200ms);
+    color:#222;
+    &:hover {
+        color:#444;
+        .icon {
+            color:#444
+        }
+    }
+}
+
+.spotify-link {
+    text-decoration:none;
+    display:inline-block;
+}
+
+
+a.itunes-link {
+    font-family: 'rondo', Verdana, sans-serif;
+    font-size: 1.875em;
+    margin: 0 0 0 .2em;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #222;
+    padding:0 10px;
+}
+
+
+
+
+
+
+/* ==============
+    MOBILE: Header
+   ============== */
+nav{
+    background: #000;
+}
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    text-align:center;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0;
+}
+
+header a{
+    text-decoration: none;
+}
+    
+nav a {
+    font-family: 'bebas-neue', Helvetica Neue, Helvetica, Arial;
+    text-align: center;
+    font-size: 1.5em;
+    //letter-spacing: 1px;
+    text-transform: uppercase;
+    //color: #fff;
+    display: block;
+    padding: 15px 20px;
+}
+
+nav a:hover,
+nav a:visited {
+    color:#fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .selected a{
+    text-decoration: underline;
+}
+
+.logo-container a {
+    text-align:center
+}
+
+.logo{
+    display: block;
+    background-image: url(../img/logo/mw_logo-horizontal.png);
+    width:325px;
+    height:90px;
+    background-size: 100%;
+    margin:20px auto;
+}
+
+.title {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.header-image {
+        text-decoration:none;
+        display:block;
+        position:relative;
+    }
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 10px 0;
+}
+
+    article {
+        margin-bottom:40px;
+        clear:both;
+        &:first-child {
+            margin-bottom:0;
+        }
+    }
+
+    article:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+
+    article img {
+        width:100%;
+        height:auto;
+    }
+
+    .main h2 {
+    }
+
+.image-lister{
+    margin:0;
+    padding:0;
+}
+
+.image-lister li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.image-lister a{
+    text-decoration: none;
+}
+
+.bio{
+    background:#000;
+    color: #fff;
+    padding: 2em;
+}
+
+.quote{
+    background: #000;
+    color: #fff;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+}
+
+.quote blockquote{
+    margin: 0;
+}
+
+.quote a{
+    color: #fff;
+}
+
+.quote figcaption{
+    padding: 1em 0 1em 0;
+}
+
+.quote figcaption:before{
+    content: "– ";
+    padding-right: .4em;
+}
+
+.block-link{
+    background: #000;
+    margin:0 0 1em 0;
+    text-align: center;
+}
+
+.block-link a{
+    font-family: Helvetica Neue, Helvetica, Arial;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .5em;
+    display: inline-block;
+}
+
+.social a{
+    font-family: 'rondo', Verdana, sans-serif;
+    font-size: 1.875em;
+    margin: 0 0 0 .2em;
+    text-decoration: none;
+    text-transform: lowercase;
+    color:#222;
+    padding:0 10px;
+}
+    .social a:hover  {
+        color:#444 !important;
+    }
+
+.icon {
+    color:#222;
+}
+
+.social{
+    display: block;
+    margin:15px auto 15px; 
+    text-align:center;
+    padding:5px 0;
+}
+
+.read-more, .read-less {
+    padding-left:5px;
+    opacity:.7;
+}
+    .read-more:hover, .read-less:hover {
+        opacity:1;
+    }
+.read-more a, .read-less a {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color:#222;
+    text-decoration: none
+}
+.icon-globe {
+    font-size:29px !important;
+}
+    .icon-globe:before {
+        content: "\e000";
+    }
+    
+    .read-more a:after, .read-less a:after {
+        padding-left: 5px;
+        position:relative;
+        top:2px;
+    }
+    .read-more a:after {
+        content: "\e003";
+    }
+
+    .read-less a:after {
+        content: "\e004";
+    }
+
+.block-link .social a{
+    font-size: 1.7em;
+    padding: .3em;
+}
+
+.content-lister li, .content-lister{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.content-lister li{
+    padding-bottom: 1em;
+}
+
+.content-lister p{
+    margin: 0;
+}
+
+.fluid-width-video-wrapper{
+    margin-bottom: 20px;
+}
+
+/* ==============
+    MOBILE: Carousel
+   ============== */
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: 0 0 30px; background: #fff; position: relative; zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 33px; height: 33px; margin: -20px 0 0; display: block; background: url(../img/bg_direction_nav.png) no-repeat 0 0; background-size: 66px; position: absolute; top: 57%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 0;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 0;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+
+.caption{
+    position:absolute;
+    bottom:0;
+    margin: 0;
+    width:100%;
+    background:rgba(black, .5);
+    color:#f7f7f7;
+    padding:10px 13px;
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+.flexslider a{
+    text-decoration: none;
+}
+
+/* ==============
+    MOBILE: Footer
+   ============== */
+
+.contact a{
+    font-size: 13px;
+    font-family: 'AlegreyaRegular';
+    color:#444; 
+}
+
+.footer-container {
+    padding-bottom:40px;
+    &:before {
+        content:"";
+        border-top:1px solid #d9d9d9;
+        width:100%;
+        margin:0 auto;
+        display:block;
+    }
+}
+
+footer .social a{
+    color: #000;
+    margin:0 18px;
+    padding:0;
+    &:first-child {
+        margin-left:0;
+    }
+    &:last-child {
+        margin-right:0;
+    }
+}
+
+.mailing-list, .copyright {
+    font-size:.9em;
+    position:relative;
+    margin:15px 0;
+    padding:5px 0
+}
+
+.mailing-list {
+    text-align:center;
+    border:1px solid #d9d9d9;
+    border-radius:3px;
+    //margin-bottom:40px;
+}
+
+.copyright {
+    text-align:center;
+}
+
+/* ==============
+    MOBILE: =Alcove
+   ============== */
+
+    .alcove section {
+        margin-bottom:30px;
+    }
+
+   .alcove-section img {
+        border:1px solid #d9d9d9;
+        border-radius:3px;
+   }
+   .alcove-section ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+   }
+        .alcove-section li {
+            display:inline;
+        }
+
+    /* Shows styling */
+    .tour-header {
+        display:none;
+    }
+    
+    #tour-date, #tour-city, #tour-venue {
+        text-align:right;
+    }
+
+    #tour-date:before, #tour-city:before, #tour-venue:before {
+        float:left;
+        text-transform: uppercase;
+        font-family: 'AlegreyaRegular';
+        font-size:19px;
+    }
+
+        #tour-date:before {
+            content:"DATE";
+        }
+
+        #tour-venue:before {
+            content:"VENUE";
+        }
+
+        #tour-city:before {
+            content:"CITY";
+        }
+
+    .tour-row {
+        margin-bottom:40px;
+    }
+
+    .alcove .scroll {
+        height:600px;
+        overflow-y:scroll;
+    }
+
+    .alcove nav li, .press nav li {
+        width:19%;
+    }
+
+    .alcove nav a, .press nav a {
+        padding:10px 0;
+        margin:0;
+        font-size:10px;
+    }
+
+    /* ===============
+    =LOGOS
+   =============== */
+
+   .logo-footer {
+        width:20px;
+        top:-2px;
+        margin:0 5px;
+        position:relative;
+   }
+   
+   //Bon Iver
+    .artist-logo {
+        text-align:center;
+        margin:0 auto;
+        span {
+            position:absolute;
+            left:-9999px;
+        }
+        width:300px;
+        height:100px;
+    }
+
+    #bon-iver-logo {
+        background:url(../img/artists/bon-iver/logo/BonIverLogo.png) no-repeat;
+        background-size:100%;
+    }
+
+
+/* ===============
+    =PRESS
+   =============== */
+
+   .main-press-wrapper {
+
+   }
+
+   .press .caption {
+    text-align:center;
+   }
+
+   #press-collage {
+       margin:0 auto;
+    }
+
+        #press-collage img {
+            width:100%;
+            height:auto;
+        }
+
+        .press-item {
+            width: 280px;
+            margin: 20px;
+            float: left;
+        }
+
+            .press-item a {
+                color:#222;
+            }
+
+        .masonry,
+        .masonry .masonry-brick {
+            -webkit-transition-duration: 0.7s;
+            -moz-transition-duration: 0.7s;
+            -ms-transition-duration: 0.7s;
+            -o-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+        }
+
+        .masonry {
+            -webkit-transition-property: height, width;
+            -moz-transition-property: height, width;
+            -ms-transition-property: height, width;
+            -o-transition-property: height, width;
+            transition-property: height, width;
+        }
+
+        .masonry .masonry-brick {
+            -webkit-transition-property: left, right, top;
+            -moz-transition-property: left, right, top;
+            -ms-transition-property: left, right, top;
+            -o-transition-property: left, right, top;
+            transition-property: left, right, top;
+        }
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+        padding-right:0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        //display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+
+/* ====================
+    WIDE: Body
+   ==================== */
+
+
+    body{
+        border-top: 4px solid #222;
+    }
+
+/* ============
+    WIDE: Header
+   ============ */
+    .header-container{
+        margin: 20px auto 30px auto;
+        width: 72.7272%;
+    }
+
+    nav {
+        float: right;
+        background:#fff;
+        margin-top: 15px;
+    }
+
+    nav a, nav a:hover, nav a:visited{
+        color: #000;
+    }
+
+    .logo {
+        width:275px;
+        height:75px;
+    }
+
+    .logo, .title{
+        display: inline-block;
+    }
+
+    .logo{
+        margin-top: 0;
+    }
+
+    .title{
+        margin-left:10px;
+        font-size: 1.2em;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    h2{
+        font-size: 1.875em;
+    }
+
+    .home-wrapper{
+        
+        margin: 0;
+    }
+
+    .wrapper{
+        width: 82.7272%;
+        margin:0 auto;
+    }
+
+    .row {
+        clear:both;
+        margin:1em 0;
+        &:after {
+            content:"";
+            display:table;
+            clear:both;
+        }
+    }
+
+    .col1of2, .col2of2{
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .col2of2{
+        margin-left: 3.3%;
+    }
+
+    .col1of3, .col2of3 {
+        width:30%;
+        float:left;
+        margin-right:5%;
+    }
+
+    .col3of3 {
+        width:30%;
+        float:right;
+        margin-right:0;
+    }
+
+    .slides li a, .image-lister a{
+        display: block;
+        position: relative;
+    }
+
+    .caption {        
+        font-size:2em;
+        /* text-shadow:1px 2px 5px rgba(0, 0, 0, 0.3); */
+    }
+
+    
+
+    .block-link{
+        display: block;
+        width: 49.9%;
+        float: right;
+        text-align: left;
+    }
+
+    .block-link a{
+        padding: .5em 1.5em;
+    }
+
+    .block-link .social{
+        width: 100%;
+        text-align: right;
+        padding-right: 1.5em;
+    }
+    
+    .caption.caption-black{
+        color: #222;
+    }
+
+    .image-lister li{
+        width: 48.125%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .image-lister li:nth-child(odd){
+        margin-right: 3%;
+    }
+
+    .image-lister .caption{
+        font-size: 1.4em;
+    }
+
+    .image-lister .caption.caption-black{
+        color: #fff;
+    }
+
+    .main article{
+        margin-bottom: 40px;
+    }
+
+    .scroll {
+        height:400px;
+        overflow-y: scroll;
+    }
+
+    .social a {
+        padding:0;
+    }
+
+    .album_thumb {
+    
+    }
+
+/* ============
+    WIDE: =Alcove
+   ============ */
+
+    .alcove-section section {
+        display:inline-block;
+        margin-right:10px;
+    }
+
+    .alcove-albums img {
+        max-width:300px;
+    }
+
+    /* Shows styling */
+    .shows {
+        display: table;
+        width:100%;
+    }
+
+    .tour-header {display:block;font-size:.9em}
+
+    .tour-header h3 {
+        display:inline-block;
+        width:33%;
+        &:last-child {
+            width:32%;
+        }
+    }
+
+    .tour-row {
+        display:table-row;
+        font-size:.9em;
+    }
+
+        .tour-row p, .tour-row h3 {
+            display:table-cell;
+            width:33%;
+        }
+
+    #tour-date:before, #tour-venue:before, #tour-city:before {
+            content:"";
+        }
+    
+    #tour-date, #tour-venue, #tour-city {text-align:left;}
+
+    .alcove nav li, .press nav li {
+        width:auto;
+    }
+
+    .alcove nav a, .press nav a {
+        padding:15px 20px;
+        font-size:12px;
+    }
+
+    /* ============
+    WIDE: =Footer
+   ============ */
+
+
+    
+    
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper, .header-container, .footer-container, .main-container {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+    .header-container{
+        margin: 20px auto;
+    }
+
+    .main div {
+    }
+
+    nav{
+    }
+
+     .caption {
+    }
+
+
+
+    .image-lister .caption.caption-black{
+        color: #222;
+    }
+
+.mailing-list {
+        display:inline-block;
+        width:24%;
+        padding-left:5px;
+        text-align:left;
+        top:-6px;
+    }
+
+    .copyright {
+        width:24%;
+        text-align:right;
+        display:inline-block;
+        top:-6px;
+    }
+
+    footer .social {
+        display:inline-block;
+        width:50%;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.black {
+    color:#222;
+}
+
+.italic {
+    font-style:italic;
+}
+
+.hide {
+    position:absolute;
+    left:-9999px;
+    top:-9999px;
+}
+
+
+//Colorbox
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:rgba(black, 0.9);}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(../img/colorbox/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(../img/colorbox/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(../img/colorbox/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(../img/colorbox/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(../img/colorbox/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(../img/colorbox/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(../img/colorbox/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(../img/colorbox/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;opacity:0;}
+        #cboxLoadingOverlay{background:url(../img/colorbox/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../img/colorbox/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious, #cboxNext {
+            position:absolute;
+            bottom:0;
+            width:50px;
+            height:60px;
+            opacity:.2;
+            text-indent:-9999px;
+            @include transition(opacity 200ms);
+            &:hover {
+                opacity:1 !important;
+            }
+        }
+        #cboxPrevious{
+            left:0; 
+            background:url(../img/carousel-l.png) no-repeat; }
+        #cboxNext{
+            right:15px; 
+            background:url(../img/carousel-r.png) no-repeat; 
+        }
+        #cboxContent:hover #cboxPrevious, #cboxContent:hover #cboxNext {
+            opacity:.4;
+        }
+        #cboxClose{position:absolute; top:-8px; left:-8px; background:url(../img/colorbox/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

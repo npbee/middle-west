@@ -1,0 +1,3 @@
+All jpeg images are saved at twice the desired size and at 10% quality for retina quality at small sizes - see 'compressive images' http://filamentgroup.com/lab/rwd_img_compression/
+
+There are then 3 versions of each image for different viewport sizes using picturefill for responsive images - see https://github.com/scottjehl/picturefill

@@ -30,7 +30,7 @@
                     <div data-picture data-alt="Bon Iver">
                         <div data-src="{{ page.header-image-s }}"></div>
                         <div data-src="{{ page.header-image-m }}"     data-media="(min-width: 480px)"></div>
-                        <div data-src="{{ page.header-image-l }} "     data-media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"></div>
+                        <div data-src="{{ page.header-image-l }} "     data-media="(min-width: 660px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"></div>
                     </div>
                     <noscript>
                         <img src="{{ page.header-image-s }}" alt="{{ page.artist }}">
@@ -79,14 +79,89 @@
                         <hr>
 
                         {% for album in page.albums %}
-                        <div class="row">
-                            <div class="album_thumb col{% cycle '1', '2' %}of2">
-                                <div id="card-container">
-                                    <a class="group colorbox-inline" href="#{{ album.hash }}">
-                                        <img class="album-cover" src="{{ album.thumb-image }}" alt="{{ album.name }}" height="300" width="300" />
-                                    </a>
-                                </div>
+                        <div class="album_thumb col{% cycle '1', '2', '3' %}of3">
+                            <div id="card-container">
+                                <a class="group colorbox-inline" href="#{{ album.hash }}">
+                                    <img class="album-cover" src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
+                                </a>
                             </div>
                         </div>
                         {% endfor %}
 
+                        {% for album in page.albums %}
+                        <!-- This is where the details for each album goes. -->
+                        <div class="discography--hidden" style="display:none">
+
+                            <!-- {{ album.name }} -->
+                            <div class="album-container" id="{{ album.hash }}">
+                                <img class="album-cover" src="{{ album.full-image }}" alt="{{ album.name }} cover" height="600" width="600" />
+                                <h3>{{ album.name}} ({{ album.year }})</h3>
+                                <span class="album-label">{{ album.label }}</span>
+                                <div class="album-links">
+                                    <a class="spotify-link" href="{{ album.spotify-link }}" target="_blank">
+                                    <span class="icon" aria-hidden="true" data-icon="&#xe001;"></span>
+                                    <span class="hide">spotify</span>
+                                    </a>
+                                    <a class="itunes-link" href="{{ album.itunes-link }}" target="_blank">apple</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        {% endfor %}
+                    </article>
+                </div>
+
+                <article>
+                    <h2>Videos</h2>
+                    <hr>
+                        {% for video in page.videos %}
+                            <div class="col{% cycle '1', '2', '3' %}of3">
+                                <a class="colorbox-iframe" href="http://www.youtube.com/embed/MjxA25Tj1Ks?rel=0&wmode=transparent">Popup</a>
+                            {{ video.embed-code }}
+                        </div>
+                        {% endfor %}
+                </article>
+
+                <article>
+                    <h2>Bio</h2>
+                    <hr>
+                    <div class="expandable">
+                        {% for section in page.bio %}
+                            {{ section.paragraph }}
+                        {% endfor %}
+                    </div>
+                </article>
+
+                <article>
+                    <h2>Contact</h2>
+                    <hr>
+                    {% for contact in page.contact %}
+                    <div class="col{% cycle '1', '2' %}of2">
+                        <section>
+                            <h3>{{ contact.type }}</h3>
+                            <ul class="content-lister">
+                                {% if contact.regions %}
+                                    {% for region in contact.regions %}
+                                    <li>
+                                        <p>{{ region.region }} / {{ region.company }}: {{ region.name }}</p>
+                                        <a href="mailto: {{ region.email }}">{{ region.email }}</a>
+                                    </li>
+                                    {% endfor %}
+
+                                    {% else %}
+                                    <li>
+                                        <p>{% if contact.company %}{{ contact.company }}: {% endif %}{{ contact.name }}</p>
+                                        <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </section>
+                    </div>
+
+                    {% endfor %}
+                </article>
+
+            </div> <!-- .main -->
+        </div> <!-- .main-container -->
+
+{% include footer.html %}

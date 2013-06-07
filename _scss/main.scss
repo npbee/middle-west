@@ -50,6 +50,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
     font: 16px/26px "futura-pt", Arial;
+    background: #fff;
 }
 
 ::-moz-selection {
@@ -469,6 +470,11 @@ nav .selected a{
     margin-bottom: 20px;
 }
 
+/* =Discography */
+.album_thumb {
+    margin-bottom: 2%;
+}
+
 /* ==============
     MOBILE: Carousel
    ============== */
@@ -523,7 +529,7 @@ html[xmlns] .slides {display: block;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 33px; height: 33px; margin: -20px 0 0; display: block; background: url(../img/bg_direction_nav.png) no-repeat 0 0; background-size: 66px; position: absolute; top: 57%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {width: 33px; height: 33px; margin: -20px 0 0; display: block; background: url(../img/icons/bg_direction_nav.png) no-repeat 0 0; background-size: 66px; position: absolute; top: 57%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
 .flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
 .flex-direction-nav .flex-prev {left: -36px;}
 .flexslider:hover .flex-next {opacity: 0.8; right: 0;}
@@ -901,13 +907,13 @@ footer .social a{
     }
 
     .col1of3, .col2of3 {
-        width:30%;
+        width:32%;
         float:left;
-        margin-right:5%;
+        margin:0 2% 2% 0;
     }
 
     .col3of3 {
-        width:30%;
+        width:32%;
         float:right;
         margin-right:0;
     }
@@ -1235,10 +1241,10 @@ footer .social a{
         }
         #cboxPrevious{
             left:0; 
-            background:url(../img/carousel-l.png) no-repeat; }
+            background:url(../img/icons/carousel-l.png) no-repeat; }
         #cboxNext{
             right:15px; 
-            background:url(../img/carousel-r.png) no-repeat; 
+            background:url(../img/icons/carousel-r.png) no-repeat; 
         }
         #cboxContent:hover #cboxPrevious, #cboxContent:hover #cboxNext {
             opacity:.4;

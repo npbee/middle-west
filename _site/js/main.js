@@ -54,6 +54,11 @@ $(document).ready(function(){
         //width: "50%",
         rel: 'group'
     });
+    $('.colorbox-iframe').colorbox({
+        iframe: true,
+        width:"80%",
+        height:"80%"
+    });
 
 });
 

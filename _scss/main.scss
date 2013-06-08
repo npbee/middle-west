@@ -166,6 +166,8 @@ a:hover{
     color: #ccc;
 }
 
+/* --------------------=News */
+
 /* --------------------=Discography */
 .album_thumb {
     
@@ -529,11 +531,11 @@ html[xmlns] .slides {display: block;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 33px; height: 33px; margin: -20px 0 0; display: block; background: url(../img/icons/bg_direction_nav.png) no-repeat 0 0; background-size: 66px; position: absolute; top: 57%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {width: 33px; height: 33px; margin: -20px 0 0; display: block; background: url(../img/icons/bg_direction_nav.png) no-repeat 0 0; background-size: 66px; position: absolute; top: 48%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
 .flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
 .flex-direction-nav .flex-prev {left: -36px;}
-.flexslider:hover .flex-next {opacity: 0.8; right: 0;}
-.flexslider:hover .flex-prev {opacity: 0.8; left: 0;}
+.flexslider:hover .flex-next {opacity: 0.8; right: -33px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: -33px;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 
@@ -898,12 +900,16 @@ footer .social a{
 
     .col1of2, .col2of2{
         width: 48%;
-        display: inline-block;
-        vertical-align: top;
+    }
+
+    .col1of2 {
+        float:left;
+        clear:left;
+        margin-right:2%;
     }
 
     .col2of2{
-        margin-left: 3.3%;
+        float:right
     }
 
     .col1of3, .col2of3 {

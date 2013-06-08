@@ -49,9 +49,7 @@ $(document).ready(function(){
     });
     
     //Colorbox
-    $('.colorbox-inline').colorbox({
-        inline: true,
-        //width: "50%",
+    $('.colorbox').colorbox({
         rel: 'group'
     });
     $('.colorbox-iframe').colorbox({

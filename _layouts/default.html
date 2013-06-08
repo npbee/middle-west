@@ -31,3 +31,22 @@
         </div> <!-- #main-container -->
 
 {% include footer.html %}
+
+
+<script>
+    $(function() {
+        $.ajax({
+            type: 'GET',
+            dataType: 'jsonp',
+            url: 'http://api.tumblr.com/v2/blog/theaironearth.tumblr.com/posts?api_key=0HGXyTUckXBQO6GJogg5kukScgMqnAVsqkBYlHqmIbPHRK5y7b',
+            data: { get_param: 'value'},
+            success: function(data) {
+                for (i = 0; i <= 19; i++) {
+                    $('.news').append('<div>' + data.response.posts[i].date + '</div><div>' + data.response.posts[i].body + '</div>');
+                }
+            }
+        });
+    });
+</script>
+
+{% include foot.html %}

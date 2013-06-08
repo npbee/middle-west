@@ -179,11 +179,16 @@
     </div>
 </article>
 
+<div class="news">
+    <h1>News</h1>
+    <hr>
+</div>
+
 
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-<div class="footer-container">
+    <div class="footer-container">
             <footer class="wrapper">
 
                 <div class="mailing-list">Mailing List sign up</div>
@@ -201,8 +206,46 @@
 
             </footer>
         </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="../js/plugins.js"></script>
         <script async src="../js/main.js"></script>
+
+
+<script>
+    $(function() {
+        $.ajax({
+            type: 'GET',
+            dataType: 'jsonp',
+            url: 'http://api.tumblr.com/v2/blog/theaironearth.tumblr.com/posts?api_key=0HGXyTUckXBQO6GJogg5kukScgMqnAVsqkBYlHqmIbPHRK5y7b',
+            data: { get_param: 'value'},
+            success: function(data) {
+                for (i = 0; i <= 19; i++) {
+                    var full_date = data.response.posts[i].date;
+                    var month = parseInt(full_date.substr(5,6), 10);
+                    var day = parseInt(full_date.substr(8,9), 10);
+                    var year = parseInt(full_date.substr(0,4), 10);
+                    $('.news').append(""+
+                            "<article>"+
+                                "<h2 class='post-title'>"+
+                                    data.response.posts[i].title +
+                                "</h2>" +
+                                
+                                "<div class='post-date'>" +
+                                    month + '/' + day + '/' + year +
+                                "</div>"+
+                                "<div>" + 
+                                    data.response.posts[i].body + 
+                                "</div>" +
+                            "</article>"
+                        );
+                }
+            }
+        });
+    });
+</script>
+
+
+        
          <!--<script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

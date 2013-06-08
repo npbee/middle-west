@@ -208,6 +208,29 @@ ul {
     }
 }
 
+/*  ----------------------------------------=Discography */
+.album_thumb {
+    margin-bottom: 2%;
+}
+
+.album-label {
+    display:block;
+    padding:5px 0;
+}
+
+.album-cover {
+    border:1px solid #d9d9d9;
+    border-radius:3px;
+}
+
+.album-container {
+    text-align:center;
+}
+
+
+
+
+
 
 /* ----------------------------------------=Navigation */
 nav{
@@ -269,8 +292,8 @@ nav{
 .logo{
     display: block;
     background-image: url(../img/logo/mw_logo-horizontal.png);
-    width:300px;
-    height:80px;
+    width:325px;
+    height:90px;
     background-size: 100%;
     margin:20px auto;
     @include breakpoint(large) {
@@ -318,10 +341,6 @@ article {
 .header-image {
     display:block;
     position:relative;
-    min-height:200px;
-    @include breakpoint(large) {
-        min-height:500px;
-    }
 }
 
 .caption{
@@ -389,45 +408,6 @@ article {
         content: "\e004";
     }
 
-/*  ----------------------------------------=Discography */
-.album_thumb {
-    margin-bottom: 2%;
-    &:after {
-        content:"";
-        display:block;
-        width:75%;
-        margin:30px auto;
-        border-bottom:1px solid #d9d9d9;
-    }
-    @include breakpoint(large) {
-        &:after {
-            display:none;
-        }
-    }
-}
-
-.album-label {
-    display:block;
-}
-
-.album-links {
-    margin: 10px 0;
-}
-.album-cover {
-    border:1px solid #d9d9d9;
-    border-radius:3px;
-}
-
-.album-container {
-    text-align:center;
-}
-
-.mobile-album-info {
-    text-align:center;
-    @include breakpoint(large) {
-        display:none;
-    }
-}
 
 /* --------------------=Contact */
 .contacts li{
@@ -773,10 +753,6 @@ footer .social {
    Helper classes
    ========================================================================== */
 
-
-.wf-loading {
-    visibility: hidden;
-}
 .clearfix:before,
 .clearfix:after {
     content: " ";

@@ -1,15 +1,15 @@
-// runs the slider across the site
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
-
 $(document).ready(function(){
+    $('.flexslider').flexslider({
+        animation: "slide"
+    });
+
     // fits iframe videos to fluid column widths
     $("div.main").fitVids();
 
-    $("img.lazy").lazyload();
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        threshold: 200
+    });
 
     // Expandable sections
     $('.expandable').expander({

@@ -18,15 +18,15 @@
 /* ==========================================================================
    =BASE
    ========================================================================== */
-/* line 32, ../_scss/main.scss */
+/* line 32, ../_scss/main_nickedit.scss */
 * {
   -webkit-box-sizing: border-box; }
 
-/* line 36, ../_scss/main.scss */
+/* line 36, ../_scss/main_nickedit.scss */
 html {
   -webkit-text-size-adjust: 100%; }
 
-/* line 40, ../_scss/main.scss */
+/* line 40, ../_scss/main_nickedit.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -34,11 +34,11 @@ body {
   background: #fff;
   margin: 0; }
   @media only screen and (min-width: 750px) {
-    /* line 40, ../_scss/main.scss */
+    /* line 40, ../_scss/main_nickedit.scss */
     body {
       border-top: 4px solid #222; } }
 
-/* line 51, ../_scss/main.scss */
+/* line 51, ../_scss/main_nickedit.scss */
 hr {
   display: block;
   height: 1px;
@@ -48,33 +48,33 @@ hr {
   padding: 0;
   clear: both; }
 
-/* line 61, ../_scss/main.scss */
+/* line 61, ../_scss/main_nickedit.scss */
 img {
   vertical-align: middle; }
 
-/* line 65, ../_scss/main.scss */
+/* line 65, ../_scss/main_nickedit.scss */
 h1, h2, h3, h4 {
   font-family: "bebas-neue", Helvetica, Helvetica Neue, Arial;
   font-weight: normal;
   letter-spacing: 1px; }
 
-/* line 71, ../_scss/main.scss */
+/* line 71, ../_scss/main_nickedit.scss */
 h2 {
   margin: .7em 0 .2em 0; }
   @media only screen and (min-width: 750px) {
-    /* line 71, ../_scss/main.scss */
+    /* line 71, ../_scss/main_nickedit.scss */
     h2 {
       font-size: 1.875em; } }
 
-/* line 78, ../_scss/main.scss */
+/* line 78, ../_scss/main_nickedit.scss */
 h3 {
   margin: .7em 0 .1em 0; }
 
-/* line 82, ../_scss/main.scss */
+/* line 82, ../_scss/main_nickedit.scss */
 img {
   max-width: 100%; }
 
-/* line 86, ../_scss/main.scss */
+/* line 86, ../_scss/main_nickedit.scss */
 a, a:visited {
   color: #0989b8;
   text-decoration: none;
@@ -83,12 +83,12 @@ a, a:visited {
   -o-transition: color 200ms;
   transition: color 200ms; }
 
-/* line 92, ../_scss/main.scss */
+/* line 92, ../_scss/main_nickedit.scss */
 a:hover {
   text-decoration: underline;
   color: #065977; }
 
-/* line 97, ../_scss/main.scss */
+/* line 97, ../_scss/main_nickedit.scss */
 ul {
   padding: 0;
   margin: 0;
@@ -98,17 +98,17 @@ ul {
     =LAYOUT
    ====================================== */
 @media only screen and (min-width: 1140px) {
-  /* line 107, ../_scss/main.scss */
+  /* line 107, ../_scss/main_nickedit.scss */
   .main-container, .header-container, .footer-container {
     width: 1026px;
     margin: 0 auto; } }
 
-/* line 113, ../_scss/main.scss */
+/* line 113, ../_scss/main_nickedit.scss */
 .wrapper {
   width: 90%;
   margin: 0 auto; }
   @media only screen and (min-width: 1140px) {
-    /* line 113, ../_scss/main.scss */
+    /* line 113, ../_scss/main_nickedit.scss */
     .wrapper {
       width: 100%; } }
 
@@ -117,33 +117,33 @@ ul {
    ====================================== */
 /* ----------------------------------------=GRID */
 @media only screen and (min-width: 750px) {
-  /* line 128, ../_scss/main.scss */
+  /* line 128, ../_scss/main_nickedit.scss */
   .col1of2, .col2of2 {
     width: 48%; }
 
-  /* line 132, ../_scss/main.scss */
+  /* line 132, ../_scss/main_nickedit.scss */
   .col1of2 {
     float: left;
     clear: left;
     margin-right: 2%; }
 
-  /* line 138, ../_scss/main.scss */
+  /* line 138, ../_scss/main_nickedit.scss */
   .col2of2 {
     float: right; }
 
-  /* line 142, ../_scss/main.scss */
+  /* line 142, ../_scss/main_nickedit.scss */
   .col1of3, .col2of3 {
     width: 32%;
     float: left;
     margin: 0 2% 2% 0; }
 
-  /* line 148, ../_scss/main.scss */
+  /* line 148, ../_scss/main_nickedit.scss */
   .col3of3 {
     width: 32%;
     float: right;
     margin-right: 0; } }
 /* ----------------------------------------=Icons */
-/* line 156, ../_scss/main.scss */
+/* line 156, ../_scss/main_nickedit.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -159,22 +159,22 @@ ul {
   -moz-transition: color 200ms;
   -o-transition: color 200ms;
   transition: color 200ms; }
-  /* line 168, ../_scss/main.scss */
+  /* line 168, ../_scss/main_nickedit.scss */
   [data-icon]:before:hover {
     color: #444; }
 
-/* line 173, ../_scss/main.scss */
+/* line 173, ../_scss/main_nickedit.scss */
 .icon {
   -webkit-transition: color 200ms;
   -moz-transition: color 200ms;
   -o-transition: color 200ms;
   transition: color 200ms;
   color: #222; }
-  /* line 176, ../_scss/main.scss */
+  /* line 176, ../_scss/main_nickedit.scss */
   .icon:hover {
     color: #444444; }
 
-/* line 181, ../_scss/main.scss */
+/* line 181, ../_scss/main_nickedit.scss */
 .album-links a, .social a {
   color: #222;
   font-family: 'rondo', Verdana, sans-serif;
@@ -187,36 +187,55 @@ ul {
   -moz-transition: color 200ms;
   -o-transition: color 200ms;
   transition: color 200ms; }
-  /* line 190, ../_scss/main.scss */
+  /* line 190, ../_scss/main_nickedit.scss */
   .album-links a:hover, .social a:hover {
     color: #444; }
-    /* line 192, ../_scss/main.scss */
+    /* line 192, ../_scss/main_nickedit.scss */
     .album-links a:hover .icon, .social a:hover .icon {
       color: #444; }
 
-/* line 198, ../_scss/main.scss */
+/* line 198, ../_scss/main_nickedit.scss */
 .spotify-link {
   text-decoration: none;
   display: inline-block; }
 
 /*  ----------------------------------------=HEADER */
 @media only screen and (min-width: 750px) {
-  /* line 205, ../_scss/main.scss */
+  /* line 205, ../_scss/main_nickedit.scss */
   .header-container {
     margin: 20px auto 30px auto; } }
 
+/*  ----------------------------------------=Discography */
+/* line 212, ../_scss/main_nickedit.scss */
+.album_thumb {
+  margin-bottom: 2%; }
+
+/* line 216, ../_scss/main_nickedit.scss */
+.album-label {
+  display: block;
+  padding: 5px 0; }
+
+/* line 221, ../_scss/main_nickedit.scss */
+.album-cover {
+  border: 1px solid #d9d9d9;
+  border-radius: 3px; }
+
+/* line 226, ../_scss/main_nickedit.scss */
+.album-container {
+  text-align: center; }
+
 /* ----------------------------------------=Navigation */
-/* line 213, ../_scss/main.scss */
+/* line 236, ../_scss/main_nickedit.scss */
 nav {
   background: #231f20; }
   @media only screen and (min-width: 750px) {
-    /* line 213, ../_scss/main.scss */
+    /* line 236, ../_scss/main_nickedit.scss */
     nav {
       float: right;
       background: #fff;
       margin-top: 30px; } }
 
-/* line 222, ../_scss/main.scss */
+/* line 245, ../_scss/main_nickedit.scss */
 nav a, nav a:visited {
   font-family: 'bebas-neue', Helvetica Neue, Helvetica, Arial;
   text-align: center;
@@ -226,96 +245,91 @@ nav a, nav a:visited {
   display: block;
   padding: 15px 20px; }
   @media only screen and (min-width: 480px) {
-    /* line 222, ../_scss/main.scss */
+    /* line 245, ../_scss/main_nickedit.scss */
     nav a, nav a:visited {
       display: inline-block;
       margin-bottom: 0; } }
   @media only screen and (min-width: 750px) {
-    /* line 222, ../_scss/main.scss */
+    /* line 245, ../_scss/main_nickedit.scss */
     nav a, nav a:visited {
       color: #000; } }
 
-/* line 240, ../_scss/main.scss */
+/* line 263, ../_scss/main_nickedit.scss */
 nav ul {
   margin: 0 auto;
   padding: 0;
   text-align: center; }
 
-/* line 246, ../_scss/main.scss */
+/* line 269, ../_scss/main_nickedit.scss */
 nav li {
   display: inline-block; }
 
 @media only screen and (min-width: 480px) {
-  /* line 252, ../_scss/main.scss */
+  /* line 275, ../_scss/main_nickedit.scss */
   nav li:first-child a {
     margin-left: 0; }
 
-  /* line 256, ../_scss/main.scss */
+  /* line 279, ../_scss/main_nickedit.scss */
   nav li:last-child a {
     margin-right: 0;
     padding-right: 0; } }
 /*  ----------------------------------------=Logo */
-/* line 265, ../_scss/main.scss */
+/* line 288, ../_scss/main_nickedit.scss */
 .logo-container a {
   text-align: center; }
 
-/* line 269, ../_scss/main.scss */
+/* line 292, ../_scss/main_nickedit.scss */
 .logo {
   display: block;
   background-image: url(../img/logo/mw_logo-horizontal.png);
-  width: 300px;
-  height: 80px;
+  width: 325px;
+  height: 90px;
   background-size: 100%;
   margin: 20px auto; }
   @media only screen and (min-width: 750px) {
-    /* line 269, ../_scss/main.scss */
+    /* line 292, ../_scss/main_nickedit.scss */
     .logo {
       float: left;
       width: 275px;
       height: 75px; } }
 
 /*  ----------------------------------------=Sections */
-/* line 285, ../_scss/main.scss */
+/* line 308, ../_scss/main_nickedit.scss */
 article {
   margin-bottom: 40px;
   clear: both; }
-  /* line 288, ../_scss/main.scss */
+  /* line 311, ../_scss/main_nickedit.scss */
   article:first-child {
     margin-bottom: 0; }
-  /* line 291, ../_scss/main.scss */
+  /* line 314, ../_scss/main_nickedit.scss */
   article:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 296, ../_scss/main.scss */
+  /* line 319, ../_scss/main_nickedit.scss */
   article img {
     width: 100%;
     height: auto; }
 
 /*  ----------------------------------------=Artist List */
-/* line 304, ../_scss/main.scss */
+/* line 327, ../_scss/main_nickedit.scss */
 .artist-list a {
   display: block;
   position: relative; }
 
-/* line 309, ../_scss/main.scss */
+/* line 332, ../_scss/main_nickedit.scss */
 .artist-list li {
   list-style: none;
   padding: 10px 0; }
 
 /* ----------------------------------------=Artist Pages */
 /* --------------------=Header Image */
-/* line 318, ../_scss/main.scss */
+/* line 341, ../_scss/main_nickedit.scss */
 .header-image {
   display: block;
-  position: relative;
-  min-height: 200px; }
-  @media only screen and (min-width: 750px) {
-    /* line 318, ../_scss/main.scss */
-    .header-image {
-      min-height: 500px; } }
+  position: relative; }
 
-/* line 327, ../_scss/main.scss */
+/* line 346, ../_scss/main_nickedit.scss */
 .caption {
   position: absolute;
   bottom: 0;
@@ -327,37 +341,37 @@ article {
   font-size: 1.4em;
   line-height: 1; }
   @media only screen and (min-width: 750px) {
-    /* line 327, ../_scss/main.scss */
+    /* line 346, ../_scss/main_nickedit.scss */
     .caption {
       font-size: 2em; } }
 
 /* --------------------=Social Links */
-/* line 343, ../_scss/main.scss */
+/* line 362, ../_scss/main_nickedit.scss */
 .social {
   display: block;
   margin: 15px auto 15px;
   text-align: center;
   padding: 5px 0; }
 
-/* line 350, ../_scss/main.scss */
+/* line 369, ../_scss/main_nickedit.scss */
 .icon-globe {
   font-size: 29px !important; }
 
-/* line 353, ../_scss/main.scss */
+/* line 372, ../_scss/main_nickedit.scss */
 .icon-globe:before {
   content: "\e000"; }
 
 /* --------------------=Bio */
-/* line 358, ../_scss/main.scss */
+/* line 377, ../_scss/main_nickedit.scss */
 .read-more, .read-less {
   padding-left: 5px;
   opacity: .7; }
 
-/* line 362, ../_scss/main.scss */
+/* line 381, ../_scss/main_nickedit.scss */
 .read-more:hover, .read-less:hover {
   opacity: 1; }
 
-/* line 366, ../_scss/main.scss */
+/* line 385, ../_scss/main_nickedit.scss */
 .read-more a, .read-less a {
   font-family: 'icomoon' !important;
   speak: none;
@@ -370,84 +384,43 @@ article {
   color: #222;
   text-decoration: none; }
 
-/* line 379, ../_scss/main.scss */
+/* line 398, ../_scss/main_nickedit.scss */
 .read-more a:after, .read-less a:after {
   padding-left: 5px;
   position: relative;
   top: 2px; }
 
-/* line 384, ../_scss/main.scss */
+/* line 403, ../_scss/main_nickedit.scss */
 .read-more a:after {
   content: "\e003"; }
 
-/* line 388, ../_scss/main.scss */
+/* line 407, ../_scss/main_nickedit.scss */
 .read-less a:after {
   content: "\e004"; }
 
-/*  ----------------------------------------=Discography */
-/* line 393, ../_scss/main.scss */
-.album_thumb {
-  margin-bottom: 2%; }
-  /* line 395, ../_scss/main.scss */
-  .album_thumb:after {
-    content: "";
-    display: block;
-    width: 75%;
-    margin: 30px auto;
-    border-bottom: 1px solid #d9d9d9; }
-  @media only screen and (min-width: 750px) {
-    /* line 403, ../_scss/main.scss */
-    .album_thumb:after {
-      display: none; } }
-
-/* line 409, ../_scss/main.scss */
-.album-label {
-  display: block; }
-
-/* line 413, ../_scss/main.scss */
-.album-links {
-  margin: 10px 0; }
-
-/* line 416, ../_scss/main.scss */
-.album-cover {
-  border: 1px solid #d9d9d9;
-  border-radius: 3px; }
-
-/* line 421, ../_scss/main.scss */
-.album-container {
-  text-align: center; }
-
-/* line 425, ../_scss/main.scss */
-.mobile-album-info {
-  text-align: center; }
-  @media only screen and (min-width: 750px) {
-    /* line 425, ../_scss/main.scss */
-    .mobile-album-info {
-      display: none; } }
-
 /* --------------------=Contact */
-/* line 433, ../_scss/main.scss */
+/* line 413, ../_scss/main_nickedit.scss */
 .contacts li {
   padding-bottom: 1em; }
 
-/* line 436, ../_scss/main.scss */
+/* line 416, ../_scss/main_nickedit.scss */
 .contacts span {
   display: block; }
 
-/* line 440, ../_scss/main.scss */
+/* line 420, ../_scss/main_nickedit.scss */
 .fluid-width-video-wrapper {
   margin-bottom: 20px; }
 
 /*  ----------------------------------------=Flexslider */
 /* Browser Resets */
-/* line 452, ../_scss/main.scss */
+/* line 432, ../_scss/main_nickedit.scss */
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
 .flexslider a:focus {
   outline: none; }
 
-/* line 455, ../_scss/main.scss */
+/* line 435, ../_scss/main_nickedit.scss */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -457,28 +430,28 @@ article {
 
 /* FlexSlider Necessary Styles
 *********************************/
-/* line 459, ../_scss/main.scss */
+/* line 439, ../_scss/main_nickedit.scss */
 .flexslider {
   margin: 0;
   padding: 0; }
 
-/* line 460, ../_scss/main.scss */
+/* line 440, ../_scss/main_nickedit.scss */
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 461, ../_scss/main.scss */
+/* line 441, ../_scss/main_nickedit.scss */
 .flexslider .slides img {
   width: 100%;
   display: block; }
 
-/* line 462, ../_scss/main.scss */
+/* line 442, ../_scss/main_nickedit.scss */
 .flex-pauseplay span {
   text-transform: capitalize; }
 
 /* Clearfix for the .slides element */
-/* line 465, ../_scss/main.scss */
+/* line 445, ../_scss/main_nickedit.scss */
 .slides:after {
   content: ".";
   display: block;
@@ -487,55 +460,55 @@ article {
   line-height: 0;
   height: 0; }
 
-/* line 466, ../_scss/main.scss */
+/* line 446, ../_scss/main_nickedit.scss */
 html[xmlns] .slides {
   display: block; }
 
-/* line 467, ../_scss/main.scss */
+/* line 447, ../_scss/main_nickedit.scss */
 * html .slides {
   height: 1%; }
 
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 472, ../_scss/main.scss */
+/* line 452, ../_scss/main_nickedit.scss */
 .no-js .slides > li:first-child {
   display: block; }
 
 /* FlexSlider Default Theme
 *********************************/
-/* line 477, ../_scss/main.scss */
+/* line 457, ../_scss/main_nickedit.scss */
 .flexslider {
   margin: 0 0 30px;
   background: #fff;
   position: relative;
   zoom: 1; }
 
-/* line 478, ../_scss/main.scss */
+/* line 458, ../_scss/main_nickedit.scss */
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease; }
 
-/* line 479, ../_scss/main.scss */
+/* line 459, ../_scss/main_nickedit.scss */
 .loading .flex-viewport {
   max-height: 300px; }
 
-/* line 480, ../_scss/main.scss */
+/* line 460, ../_scss/main_nickedit.scss */
 .flexslider .slides {
   zoom: 1; }
 
-/* line 482, ../_scss/main.scss */
+/* line 462, ../_scss/main_nickedit.scss */
 .carousel li {
   margin-right: 5px; }
 
 /* Direction Nav */
-/* line 486, ../_scss/main.scss */
+/* line 466, ../_scss/main_nickedit.scss */
 .flex-direction-nav {
   *height: 0; }
 
-/* line 487, ../_scss/main.scss */
+/* line 467, ../_scss/main_nickedit.scss */
 .flex-direction-nav a {
   width: 33px;
   height: 33px;
@@ -551,56 +524,56 @@ html[xmlns] .slides {
   opacity: 0;
   -webkit-transition: all .3s ease; }
 
-/* line 502, ../_scss/main.scss */
+/* line 482, ../_scss/main_nickedit.scss */
 .flex-direction-nav .flex-next {
   background-position: 100%; }
 
-/* line 503, ../_scss/main.scss */
+/* line 483, ../_scss/main_nickedit.scss */
 .flexslider:hover .flex-next {
   opacity: 0.8;
   right: 0px; }
 
-/* line 504, ../_scss/main.scss */
+/* line 484, ../_scss/main_nickedit.scss */
 .flexslider:hover .flex-prev {
   opacity: 0.8;
   left: 0px; }
 
 @media only screen and (min-width: 750px) {
-  /* line 506, ../_scss/main.scss */
+  /* line 486, ../_scss/main_nickedit.scss */
   .flexslider:hover .flex-next {
     opacity: 0.8;
     right: -33px; }
 
-  /* line 507, ../_scss/main.scss */
+  /* line 487, ../_scss/main_nickedit.scss */
   .flexslider:hover .flex-prev {
     opacity: 0.8;
     left: -33px; } }
-/* line 509, ../_scss/main.scss */
+/* line 489, ../_scss/main_nickedit.scss */
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
   opacity: 1; }
 
-/* line 510, ../_scss/main.scss */
+/* line 490, ../_scss/main_nickedit.scss */
 .flex-direction-nav .flex-disabled {
   opacity: 0.3 !important;
   filter: alpha(opacity=30);
   cursor: default; }
 
 /* Control Nav */
-/* line 513, ../_scss/main.scss */
+/* line 493, ../_scss/main_nickedit.scss */
 .flex-control-nav {
   width: 100%;
   position: absolute;
   bottom: -40px;
   text-align: center; }
 
-/* line 514, ../_scss/main.scss */
+/* line 494, ../_scss/main_nickedit.scss */
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
   *display: inline; }
 
-/* line 515, ../_scss/main.scss */
+/* line 495, ../_scss/main_nickedit.scss */
 .flex-control-paging li a {
   width: 11px;
   height: 11px;
@@ -615,64 +588,64 @@ html[xmlns] .slides {
   border-radius: 20px;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
 
-/* line 516, ../_scss/main.scss */
+/* line 496, ../_scss/main_nickedit.scss */
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7); }
 
-/* line 517, ../_scss/main.scss */
+/* line 497, ../_scss/main_nickedit.scss */
 .flex-control-paging li a.flex-active {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default; }
 
-/* line 519, ../_scss/main.scss */
+/* line 499, ../_scss/main_nickedit.scss */
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden; }
 
-/* line 520, ../_scss/main.scss */
+/* line 500, ../_scss/main_nickedit.scss */
 .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0; }
 
-/* line 521, ../_scss/main.scss */
+/* line 501, ../_scss/main_nickedit.scss */
 .flex-control-thumbs img {
   width: 100%;
   display: block;
   opacity: .7;
   cursor: pointer; }
 
-/* line 522, ../_scss/main.scss */
+/* line 502, ../_scss/main_nickedit.scss */
 .flex-control-thumbs img:hover {
   opacity: 1; }
 
-/* line 523, ../_scss/main.scss */
+/* line 503, ../_scss/main_nickedit.scss */
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default; }
 
 @media screen and (max-width: 860px) {
-  /* line 526, ../_scss/main.scss */
+  /* line 506, ../_scss/main_nickedit.scss */
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 0; }
 
-  /* line 527, ../_scss/main.scss */
+  /* line 507, ../_scss/main_nickedit.scss */
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0; } }
-/* line 530, ../_scss/main.scss */
+/* line 510, ../_scss/main_nickedit.scss */
 .flexslider a {
   text-decoration: none; }
 
 /*----------------------------------------=FOOTER */
-/* line 536, ../_scss/main.scss */
+/* line 516, ../_scss/main_nickedit.scss */
 .footer-container {
   padding-bottom: 40px; }
-  /* line 538, ../_scss/main.scss */
+  /* line 518, ../_scss/main_nickedit.scss */
   .footer-container:before {
     content: "";
     border-top: 1px solid #d9d9d9;
@@ -680,37 +653,37 @@ html[xmlns] .slides {
     margin: 0 auto;
     display: block; }
 
-/* line 547, ../_scss/main.scss */
+/* line 527, ../_scss/main_nickedit.scss */
 footer .social a {
   margin: 0 18px;
   padding: 0; }
-  /* line 550, ../_scss/main.scss */
+  /* line 530, ../_scss/main_nickedit.scss */
   footer .social a:first-child {
     margin-left: 0; }
-  /* line 553, ../_scss/main.scss */
+  /* line 533, ../_scss/main_nickedit.scss */
   footer .social a:last-child {
     margin-right: 0; }
 
 @media only screen and (min-width: 1140px) {
-  /* line 558, ../_scss/main.scss */
+  /* line 538, ../_scss/main_nickedit.scss */
   footer .social {
     display: inline-block;
     width: 50%; } }
 
-/* line 565, ../_scss/main.scss */
+/* line 545, ../_scss/main_nickedit.scss */
 .mailing-list, .copyright {
   font-size: .9em;
   position: relative;
   margin: 15px 0;
   padding: 5px 0; }
 
-/* line 572, ../_scss/main.scss */
+/* line 552, ../_scss/main_nickedit.scss */
 .mailing-list {
   text-align: center;
   border: 1px solid #d9d9d9;
   border-radius: 3px; }
   @media only screen and (min-width: 1140px) {
-    /* line 572, ../_scss/main.scss */
+    /* line 552, ../_scss/main_nickedit.scss */
     .mailing-list {
       display: inline-block;
       width: 24%;
@@ -718,11 +691,11 @@ footer .social a {
       text-align: left;
       top: -6px; } }
 
-/* line 585, ../_scss/main.scss */
+/* line 565, ../_scss/main_nickedit.scss */
 .copyright {
   text-align: center; }
   @media only screen and (min-width: 1140px) {
-    /* line 585, ../_scss/main.scss */
+    /* line 565, ../_scss/main_nickedit.scss */
     .copyright {
       width: 24%;
       text-align: right;
@@ -730,154 +703,154 @@ footer .social a {
       top: -6px; } }
 
 /*----------------------------------------=ALCOVE */
-/* line 597, ../_scss/main.scss */
+/* line 577, ../_scss/main_nickedit.scss */
 .alcove section {
   margin-bottom: 30px; }
 
-/* line 601, ../_scss/main.scss */
+/* line 581, ../_scss/main_nickedit.scss */
 .alcove-section img {
   border: 1px solid #d9d9d9;
   border-radius: 3px; }
 
-/* line 605, ../_scss/main.scss */
+/* line 585, ../_scss/main_nickedit.scss */
 .alcove-section ul {
   padding: 0;
   list-style: none;
   text-align: center; }
 
-/* line 610, ../_scss/main.scss */
+/* line 590, ../_scss/main_nickedit.scss */
 .alcove-section li {
   display: inline; }
 
 /* Shows styling */
-/* line 615, ../_scss/main.scss */
+/* line 595, ../_scss/main_nickedit.scss */
 .tour-header {
   display: none; }
 
-/* line 619, ../_scss/main.scss */
+/* line 599, ../_scss/main_nickedit.scss */
 #tour-date, #tour-city, #tour-venue {
   text-align: right; }
 
-/* line 623, ../_scss/main.scss */
+/* line 603, ../_scss/main_nickedit.scss */
 #tour-date:before, #tour-city:before, #tour-venue:before {
   float: left;
   text-transform: uppercase;
   font-family: 'AlegreyaRegular';
   font-size: 19px; }
 
-/* line 630, ../_scss/main.scss */
+/* line 610, ../_scss/main_nickedit.scss */
 #tour-date:before {
   content: "DATE"; }
 
-/* line 634, ../_scss/main.scss */
+/* line 614, ../_scss/main_nickedit.scss */
 #tour-venue:before {
   content: "VENUE"; }
 
-/* line 638, ../_scss/main.scss */
+/* line 618, ../_scss/main_nickedit.scss */
 #tour-city:before {
   content: "CITY"; }
 
-/* line 642, ../_scss/main.scss */
+/* line 622, ../_scss/main_nickedit.scss */
 .tour-row {
   margin-bottom: 40px; }
 
-/* line 646, ../_scss/main.scss */
+/* line 626, ../_scss/main_nickedit.scss */
 .alcove .scroll {
   height: 600px;
   overflow-y: scroll; }
 
-/* line 651, ../_scss/main.scss */
+/* line 631, ../_scss/main_nickedit.scss */
 .alcove nav li, .press nav li {
   width: 19%; }
 
-/* line 655, ../_scss/main.scss */
+/* line 635, ../_scss/main_nickedit.scss */
 .alcove nav a, .press nav a {
   padding: 10px 0;
   margin: 0;
   font-size: 10px; }
 
 @media only screen and (min-width: 750px) {
-  /* line 662, ../_scss/main.scss */
+  /* line 642, ../_scss/main_nickedit.scss */
   .alcove-section section {
     display: inline-block;
     margin-right: 10px; }
 
-  /* line 667, ../_scss/main.scss */
+  /* line 647, ../_scss/main_nickedit.scss */
   .alcove-albums img {
     max-width: 300px; }
 
   /* Shows styling */
-  /* line 672, ../_scss/main.scss */
+  /* line 652, ../_scss/main_nickedit.scss */
   .shows {
     display: table;
     width: 100%; }
 
-  /* line 677, ../_scss/main.scss */
+  /* line 657, ../_scss/main_nickedit.scss */
   .tour-header {
     display: block;
     font-size: .9em; }
 
-  /* line 679, ../_scss/main.scss */
+  /* line 659, ../_scss/main_nickedit.scss */
   .tour-header h3 {
     display: inline-block;
     width: 33%; }
-    /* line 682, ../_scss/main.scss */
+    /* line 662, ../_scss/main_nickedit.scss */
     .tour-header h3:last-child {
       width: 32%; }
 
-  /* line 687, ../_scss/main.scss */
+  /* line 667, ../_scss/main_nickedit.scss */
   .tour-row {
     display: table-row;
     font-size: .9em; }
 
-  /* line 692, ../_scss/main.scss */
+  /* line 672, ../_scss/main_nickedit.scss */
   .tour-row p, .tour-row h3 {
     display: table-cell;
     width: 33%; }
 
-  /* line 697, ../_scss/main.scss */
+  /* line 677, ../_scss/main_nickedit.scss */
   #tour-date:before, #tour-venue:before, #tour-city:before {
     content: ""; }
 
-  /* line 701, ../_scss/main.scss */
+  /* line 681, ../_scss/main_nickedit.scss */
   #tour-date, #tour-venue, #tour-city {
     text-align: left; }
 
-  /* line 703, ../_scss/main.scss */
+  /* line 683, ../_scss/main_nickedit.scss */
   .alcove nav li, .press nav li {
     width: auto; }
 
-  /* line 707, ../_scss/main.scss */
+  /* line 687, ../_scss/main_nickedit.scss */
   .alcove nav a, .press nav a {
     padding: 15px 20px;
     font-size: 12px; } }
 /* ===============
     =PRESS
    =============== */
-/* line 723, ../_scss/main.scss */
+/* line 703, ../_scss/main_nickedit.scss */
 .press .caption {
   text-align: center; }
 
-/* line 727, ../_scss/main.scss */
+/* line 707, ../_scss/main_nickedit.scss */
 #press-collage {
   margin: 0 auto; }
 
-/* line 731, ../_scss/main.scss */
+/* line 711, ../_scss/main_nickedit.scss */
 #press-collage img {
   width: 100%;
   height: auto; }
 
-/* line 736, ../_scss/main.scss */
+/* line 716, ../_scss/main_nickedit.scss */
 .press-item {
   width: 280px;
   margin: 20px;
   float: left; }
 
-/* line 742, ../_scss/main.scss */
+/* line 722, ../_scss/main_nickedit.scss */
 .press-item a {
   color: #222; }
 
-/* line 747, ../_scss/main.scss */
+/* line 727, ../_scss/main_nickedit.scss */
 .masonry,
 .masonry .masonry-brick {
   -webkit-transition-duration: 0.7s;
@@ -886,7 +859,7 @@ footer .social a {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s; }
 
-/* line 755, ../_scss/main.scss */
+/* line 735, ../_scss/main_nickedit.scss */
 .masonry {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -894,7 +867,7 @@ footer .social a {
   -o-transition-property: height, width;
   transition-property: height, width; }
 
-/* line 763, ../_scss/main.scss */
+/* line 743, ../_scss/main_nickedit.scss */
 .masonry .masonry-brick {
   -webkit-transition-property: left, right, top;
   -moz-transition-property: left, right, top;
@@ -905,29 +878,25 @@ footer .social a {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 777, ../_scss/main.scss */
-.wf-loading {
-  visibility: hidden; }
-
-/* line 781, ../_scss/main.scss */
+/* line 757, ../_scss/main_nickedit.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 786, ../_scss/main.scss */
+/* line 762, ../_scss/main_nickedit.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 790, ../_scss/main.scss */
+/* line 766, ../_scss/main_nickedit.scss */
 .clearfix {
   *zoom: 1; }
 
-/* line 794, ../_scss/main.scss */
+/* line 770, ../_scss/main_nickedit.scss */
 .italic {
   font-style: italic; }
 
-/* line 798, ../_scss/main.scss */
+/* line 774, ../_scss/main_nickedit.scss */
 .hide {
   position: absolute;
   left: -9999px;
@@ -937,7 +906,7 @@ footer .social a {
     Colorbox Core Style:
     The following CSS is consistent between example themes and should not be altered.
 */
-/* line 810, ../_scss/main.scss */
+/* line 786, ../_scss/main_nickedit.scss */
 #colorbox, #cboxOverlay, #cboxWrapper {
   position: absolute;
   top: 0;
@@ -945,30 +914,30 @@ footer .social a {
   z-index: 9999;
   overflow: hidden; }
 
-/* line 811, ../_scss/main.scss */
+/* line 787, ../_scss/main_nickedit.scss */
 #cboxOverlay {
   position: fixed;
   width: 100%;
   height: 100%; }
 
-/* line 812, ../_scss/main.scss */
+/* line 788, ../_scss/main_nickedit.scss */
 #cboxMiddleLeft, #cboxBottomLeft {
   clear: left; }
 
-/* line 813, ../_scss/main.scss */
+/* line 789, ../_scss/main_nickedit.scss */
 #cboxContent {
   position: relative; }
 
-/* line 814, ../_scss/main.scss */
+/* line 790, ../_scss/main_nickedit.scss */
 #cboxLoadedContent {
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
 
-/* line 815, ../_scss/main.scss */
+/* line 791, ../_scss/main_nickedit.scss */
 #cboxTitle {
   margin: 0; }
 
-/* line 816, ../_scss/main.scss */
+/* line 792, ../_scss/main_nickedit.scss */
 #cboxLoadingOverlay, #cboxLoadingGraphic {
   position: absolute;
   top: 0;
@@ -976,11 +945,11 @@ footer .social a {
   width: 100%;
   height: 100%; }
 
-/* line 817, ../_scss/main.scss */
+/* line 793, ../_scss/main_nickedit.scss */
 #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
   cursor: pointer; }
 
-/* line 818, ../_scss/main.scss */
+/* line 794, ../_scss/main_nickedit.scss */
 .cboxPhoto {
   float: left;
   margin: auto;
@@ -989,14 +958,14 @@ footer .social a {
   max-width: none;
   -ms-interpolation-mode: bicubic; }
 
-/* line 819, ../_scss/main.scss */
+/* line 795, ../_scss/main_nickedit.scss */
 .cboxIframe {
   width: 100%;
   height: 100%;
   display: block;
   border: 0; }
 
-/* line 820, ../_scss/main.scss */
+/* line 796, ../_scss/main_nickedit.scss */
 #colorbox, #cboxContent, #cboxLoadedContent {
   box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -1007,73 +976,73 @@ footer .social a {
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
-/* line 827, ../_scss/main.scss */
+/* line 803, ../_scss/main_nickedit.scss */
 #cboxOverlay {
   background: rgba(0, 0, 0, 0.9); }
 
-/* line 828, ../_scss/main.scss */
+/* line 804, ../_scss/main_nickedit.scss */
 #colorbox {
   outline: 0; }
 
-/* line 829, ../_scss/main.scss */
+/* line 805, ../_scss/main_nickedit.scss */
 #cboxTopLeft {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -101px 0; }
 
-/* line 830, ../_scss/main.scss */
+/* line 806, ../_scss/main_nickedit.scss */
 #cboxTopRight {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -130px 0; }
 
-/* line 831, ../_scss/main.scss */
+/* line 807, ../_scss/main_nickedit.scss */
 #cboxBottomLeft {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -101px -29px; }
 
-/* line 832, ../_scss/main.scss */
+/* line 808, ../_scss/main_nickedit.scss */
 #cboxBottomRight {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -130px -29px; }
 
-/* line 833, ../_scss/main.scss */
+/* line 809, ../_scss/main_nickedit.scss */
 #cboxMiddleLeft {
   width: 21px;
   background: url(../img/colorbox/controls.png) left top repeat-y; }
 
-/* line 834, ../_scss/main.scss */
+/* line 810, ../_scss/main_nickedit.scss */
 #cboxMiddleRight {
   width: 21px;
   background: url(../img/colorbox/controls.png) right top repeat-y; }
 
-/* line 835, ../_scss/main.scss */
+/* line 811, ../_scss/main_nickedit.scss */
 #cboxTopCenter {
   height: 21px;
   background: url(../img/colorbox/border.png) 0 0 repeat-x; }
 
-/* line 836, ../_scss/main.scss */
+/* line 812, ../_scss/main_nickedit.scss */
 #cboxBottomCenter {
   height: 21px;
   background: url(../img/colorbox/border.png) 0 -29px repeat-x; }
 
-/* line 837, ../_scss/main.scss */
+/* line 813, ../_scss/main_nickedit.scss */
 #cboxContent {
   background: #fff;
   overflow: hidden; }
 
-/* line 838, ../_scss/main.scss */
+/* line 814, ../_scss/main_nickedit.scss */
 .cboxIframe {
   background: #fff; }
 
-/* line 839, ../_scss/main.scss */
+/* line 815, ../_scss/main_nickedit.scss */
 #cboxError {
   padding: 50px;
   border: 1px solid #ccc; }
 
-/* line 841, ../_scss/main.scss */
+/* line 817, ../_scss/main_nickedit.scss */
 #cboxTitle {
   position: absolute;
   bottom: 4px;
@@ -1082,7 +1051,7 @@ footer .social a {
   width: 100%;
   color: #949494; }
 
-/* line 842, ../_scss/main.scss */
+/* line 818, ../_scss/main_nickedit.scss */
 #cboxCurrent {
   position: absolute;
   bottom: 4px;
@@ -1090,16 +1059,16 @@ footer .social a {
   color: #949494;
   opacity: 0; }
 
-/* line 843, ../_scss/main.scss */
+/* line 819, ../_scss/main_nickedit.scss */
 #cboxLoadingOverlay {
   background: url(../img/colorbox/loading_background.png) no-repeat center center; }
 
-/* line 844, ../_scss/main.scss */
+/* line 820, ../_scss/main_nickedit.scss */
 #cboxLoadingGraphic {
   background: url(../img/colorbox/loading.gif) no-repeat center center; }
 
 /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-/* line 847, ../_scss/main.scss */
+/* line 823, ../_scss/main_nickedit.scss */
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
   border: 0;
   padding: 0;
@@ -1109,18 +1078,18 @@ footer .social a {
   background: none; }
 
 /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
-/* line 850, ../_scss/main.scss */
+/* line 826, ../_scss/main_nickedit.scss */
 #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
   outline: 0; }
 
-/* line 852, ../_scss/main.scss */
+/* line 828, ../_scss/main_nickedit.scss */
 #cboxSlideshow {
   position: absolute;
   bottom: 4px;
   right: 30px;
   color: #0092ef; }
 
-/* line 853, ../_scss/main.scss */
+/* line 829, ../_scss/main_nickedit.scss */
 #cboxPrevious, #cboxNext {
   position: absolute;
   bottom: 0;
@@ -1132,25 +1101,25 @@ footer .social a {
   -moz-transition: opacity 200ms;
   -o-transition: opacity 200ms;
   transition: opacity 200ms; }
-  /* line 861, ../_scss/main.scss */
+  /* line 837, ../_scss/main_nickedit.scss */
   #cboxPrevious:hover, #cboxNext:hover {
     opacity: 1 !important; }
 
-/* line 865, ../_scss/main.scss */
+/* line 841, ../_scss/main_nickedit.scss */
 #cboxPrevious {
   left: 0;
   background: url(../img/icons/carousel-l.png) no-repeat; }
 
-/* line 868, ../_scss/main.scss */
+/* line 844, ../_scss/main_nickedit.scss */
 #cboxNext {
   right: 15px;
   background: url(../img/icons/carousel-r.png) no-repeat; }
 
-/* line 872, ../_scss/main.scss */
+/* line 848, ../_scss/main_nickedit.scss */
 #cboxContent:hover #cboxPrevious, #cboxContent:hover #cboxNext {
   opacity: .4; }
 
-/* line 875, ../_scss/main.scss */
+/* line 851, ../_scss/main_nickedit.scss */
 #cboxClose {
   position: absolute;
   top: -8px;
@@ -1160,7 +1129,7 @@ footer .social a {
   height: 25px;
   text-indent: -9999px; }
 
-/* line 876, ../_scss/main.scss */
+/* line 852, ../_scss/main_nickedit.scss */
 #cboxClose:hover {
   background-position: -25px -25px; }
 
@@ -1169,7 +1138,7 @@ footer .social a {
   when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
   See: http://jacklmoore.com/notes/ie-transparency-problems/
 */
-/* line 890, ../_scss/main.scss */
+/* line 866, ../_scss/main_nickedit.scss */
 .cboxIE #cboxTopLeft,
 .cboxIE #cboxTopCenter,
 .cboxIE #cboxTopRight,

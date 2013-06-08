@@ -1,5 +1,5 @@
 {% include head.html %}
-    <body>
+    <body class="home">
         <!--[if lt IE 9]>
             <p class="chromeframe">You are using an outdated browser. <a href="http:/browsehappy.com/">Upgrade your browser today</a> or <a href="http:/www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
@@ -46,15 +46,19 @@
                     var year = parseInt(full_date.substr(0,4), 10);
                     $('.news').append(""+
                             "<article>"+
-                                "<h2 class='post-title'>"+
+                                "<h3 class='post-title'>"+
                                     data.response.posts[i].title +
-                                "</h2>" +
+                                "</h3>" +
                                 
                                 "<div class='post-date'>" +
                                     month + '/' + day + '/' + year +
                                 "</div>"+
                                 "<div>" + 
                                     data.response.posts[i].body + 
+                                "</div>" +
+                                "<div class='post-meta'>tags: "+
+                                    "<span>" + data.response.posts[i].tags + "</span>" + 
+                                    "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" + 
                                 "</div>" +
                             "</article>"
                         );

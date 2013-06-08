@@ -19,7 +19,7 @@
             var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
           })();
         </script>
-        <link rel="stylesheet" href="../../css/normalize.min.css">
+        <!-- <link rel="stylesheet" href="../../css/normalize.min.css"> -->
         <link rel="stylesheet" href="../../css/main.css">
     </head>
 
@@ -33,8 +33,8 @@
             <nav>
                 <ul>
                     <!-- <li><a href="../">Home</a></li> -->
-                    <li><a href="../about">About</a></li>
-                    <li class="selected"><a href="../artists">Artists</a></li>
+                    <li><a href="../.../about">About</a></li>
+                    <li class="selected"><a href="../">Artists</a></li>
                 </ul>
             </nav>
             <div class="logo-container">
@@ -71,12 +71,12 @@
 
             <div class="main wrapper clearfix">
 
-                <div class="news">
+                <div class="news col1of2">
                     <h2>News</h2>
                     <hr>
                 </div>
 
-                <div class="col1of2">
+                <div class="col2of2">
                     <article>
                         <h2>Happenings</h2>
                         <hr>
@@ -90,7 +90,7 @@
                     </article>
                 </div>
 
-                <div class="col2of2">
+                <div class="col1of2">
                     <article>
                         <h2>Shows</h2>
                         <hr>
@@ -100,6 +100,24 @@
                             </div>
                         </div>
                     </article>
+                </div>
+
+                <div class="col2of2">
+                    <h2>Videos</h2>
+                    <hr>
+                        
+                            <div class="col1of2">
+                            <iframe width="280" height="170" src="http://www.youtube.com/embed/MjxA25Tj1Ks?list=UUci2c90HJbY0VAS3_eLF3Wg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
+                            <div class="col2of2">
+                            <iframe src="http://player.vimeo.com/video/40304685" width="280" height="170" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </div>
+                        
+                            <div class="col1of2">
+                            <iframe width="280" height="170" src="http://www.youtube.com/embed/t60roHM1t7o?list=UUci2c90HJbY0VAS3_eLF3Wg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
                 </div>
 
                 <article>
@@ -122,8 +140,7 @@
                     </div>
                 </article>
 
-                <div class="discography col1of2">
-                    <article>
+                <article class="discography">
                         <h2>Discography</h2>
                         <hr>
 
@@ -376,26 +393,9 @@
 
                         </div>
                         
-                    </article>
-                </div>
+                </article>
 
-                <div class="col2of2">
-                    <h2>Videos</h2>
-                    <hr>
-                        
-                            <div class="col1of2">
-                            <iframe width="280" height="170" src="http://www.youtube.com/embed/MjxA25Tj1Ks?list=UUci2c90HJbY0VAS3_eLF3Wg" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        
-                            <div class="col2of2">
-                            <iframe src="http://player.vimeo.com/video/40304685" width="280" height="170" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                        </div>
-                        
-                            <div class="col1of2">
-                            <iframe width="280" height="170" src="http://www.youtube.com/embed/t60roHM1t7o?list=UUci2c90HJbY0VAS3_eLF3Wg" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        
-                </div>
+                
 
                 
 
@@ -521,6 +521,10 @@
                                 "</div>"+
                                 "<div>" + 
                                     data.response.posts[i].body + 
+                                "</div>" +
+                                "<div class='post-meta'>tags: "+
+                                    "<span>" + data.response.posts[i].tags + "</span>" + 
+                                    "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" + 
                                 "</div>" +
                             "</article>"
                         );

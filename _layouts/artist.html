@@ -10,8 +10,8 @@
             <nav>
                 <ul>
                     <!-- <li><a href="../">Home</a></li> -->
-                    <li><a href="../about">About</a></li>
-                    <li class="selected"><a href="../artists">Artists</a></li>
+                    <li><a href="../.../about">About</a></li>
+                    <li class="selected"><a href="../">Artists</a></li>
                 </ul>
             </nav>
             <div class="logo-container">
@@ -48,12 +48,12 @@
 
             <div class="main wrapper clearfix">
 
-                <div class="news">
+                <div class="news col1of2">
                     <h2>News</h2>
                     <hr>
                 </div>
 
-                <div class="col1of2">
+                <div class="col2of2">
                     <article>
                         <h2>Happenings</h2>
                         <hr>
@@ -67,7 +67,7 @@
                     </article>
                 </div>
 
-                <div class="col2of2">
+                <div class="col1of2">
                     <article>
                         <h2>Shows</h2>
                         <hr>
@@ -77,6 +77,16 @@
                             </div>
                         </div>
                     </article>
+                </div>
+
+                <div class="col2of2">
+                    <h2>Videos</h2>
+                    <hr>
+                        {% for video in page.videos %}
+                            <div class="col{% cycle 'videos': '1', '2' %}of2">
+                            {{ video.embed-code }}
+                        </div>
+                        {% endfor %}
                 </div>
 
                 <article>
@@ -89,8 +99,7 @@
                     </div>
                 </article>
 
-                <div class="discography col1of2">
-                    <article>
+                <article class="discography">
                         <h2>Discography</h2>
                         <hr>
 
@@ -138,18 +147,9 @@
 
                         </div>
                         {% endfor %}
-                    </article>
-                </div>
+                </article>
 
-                <div class="col2of2">
-                    <h2>Videos</h2>
-                    <hr>
-                        {% for video in page.videos %}
-                            <div class="col{% cycle 'videos': '1', '2' %}of2">
-                            {{ video.embed-code }}
-                        </div>
-                        {% endfor %}
-                </div>
+                
 
                 
 
@@ -208,6 +208,10 @@
                                 "</div>"+
                                 "<div>" + 
                                     data.response.posts[i].body + 
+                                "</div>" +
+                                "<div class='post-meta'>tags: "+
+                                    "<span>" + data.response.posts[i].tags + "</span>" + 
+                                    "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" + 
                                 "</div>" +
                             "</article>"
                         );

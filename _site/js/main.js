@@ -49,15 +49,29 @@ $(document).ready(function(){
         }
     });
     
-    //Colorbox
-    $('.colorbox').colorbox({
-        rel: 'group'
-    });
-    $('.colorbox-iframe').colorbox({
-        iframe: true,
-        width:"80%",
-        height:"80%"
-    });
+    var width = $(window).width();
+    console.log(width);
+
+    if ((width>= 768)) {
+        //Colorbox
+            $('.colorbox').colorbox({
+                rel: 'group'
+            });
+            $('.colorbox-iframe').colorbox({
+                iframe: true,
+                width:"80%",
+                height:"80%"
+            });
+    } else {
+        $('.colorbox').click(function() {
+            var info = $(this).parent().next();
+            $(info).toggleClass('show');
+            return false;
+        });
+        $('.mobile-album-info-close').click(function() {
+            $('.mobile-album-info').removeClass('show');
+        });
+    }
 
 });
 

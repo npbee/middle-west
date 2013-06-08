@@ -100,6 +100,8 @@ ul {
     list-style:none;
 }
 
+p {margin: .5em 0}
+
 
 /* ======================================
     =LAYOUT
@@ -412,19 +414,8 @@ article {
 
 /*  ----------------------------------------=Discography */
 .album_thumb {
-    margin-bottom: 2%;
-    &:after {
-        content:"";
-        display:block;
-        width:75%;
-        margin:30px auto;
-        border-bottom:1px solid #d9d9d9;
-    }
-    @include breakpoint(large) {
-        &:after {
-            display:none;
-        }
-    }
+    margin-bottom: 5%;
+    position:relative;
 }
 
 .album-label {
@@ -444,10 +435,41 @@ article {
 }
 
 .mobile-album-info {
-    text-align:center;
+    @include transition(left 200ms ease-in-out);
+    transform: translateZ(0);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left:-9999px;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    opacity: .8;
+    color: #f7f7f7 !important;
+    z-index: 2;
+    h3 {
+        margin-top:35%;
+    }
+    .album-links a {
+        color:#f7f7f7;
+    }
+    .icon {
+        color: #f7f7f7;
+    }
     @include breakpoint(large) {
         display:none;
     }
+}
+
+.mobile-album-info-close {
+    cursor:pointer;
+    position:absolute;
+    right:5px;
+    top:5px;
+}
+
+.show {
+    left:0;
 }
 
 /* --------------------=Contact */

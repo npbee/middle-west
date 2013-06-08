@@ -48,12 +48,13 @@
 
             <div class="main wrapper clearfix">
 
-                <div class="news col1of2">
+                <div class="news">
                     <h2>News</h2>
                     <hr>
+                    <div class="scroll"></div>
                 </div>
 
-                <div class="col2of2">
+                <div class="col1of2">
                     <article>
                         <h2>Happenings</h2>
                         <hr>
@@ -67,7 +68,7 @@
                     </article>
                 </div>
 
-                <div class="col1of2">
+                <div class="col2of2">
                     <article>
                         <h2>Shows</h2>
                         <hr>
@@ -79,27 +80,7 @@
                     </article>
                 </div>
 
-                <div class="col2of2">
-                    <h2>Videos</h2>
-                    <hr>
-                        {% for video in page.videos %}
-                            <div class="col{% cycle 'videos': '1', '2' %}of2">
-                            {{ video.embed-code }}
-                        </div>
-                        {% endfor %}
-                </div>
-
-                <article>
-                    <h2>Bio</h2>
-                    <hr>
-                    <div class="expandable">
-                        {% for section in page.bio %}
-                            {{ section.paragraph }}
-                        {% endfor %}
-                    </div>
-                </article>
-
-                <article class="discography">
+                <article class="discography col1of2">
                         <h2>Discography</h2>
                         <hr>
 
@@ -112,6 +93,7 @@
                             </div>
 
                             <div class="mobile-album-info">
+                                <span class="mobile-album-info-close">X</span>
                                 <h3>{{ album.name }} ({{ album.year }})</h3>
                                 <span class="album-label">{{ album.label }}</span>
 
@@ -149,7 +131,25 @@
                         {% endfor %}
                 </article>
 
-                
+                <div class="col2of2">
+                    <h2>Videos</h2>
+                    <hr>
+                        {% for video in page.videos %}
+                            <div class="col{% cycle 'videos': '1', '2' %}of2">
+                            {{ video.embed-code }}
+                        </div>
+                        {% endfor %}
+                </div>
+
+                <article>
+                    <h2>Bio</h2>
+                    <hr>
+                    <div class="expandable">
+                        {% for section in page.bio %}
+                            {{ section.paragraph }}
+                        {% endfor %}
+                    </div>
+                </article>          
 
                 
 
@@ -192,7 +192,7 @@
             url: 'http://api.tumblr.com/v2/blog/theaironearth.tumblr.com/posts?api_key=0HGXyTUckXBQO6GJogg5kukScgMqnAVsqkBYlHqmIbPHRK5y7b&tag={{ page.tumblr-tag }}',
             data: { get_param: 'value'},
             success: function(data) {
-                for (i = 0; i <= 19; i++) {
+                for (i = 0; i <= 5; i++) {
                     var full_date = data.response.posts[i].date;
                     var month = parseInt(full_date.substr(5,6), 10);
                     var day = parseInt(full_date.substr(8,9), 10);
@@ -209,8 +209,8 @@
                                 "<div>" + 
                                     data.response.posts[i].body + 
                                 "</div>" +
-                                "<div class='post-meta'>tags: "+
-                                    "<span>" + data.response.posts[i].tags + "</span>" + 
+                                "<div class='post-meta'>tags:  "+
+                                    "<span><a target='_blank' href='http://tumblr.com/tagged/" + data.response.posts[i].tags + "''>" + data.response.posts[i].tags + "</span>" + 
                                     "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" + 
                                 "</div>" +
                             "</article>"

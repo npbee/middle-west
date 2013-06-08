@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../../css/normalize.min.css">
+        <link rel="stylesheet" href="../../css/main.css">
+
+        <script src="../../js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body class="press">
+        <!--[if lt IE 9]>
+            <p class="chromeframe">You are using an outdated browser. <a href="/mwmhttp://browsehappy.com/">Upgrade your browser today</a> or <a href="/mwmhttp://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="clearfix">
+                <nav>
+                    <ul>
+                        <li><a href="../bon-iver#media">Media</a></li>
+                        <li><a href="../bon-iver#videos">Videos</a></li>
+                        <li><a href="../bon-iver#photos">Photos</a></li>
+                        <li><a href="../bon-iver#tour-dates">Tour</a></li>
+                        <li class="selected"><a href="press">Press</a></li>
+                    </ul>
+                </nav>
+                <div class="logo-container">
+                    <a href="/">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Middle West Management" class="logo">
+                            <!-- <h1 class="title">Middle West</h1> -->
+                    </a>
+                </div>
+            </header>
+        </div>
+
+        <div class="press-container">
+
+                <a href="../bon-iver" class="header-image">
+                    <h2 class="artist-logo" id="bon-iver-logo"><span>Bon Iver</span></h2>
+                </a>
+                <!-- <span class="social">
+                    <a class="icon-globe" href="http://boniver.org" target="_blank"></a>
+                    <a href="https://www.facebook.com/boniverwi"  target="_blank">facebook</a>
+                    <a href="https://twitter.com/boniver"  target="_blank">twitter</a>
+                    <a href="http://instagram.com/boniver"  target="_blank">instagram</a>
+                </span> -->
+
+            <div class="main press-wrapper clearfix">
+
+                <div id="press-collage">
+
+                    <div class="press-item"><a href="#"><img src="../../img/artists/bon-iver/press/bon-iver-press-thumb-sundaytimes.jpg" /> Sunday Times</a></div>
+                    <div class="press-item"><a href="#"><img src="../../img/artists/bon-iver/press/bon-iver-press-thumb-underTheRadar.jpg" /> Under The Radar</a></div>
+                    <div class="press-item">
+                        <a href="#">“Justin Vernon took several chances with Bon Iver, but the biggest one was that he managed to make sounds 25 years out of style sound cool...”<span class="quote-source">-Under The Radar</span></a>
+                    </div>
+
+                    <div class="press-item">
+                        <a href="#">“Bon Iver might be the record that frees Bon Iver from the myth of Bon Iver: from the endlessly repeated creation saga (cabin, heartbreak, Wisconsin), from the detailed evocations of his beard, from the loaded allusions to his partnership with Kanye West. Bon Iver opens with six long seconds of silence, a clearing...”
+                        <span class="quote-source">-Pitchfork</span>
+                        </a>
+                    </div>
+
+                    <div class="press-item">
+                        <a href="#">
+                            “This year, we couldn't sit still...”
+                            <span class="quote-source">-NPR</span>
+                        </a>
+                    </div>
+
+                    <div class="press-item">
+                        <a href="#">
+                            “This summer, when All Songs Considered asked listeners to vote for their favorite albums of the year so far, there were a handful of shoo-ins. Instantly beloved releases by Bon Iver, Adele, Fleet Foxes, the Decemberists and others all made a predictably strong showing...”
+                            <span class="quote-source">-NPR</span>
+                        </a>
+                    </div>
+
+                    <div class="press-item" style="width:300px;height:200px;border:1px solid black"></div>
+
+                </div>
+
+
+
+                
+                
+            </div> <!-- .main -->
+        </div> <!-- .main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+
+                <div class="mailing-list">Mailing List sign up</div>
+
+                <div class="social">
+                    <a href="mailto:info@middlewestmanagement.com" target="_blank">email</a>
+                    <a href="http://facebook.com/middlewestmgmt" target="_blank">facebook</a>
+                    <a href="https://twitter.com/middlewestmgmt" target="_blank">twitter</a>
+                    <a href="http:/instagr.am/middlewestmgmt" target="_blank">instagram</a>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; <a href="/"><img class="logo-footer" src="../../img/mwm-logo.png" alt="mwm-logo" /></a>Middle West Management, 2013</p>
+                </div>
+
+            </footer>
+        </div>
+        <script src="../../js/plugins.js"></script>
+        <script src="../../js/main.js"></script>
+        <script src="../../js/jquery.masonry.js"></script>
+        <script src="../../js/imagesLoaded.min.js"></script>
+        <script>
+            // $(function(){
+            //     var $container = $("#press-collage");
+            //     $container.imagesLoaded(function() {
+            //         $container.masonry({
+            //             itemSelector : '.press-item',
+            //             columnWidth : function( containerWidth) {
+            //                 return containerWidth / 5;
+            //             }
+            //             //isFitWidth: true
+            //         })
+            //     });
+            // });
+            $(function(){
+                
+                $('#press-collage').masonry({
+                  itemSelector: '.press-item',
+                  // set columnWidth a fraction of the container width
+                  columnWidth: function( containerWidth ) {
+                    return containerWidth / 5;
+                  }
+                });
+                
+              });
+        </script>
+         <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+    </body>
+</html>

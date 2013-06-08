@@ -285,9 +285,6 @@ nav{
 article {
     margin-bottom:40px;
     clear:both;
-    &:first-child {
-        margin-bottom:0;
-    }
     &:after {
         content:"";
         display:table;
@@ -618,138 +615,72 @@ footer .social {
 
 /*----------------------------------------=ALCOVE */
 
-    .alcove section {
-        margin-bottom:30px;
-    }
+.media ul {
+    list-style: disc;
+    padding:0 0 20px 20px;
+}
 
-   .alcove-section img {
-        border:1px solid #d9d9d9;
-        border-radius:3px;
-   }
-   .alcove-section ul {
-        padding:0;
-        list-style:none;
-        text-align:center;
-   }
-        .alcove-section li {
-            display:inline;
-        }
-
-    /* Shows styling */
-    .tour-header {
-        display:none;
-    }
-    
-    #tour-date, #tour-city, #tour-venue {
-        text-align:right;
-    }
-
-    #tour-date:before, #tour-city:before, #tour-venue:before {
-        float:left;
-        text-transform: uppercase;
-        font-family: 'AlegreyaRegular';
-        font-size:19px;
-    }
-
-        #tour-date:before {
-            content:"DATE";
-        }
-
-        #tour-venue:before {
-            content:"VENUE";
-        }
-
-        #tour-city:before {
-            content:"CITY";
-        }
-
-    .tour-row {
-        margin-bottom:40px;
-    }
-
-    .alcove .scroll {
-        height:600px;
-        overflow-y:scroll;
-    }
-
-    .alcove nav li, .press nav li {
-        width:19%;
-    }
-
-    .alcove nav a, .press nav a {
-        padding:10px 0;
-        margin:0;
-        font-size:10px;
-    }
-
-    @include breakpoint(large) {
-        .alcove-section section {
-        display:inline-block;
-        margin-right:10px;
-    }
-
-    .alcove-albums img {
-        max-width:300px;
-    }
-
-    /* Shows styling */
-    .shows {
-        display: table;
-        width:100%;
-    }
-
-    .tour-header {display:block;font-size:.9em}
-
-    .tour-header h3 {
-        display:inline-block;
-        width:33%;
-        &:last-child {
-            width:32%;
-        }
-    }
-
-    .tour-row {
-        display:table-row;
-        font-size:.9em;
-    }
-
-        .tour-row p, .tour-row h3 {
-            display:table-cell;
-            width:33%;
-        }
-
-    #tour-date:before, #tour-venue:before, #tour-city:before {
-            content:"";
-        }
-    
-    #tour-date, #tour-venue, #tour-city {text-align:left;}
-
-    .alcove nav li, .press nav li {
-        width:auto;
-    }
-
-    .alcove nav a, .press nav a {
-        padding:15px 20px;
-        font-size:12px;
-    }
-
-    }
-
-
-/* ===============
-    =PRESS
-   =============== */
-
-   .main-press-wrapper {
-
-   }
-
-   .press .caption {
+.photos ul {
     text-align:center;
-   }
+}
+    .photos li, .artwork li {
+        display:inline;
+    }
+
+    .photos section, .artwork section {
+        margin-bottom: 40px;
+    }
+
+.artwork section, .artwork ul {
+    text-align: center;
+}
+
+.artwork li:first-child a, .photos li:first-child a {
+    display:inline-block;
+    padding:10px 5px 10px 80px;
+}
+
+.artwork li:nth-child(2) a, .photos li:nth-child(2) a {
+    display:inline-block;
+    padding:10px 80px 10px 5px;
+}
+
+.artwork img {
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+}
+
+
+/*-------------------------=PRESS */
+#press-collage {
+    margin: 0 auto;
+    width:100%;
+}
+
+.press-item {
+    width: 340px;
+    //margin: 10px;
+    float: left;
+    padding: 10px;
+}
+
+.press-source {
+    background: $black;
+    display: block;
+    text-align: center;
+    color: #f7f7f7;
+    padding: 10px;
+}
+
+.press-quote {
+    padding: 10px;
+    border: 1px solid $grey;
+    display: block;
+}
+
 
    #press-collage {
-       margin:0 auto;
+       //margin:0 auto;
     }
 
         #press-collage img {
@@ -757,11 +688,6 @@ footer .social {
             height:auto;
         }
 
-        .press-item {
-            width: 280px;
-            margin: 20px;
-            float: left;
-        }
 
             .press-item a {
                 color:#222;

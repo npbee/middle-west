@@ -1,0 +1,138 @@
+{% include head-artist.html %}
+
+<body>
+    <!--[if lt IE 9]>
+        <p class="chromeframe">You are using an outdated browser. <a href="/mwmhttp://browsehappy.com/">Upgrade your browser today</a> or <a href="/mwmhttp://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <div class="header-container">
+        <header class="clearfix">
+            <nav>
+                <ul>
+                    <!-- <li><a href="../">Home</a></li> -->
+                    <li><a href="../.../about">About</a></li>
+                    <li class="selected"><a href="../">Artists</a></li>
+                </ul>
+            </nav>
+            <div class="logo-container">
+                <a href="/">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Middle West Management" class="logo">
+                        <!-- <h1 class="title">Middle West</h1> -->
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <div class="main-container">
+            <article>
+                <a href="../artists/{{ page.artist }}" class="header-image">
+                    <h2 class="caption">{{ page.artist }}</h2>
+                    <div data-picture data-alt="{{ page.artist }}">
+                        <div data-src="{{ page.header-image-s }}"></div>
+                        <div data-src="{{ page.header-image-m }}"     data-media="(min-width: 480px)"></div>
+                        <div data-src="{{ page.header-image-l }} "     data-media="(min-width: 660px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"></div>
+                    </div>
+                    <noscript>
+                        <img src="{{ page.header-image-s }}" alt="{{ page.artist }}">
+                    </noscript>
+                </a>
+
+                <span class="social">
+                    <a data-icon="&#xe000;" aria-hidden="true" href="{{ page.website }}" target="_blank"></a>
+                    <a href="{{ page.facebook }}"  target="_blank">facebook</a>
+                    <a href="{{ page.twitter }}"  target="_blank">twitter</a>
+                    <a href="{{ page.instagram }}"  target="_blank">instagram</a>
+                </span>
+
+            </article>
+
+            <div class="main wrapper clearfix">
+
+            	   <article class="media">
+                    <h2>Download Links</h2>
+                    <hr>       
+                    <!-- Zip Files here -->
+                        {% for download in page.downloads %}
+                        <h3>{{ download.title }}</h3>
+                        <ul>
+                            <li><a href="{{ download.path }}">Download</a></li>
+                        </ul>
+                        {% endfor %}
+                </article>
+
+                <!-- Video embeds -->
+                <article class="videos">
+                    <h2>Videos</h2>
+                    <hr>
+                    {% for video in page.videos %}
+                        <div class="col{% cycle 'videos': '1', '2' %}of2">
+                            {{ video.embed }}
+                        </div>
+                    {% endfor %}
+                </article>
+
+                <article class="photos" id="photos">
+                    <h2>Photos</h2>
+                    <hr>
+
+                    {% for photo in page.photos %}
+                    <section class="col{% cycle 'photos': '1', '2', '3' %}of3">
+                        <img src="{{photo.thumb }}" alt='{{ photo.name }}' width="300" height="200" />
+                        <ul>
+                            <li><a href="{{ photo.loRes }}">Lo Res</a></li>
+                            |
+                            <li><a href="{{ photo.hiRes }}">Hi Res</a></li>
+                        </ul>
+                    </section>
+                    {% endfor %}
+                    
+                </article>
+
+                <article class="artwork">
+
+                    <h2>Artwork</h2>
+                    <hr>
+                    
+                    {% for artwork in page.artwork %}
+                    <section class="col{% cycle 'artwork': '1', '2', '3' %}of3">
+                        <h3>{{ artwork.name }}({{ artwork.year }})</h3>
+                        <img src="{{ artwork.thumb }}" alt='{{ artwork.name}}-thumb' width="300" height="300" />
+                        <ul>
+                            <li><a href="{{ artwork.loRes }}">Lo Res</a></li>
+                            |
+                            <li><a href="{{ artwork.hiRes }}">Hi Res</a></li>
+                        </ul>
+                    </section>
+                    {% endfor %}
+                    
+                </article>
+
+                <article class="press">
+                    <h2>Press</h2>
+                    <hr>
+
+                    <div id="press-collage">
+                        
+                        {% for item in page.press %}
+                        <div class="press-item">
+                            {% if item.image %}
+                            <div class="press-item-image">
+                                <img src="{{ item.image }}" />
+                                <span class='press-source'>{{ item.source }}</span>
+                            </div>
+                            {% elsif item.quote %}
+                            <a href="{{ item.link }}">
+                                <span class='press-quote'>"{{ item.quote }}"</span>
+                                <span class='press-source'>{{ item.source }}</span>
+                            </a>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+
+                    </div>
+
+                </article>
+
+
+{% include footer-alcove.html %}
+{% include foot.html %}

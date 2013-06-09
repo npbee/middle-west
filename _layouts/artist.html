@@ -10,8 +10,8 @@
             <nav>
                 <ul>
                     <!-- <li><a href="../">Home</a></li> -->
-                    <li><a href="../.../about">About</a></li>
-                    <li class="selected"><a href="../">Artists</a></li>
+                    <li><a href="../../about">About</a></li>
+                    <li><a class="selected" href="../">Artists</a></li>
                 </ul>
             </nav>
             <div class="logo-container">
@@ -59,10 +59,9 @@
                         <h2>Happenings</h2>
                         <hr>
                         <div class="">
-                            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-                            <script>
-                                new TWTR.Widget({version: 2, type: 'profile', rpp: 10, interval: 6000, width: 'auto', height: 400, theme: {shell: {background: 'transparent', color: '#141414'}, tweets: {background: 'transparent', color: '#000000', links: '#2495c0'} }, features: {scrollbar: false, loop: true, live: true, hashtags: true, timestamp: true, avatars: false, behavior: 'default'} }).render().setUser('{{ page.twitter-widget }}').start();
-                            </script>   
+                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter">Tweets by @boniver</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
                         </div>
                         
                     </article>

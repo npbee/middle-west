@@ -40,6 +40,7 @@ html{
 body {
     line-height: 1.4;
     font: 18px/26px "futura-pt", Arial;
+    font-weight:normal;
     background: #fff;
     margin:0;
     color: $black;
@@ -83,7 +84,7 @@ img{
     max-width: 100%;
 }
 
-a, a:visited{
+a {
     color: #0989b8;
     text-decoration: none;
     @include transition(color 200ms);
@@ -221,7 +222,7 @@ nav{
     }
 }
 
-    nav a, nav a:visited {
+    nav a {
         font-family: 'bebas-neue', Helvetica Neue, Helvetica, Arial;
         text-align: center;
         font-size: 1.5em;
@@ -354,6 +355,12 @@ article {
     }
 
 /* --------------------=News */
+
+.news img {
+    width: auto;
+    border:1px solid $grey;
+    border-radius:3px;
+}
 .home .news {
     margin: 2em 0;
 }
@@ -593,6 +600,11 @@ html[xmlns] .slides {display: block;}
         margin:0 auto;
         display:block;
     }
+    &:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
 }
 
 footer .social a{
@@ -607,41 +619,79 @@ footer .social a{
 }
 
 footer .social {
+    clear:both;
     @include breakpoint(max) {
-        display:inline-block;
+        clear:none;
+        float:left;
         width:50%;
     }
 }
 
-.mailing-list, .copyright {
+.copyright {
     font-size:.9em;
     position:relative;
     margin:15px 0;
-    padding:5px 0
+    padding:5px 0;
+    text-align:center;
+    @include breakpoint(max) {
+        text-align:right;
+        width:25%;
+        float:right;
+    }
+}
+
+.mailing-list-container {
+    @include breakpoint(max) {
+        width:133.5%;
+    }
 }
 
 .mailing-list {
     text-align:center;
-    border:1px solid #d9d9d9;
-    border-radius:3px;
     @include breakpoint(max) {
-        display:inline-block;
-        width:24%;
-        padding-left:5px;
-        text-align:left;
-        top:-6px;
+        float:left;
+        position:relative;
+        width:25%;
+        overflow:hidden
+    }
+    input[type='email'] {
+        margin: 15px 0;
+        padding: 10px;
+        border:1px solid #d9d9d9;
+        border-radius:3px;
+        width:75%;
+        float:left;
+        @include transition(border 200ms, width 200ms);
+        &:focus {
+            outline:none;
+            border:1px solid $black;
+            border-radius:3px 0 0 3px;
+        }
+        @include breakpoint(max) {
+            padding-left:5px;
+            text-align:left;
+            &:focus {
+                width:50%;
+            }
+        }
+    }
+    input[type='submit'] {
+        margin: 15px 0;
+        padding:11px;
+        background:$black;
+        border:none;
+        border-radius: 0 3px 3px 0;
+        width:25%;
+        float:left;
+        color: #f7f7f7;
+        cursor: pointer;
+        @include transition(all 200ms);
+        &:hover {
+            background: lighten($black, 5%);
+        }
     }
 }
 
-.copyright {
-    text-align:center;
-    @include breakpoint(max) {
-        width:24%;
-        text-align:right;
-        display:inline-block;
-        top:-6px;
-    }
-}
 
 /*----------------------------------------=ALCOVE */
 
@@ -688,10 +738,15 @@ footer .social {
 }
 
 .press-item {
-    width: 340px;
+    width: 320px;
+    max-width:100%;
     //margin: 10px;
     float: left;
-    padding: 10px;
+    padding-bottom: 20px;
+    @include breakpoint(large) {
+        width: 340px;
+        padding:10px;
+    }
 }
 
 .press-source {
@@ -700,10 +755,11 @@ footer .social {
     text-align: center;
     color: #f7f7f7;
     padding: 10px;
+    font-style:italic;
 }
 
 .press-quote {
-    padding: 10px;
+    padding: 15px;
     border: 1px solid $grey;
     display: block;
 }
@@ -752,7 +808,9 @@ footer .social {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+.selected {
+    text-decoration:underline;
+}
 
 .wf-loading {
     visibility: hidden;
@@ -855,11 +913,12 @@ footer .social {
         }
         #cboxClose{
             position:absolute; 
-            bottom: 8px; 
+            bottom: 0; 
             right:0;
-            background:url(../img/icons/sprite.png) no-repeat -50px 0; 
-            width:50px; 
-            height:45px; 
+            background:url(../img/icons/sprite.png) no-repeat -25px 0; 
+            background-size:50px;
+            width:25px; 
+            height:24px; 
             text-indent:-9999px;}
 
 /*
@@ -877,3 +936,4 @@ footer .social {
 .cboxIE #cboxMiddleRight {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
+

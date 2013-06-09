@@ -796,17 +796,18 @@ footer .social {
       overflow: hidden; } }
   /* line 657, ../_scss/main.scss */
   .mailing-list input[type='email'] {
+    -webkit-appearance: none;
     margin: 15px 0;
     padding: 10px;
     border: 1px solid #d9d9d9;
-    border-radius: 3px;
+    border-radius: 3px 0 0 3px;
     width: 75%;
     float: left;
     -webkit-transition: border 200ms, width 200ms;
     -moz-transition: border 200ms, width 200ms;
     -o-transition: border 200ms, width 200ms;
     transition: border 200ms, width 200ms; }
-    /* line 665, ../_scss/main.scss */
+    /* line 666, ../_scss/main.scss */
     .mailing-list input[type='email']:focus {
       outline: none;
       border: 1px solid #231f20;
@@ -815,11 +816,12 @@ footer .social {
       /* line 657, ../_scss/main.scss */
       .mailing-list input[type='email'] {
         padding-left: 5px;
-        text-align: left; }
-        /* line 673, ../_scss/main.scss */
+        text-align: left;
+        border-radius: 3px; }
+        /* line 675, ../_scss/main.scss */
         .mailing-list input[type='email']:focus {
           width: 50%; } }
-  /* line 678, ../_scss/main.scss */
+  /* line 680, ../_scss/main.scss */
   .mailing-list input[type='submit'] {
     margin: 15px 0;
     padding: 11px;
@@ -833,67 +835,68 @@ footer .social {
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     -o-transition: all 200ms;
-    transition: all 200ms; }
-    /* line 689, ../_scss/main.scss */
+    transition: all 200ms;
+    -webkit-appearance: none; }
+    /* line 691, ../_scss/main.scss */
     .mailing-list input[type='submit']:hover {
       background: #312b2c; }
 
 /*----------------------------------------=ALCOVE */
-/* line 698, ../_scss/main.scss */
+/* line 701, ../_scss/main.scss */
 .media ul {
   list-style: disc;
   padding: 0 0 20px 20px; }
 
-/* line 703, ../_scss/main.scss */
+/* line 706, ../_scss/main.scss */
 .photos ul {
   text-align: center; }
 
-/* line 706, ../_scss/main.scss */
+/* line 709, ../_scss/main.scss */
 .photos li, .artwork li {
   display: inline; }
 
-/* line 710, ../_scss/main.scss */
+/* line 713, ../_scss/main.scss */
 .photos section, .artwork section {
   margin-bottom: 40px; }
 
-/* line 714, ../_scss/main.scss */
+/* line 717, ../_scss/main.scss */
 .artwork section, .artwork ul {
   text-align: center; }
 
-/* line 718, ../_scss/main.scss */
+/* line 721, ../_scss/main.scss */
 .artwork li:first-child a, .photos li:first-child a {
   display: inline-block;
   padding: 10px 5px 10px 80px; }
 
-/* line 723, ../_scss/main.scss */
+/* line 726, ../_scss/main.scss */
 .artwork li:nth-child(2) a, .photos li:nth-child(2) a {
   display: inline-block;
   padding: 10px 80px 10px 5px; }
 
-/* line 728, ../_scss/main.scss */
+/* line 731, ../_scss/main.scss */
 .artwork img {
   border: 1px solid #d9d9d9;
   border-radius: 3px; }
 
 /*-------------------------=PRESS */
-/* line 735, ../_scss/main.scss */
+/* line 738, ../_scss/main.scss */
 #press-collage {
   margin: 0 auto;
   width: 100%; }
 
-/* line 740, ../_scss/main.scss */
+/* line 743, ../_scss/main.scss */
 .press-item {
   width: 320px;
   max-width: 100%;
   float: left;
   padding-bottom: 20px; }
   @media only screen and (min-width: 750px) {
-    /* line 740, ../_scss/main.scss */
+    /* line 743, ../_scss/main.scss */
     .press-item {
       width: 340px;
       padding: 10px; } }
 
-/* line 752, ../_scss/main.scss */
+/* line 755, ../_scss/main.scss */
 .press-source {
   background: #231f20;
   display: block;
@@ -902,22 +905,22 @@ footer .social {
   padding: 10px;
   font-style: italic; }
 
-/* line 761, ../_scss/main.scss */
+/* line 764, ../_scss/main.scss */
 .press-quote {
   padding: 15px;
   border: 1px solid #d9d9d9;
   display: block; }
 
-/* line 772, ../_scss/main.scss */
+/* line 775, ../_scss/main.scss */
 #press-collage img {
   width: 100%;
   height: auto; }
 
-/* line 778, ../_scss/main.scss */
+/* line 781, ../_scss/main.scss */
 .press-item a {
   color: #222; }
 
-/* line 783, ../_scss/main.scss */
+/* line 786, ../_scss/main.scss */
 .masonry,
 .masonry .masonry-brick {
   -webkit-transition-duration: 0.7s;
@@ -926,7 +929,7 @@ footer .social {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s; }
 
-/* line 791, ../_scss/main.scss */
+/* line 794, ../_scss/main.scss */
 .masonry {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -934,7 +937,7 @@ footer .social {
   -o-transition-property: height, width;
   transition-property: height, width; }
 
-/* line 799, ../_scss/main.scss */
+/* line 802, ../_scss/main.scss */
 .masonry .masonry-brick {
   -webkit-transition-property: left, right, top;
   -moz-transition-property: left, right, top;
@@ -945,33 +948,33 @@ footer .social {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 811, ../_scss/main.scss */
+/* line 814, ../_scss/main.scss */
 .selected {
   text-decoration: underline; }
 
-/* line 815, ../_scss/main.scss */
+/* line 818, ../_scss/main.scss */
 .wf-loading {
   visibility: hidden; }
 
-/* line 819, ../_scss/main.scss */
+/* line 822, ../_scss/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 824, ../_scss/main.scss */
+/* line 827, ../_scss/main.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 828, ../_scss/main.scss */
+/* line 831, ../_scss/main.scss */
 .clearfix {
   *zoom: 1; }
 
-/* line 832, ../_scss/main.scss */
+/* line 835, ../_scss/main.scss */
 .italic {
   font-style: italic; }
 
-/* line 836, ../_scss/main.scss */
+/* line 839, ../_scss/main.scss */
 .hide {
   position: absolute;
   left: -9999px;
@@ -981,7 +984,7 @@ footer .social {
     Colorbox Core Style:
     The following CSS is consistent between example themes and should not be altered.
 */
-/* line 848, ../_scss/main.scss */
+/* line 851, ../_scss/main.scss */
 #colorbox, #cboxOverlay, #cboxWrapper {
   position: absolute;
   top: 0;
@@ -989,30 +992,30 @@ footer .social {
   z-index: 9999;
   overflow: hidden; }
 
-/* line 849, ../_scss/main.scss */
+/* line 852, ../_scss/main.scss */
 #cboxOverlay {
   position: fixed;
   width: 100%;
   height: 100%; }
 
-/* line 850, ../_scss/main.scss */
+/* line 853, ../_scss/main.scss */
 #cboxMiddleLeft, #cboxBottomLeft {
   clear: left; }
 
-/* line 851, ../_scss/main.scss */
+/* line 854, ../_scss/main.scss */
 #cboxContent {
   position: relative; }
 
-/* line 852, ../_scss/main.scss */
+/* line 855, ../_scss/main.scss */
 #cboxLoadedContent {
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
 
-/* line 853, ../_scss/main.scss */
+/* line 856, ../_scss/main.scss */
 #cboxTitle {
   margin: 0; }
 
-/* line 854, ../_scss/main.scss */
+/* line 857, ../_scss/main.scss */
 #cboxLoadingOverlay, #cboxLoadingGraphic {
   position: absolute;
   top: 0;
@@ -1020,11 +1023,11 @@ footer .social {
   width: 100%;
   height: 100%; }
 
-/* line 855, ../_scss/main.scss */
+/* line 858, ../_scss/main.scss */
 #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
   cursor: pointer; }
 
-/* line 856, ../_scss/main.scss */
+/* line 859, ../_scss/main.scss */
 .cboxPhoto {
   float: left;
   margin: auto;
@@ -1033,14 +1036,14 @@ footer .social {
   max-width: none;
   -ms-interpolation-mode: bicubic; }
 
-/* line 857, ../_scss/main.scss */
+/* line 860, ../_scss/main.scss */
 .cboxIframe {
   width: 100%;
   height: 100%;
   display: block;
   border: 0; }
 
-/* line 858, ../_scss/main.scss */
+/* line 861, ../_scss/main.scss */
 #colorbox, #cboxContent, #cboxLoadedContent {
   box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -1051,73 +1054,73 @@ footer .social {
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
-/* line 865, ../_scss/main.scss */
+/* line 868, ../_scss/main.scss */
 #cboxOverlay {
   background: rgba(0, 0, 0, 0.9); }
 
-/* line 866, ../_scss/main.scss */
+/* line 869, ../_scss/main.scss */
 #colorbox {
   outline: 0; }
 
-/* line 867, ../_scss/main.scss */
+/* line 870, ../_scss/main.scss */
 #cboxTopLeft {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -101px 0; }
 
-/* line 868, ../_scss/main.scss */
+/* line 871, ../_scss/main.scss */
 #cboxTopRight {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -130px 0; }
 
-/* line 869, ../_scss/main.scss */
+/* line 872, ../_scss/main.scss */
 #cboxBottomLeft {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -101px -29px; }
 
-/* line 870, ../_scss/main.scss */
+/* line 873, ../_scss/main.scss */
 #cboxBottomRight {
   width: 21px;
   height: 21px;
   background: url(../img/colorbox/controls.png) no-repeat -130px -29px; }
 
-/* line 871, ../_scss/main.scss */
+/* line 874, ../_scss/main.scss */
 #cboxMiddleLeft {
   width: 21px;
   background: url(../img/colorbox/controls.png) left top repeat-y; }
 
-/* line 872, ../_scss/main.scss */
+/* line 875, ../_scss/main.scss */
 #cboxMiddleRight {
   width: 21px;
   background: url(../img/colorbox/controls.png) right top repeat-y; }
 
-/* line 873, ../_scss/main.scss */
+/* line 876, ../_scss/main.scss */
 #cboxTopCenter {
   height: 21px;
   background: url(../img/colorbox/border.png) 0 0 repeat-x; }
 
-/* line 874, ../_scss/main.scss */
+/* line 877, ../_scss/main.scss */
 #cboxBottomCenter {
   height: 21px;
   background: url(../img/colorbox/border.png) 0 -29px repeat-x; }
 
-/* line 875, ../_scss/main.scss */
+/* line 878, ../_scss/main.scss */
 #cboxContent {
   background: #fff;
   overflow: hidden; }
 
-/* line 876, ../_scss/main.scss */
+/* line 879, ../_scss/main.scss */
 .cboxIframe {
   background: #fff; }
 
-/* line 877, ../_scss/main.scss */
+/* line 880, ../_scss/main.scss */
 #cboxError {
   padding: 50px;
   border: 1px solid #ccc; }
 
-/* line 879, ../_scss/main.scss */
+/* line 882, ../_scss/main.scss */
 #cboxTitle {
   position: absolute;
   bottom: 4px;
@@ -1126,7 +1129,7 @@ footer .social {
   width: 100%;
   color: #949494; }
 
-/* line 880, ../_scss/main.scss */
+/* line 883, ../_scss/main.scss */
 #cboxCurrent {
   position: absolute;
   bottom: 4px;
@@ -1134,16 +1137,16 @@ footer .social {
   color: #949494;
   opacity: 0; }
 
-/* line 881, ../_scss/main.scss */
+/* line 884, ../_scss/main.scss */
 #cboxLoadingOverlay {
   background: url(../img/colorbox/loading_background.png) no-repeat center center; }
 
-/* line 882, ../_scss/main.scss */
+/* line 885, ../_scss/main.scss */
 #cboxLoadingGraphic {
   background: url(../img/colorbox/loading.gif) no-repeat center center; }
 
 /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-/* line 885, ../_scss/main.scss */
+/* line 888, ../_scss/main.scss */
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
   border: 0;
   padding: 0;
@@ -1153,18 +1156,18 @@ footer .social {
   background: none; }
 
 /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
-/* line 888, ../_scss/main.scss */
+/* line 891, ../_scss/main.scss */
 #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
   outline: 0; }
 
-/* line 890, ../_scss/main.scss */
+/* line 893, ../_scss/main.scss */
 #cboxSlideshow {
   position: absolute;
   bottom: 4px;
   right: 30px;
   color: #0092ef; }
 
-/* line 891, ../_scss/main.scss */
+/* line 894, ../_scss/main.scss */
 #cboxPrevious, #cboxNext {
   width: 25px;
   height: 45px;
@@ -1174,28 +1177,28 @@ footer .social {
   bottom: 0;
   text-indent: -9999px; }
 
-/* line 900, ../_scss/main.scss */
+/* line 903, ../_scss/main.scss */
 #cboxPrevious, #cboxNext, #cboxClose {
   opacity: .2;
   -webkit-transition: opacity 200ms;
   -moz-transition: opacity 200ms;
   -o-transition: opacity 200ms;
   transition: opacity 200ms; }
-  /* line 903, ../_scss/main.scss */
+  /* line 906, ../_scss/main.scss */
   #cboxPrevious:hover, #cboxNext:hover, #cboxClose:hover {
     opacity: 1; }
 
-/* line 907, ../_scss/main.scss */
+/* line 910, ../_scss/main.scss */
 #cboxPrevious {
   left: 0;
   background-position: 0 0; }
 
-/* line 910, ../_scss/main.scss */
+/* line 913, ../_scss/main.scss */
 #cboxNext {
   left: 50px;
   background-position: -25px 0; }
 
-/* line 914, ../_scss/main.scss */
+/* line 917, ../_scss/main.scss */
 #cboxClose {
   position: absolute;
   bottom: 0;
@@ -1211,7 +1214,7 @@ footer .social {
   when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
   See: http://jacklmoore.com/notes/ie-transparency-problems/
 */
-/* line 936, ../_scss/main.scss */
+/* line 939, ../_scss/main.scss */
 .cboxIE #cboxTopLeft,
 .cboxIE #cboxTopCenter,
 .cboxIE #cboxTopRight,

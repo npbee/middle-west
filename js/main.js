@@ -22,7 +22,17 @@ $(document).ready(function(){
         lessClass: "read-less",
         slicePoint: 800
     });
-    
+
+    $('.news .scrollable').scroll(function() {
+        var scroll = $(this).scrollTop();
+        console.log(scroll);
+        if (scroll >= 1) {
+            $(this).parent().addClass('bordered');
+        } else {
+            $(this).parent().removeClass('bordered');
+        }
+    });
+
     var width = $(window).width();
 
     if ((width>= 768)) {

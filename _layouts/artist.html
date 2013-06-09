@@ -51,7 +51,7 @@
                 <div class="news">
                     <h2>News</h2>
                     <hr>
-                    <div class="scroll"></div>
+                    <div class="scrollable"></div>
                 </div>
 
                 <div class="col1of2">
@@ -59,7 +59,7 @@
                         <h2>Happenings</h2>
                         <hr>
                         <div class="">
-                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter">Tweets by @boniver</a>
+                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="400" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter">Tweets by @boniver</a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                         </div>
@@ -97,37 +97,14 @@
                                 <span class="album-label">{{ album.label }}</span>
 
                                 <div class="album-links">
-                                    <a class="spotify-link icon" href="{{ album.spotify-link }}" target="_blank">
-                                    <span class="icon" aria-hidden="true" data-icon="&#xe001;"></span>
-                                    <span class="hide">spotify</span>
-                                    </a>
-                                    <a class="itunes-link icon" href="{{ album.itunes-link }}" target="_blank">apple</a>
+                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
+                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
                                 </div>
 
                             </div>
                         </div>
                         {% endfor %}
 
-                        {% for album in page.albums %}
-                        <!-- This is where the details for each album goes. -->
-                        <div class="discography--hidden" style="display:none">
-
-                            <!-- {{ album.name }} -->
-                            <div class="album-container" id="{{ album.hash }}">
-                                <img class="album-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="{{ album.full-image }}" alt="{{ album.name }} cover" height="600" width="600" />
-                                <h3>{{ album.name}} ({{ album.year }})</h3>
-                                <span class="album-label">{{ album.label }}</span>
-                                <div class="album-links">
-                                    <a class="spotify-link" href="{{ album.spotify-link }}" target="_blank">
-                                    <span class="icon" aria-hidden="true" data-icon="&#xe001;"></span>
-                                    <span class="hide">spotify</span>
-                                    </a>
-                                    <a class="itunes-link" href="{{ album.itunes-link }}" target="_blank">apple</a>
-                                </div>
-                            </div>
-
-                        </div>
-                        {% endfor %}
                 </article>
 
                 <div class="col2of2">
@@ -196,24 +173,24 @@
                     var month = parseInt(full_date.substr(5,6), 10);
                     var day = parseInt(full_date.substr(8,9), 10);
                     var year = parseInt(full_date.substr(0,4), 10);
-                    $('.news').append(""+
-                            "<article>"+
-                                "<h3 class='post-title'>"+
-                                    data.response.posts[i].title +
-                                "</h3>" +
-                                
-                                "<div class='post-date'>" +
-                                    month + '/' + day + '/' + year +
-                                "</div>"+
-                                "<div>" + 
-                                    data.response.posts[i].body + 
-                                "</div>" +
-                                "<div class='post-meta'>tags:  "+
-                                    "<span><a target='_blank' href='http://tumblr.com/tagged/" + data.response.posts[i].tags + "''>" + data.response.posts[i].tags + "</span>" + 
-                                    "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" + 
-                                "</div>" +
-                            "</article>"
-                        );
+                    $('.news .scrollable').append(""+
+                        "<article>"+
+                            "<h3 class='post-title'>"+
+                                data.response.posts[i].title +
+                            "</h3>" +
+                            
+                            "<div class='post-date'>" +
+                                month + '/' + day + '/' + year +
+                            "</div>"+
+                            "<div>" + 
+                                data.response.posts[i].body + 
+                            "</div>" +
+                            "<div class='post-meta'>tags:  "+
+                                "<span><a target='_blank' href='http://tumblr.com/tagged/" + data.response.posts[i].tags + "''>" + data.response.posts[i].tags + "</a></span>" + 
+                                "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" + 
+                            "</div>" +
+                        "</article>"
+                    );
                 }
             }
         });

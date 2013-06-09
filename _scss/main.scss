@@ -726,11 +726,17 @@ footer .social {
 .artwork li:first-child a, .photos li:first-child a {
     display:inline-block;
     padding:10px 5px 10px 80px;
+    @include breakpoint(medium) {
+        padding:10px 5px 10px 50px;
+    }
 }
 
 .artwork li:nth-child(2) a, .photos li:nth-child(2) a {
     display:inline-block;
     padding:10px 80px 10px 5px;
+    @include breakpoint(medium) {
+        padding:10px 50px 10px 5px;
+    }
 }
 
 .artwork img {

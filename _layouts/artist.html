@@ -25,7 +25,7 @@
 
     <div class="main-container">
             <article>
-                <a href="../artists/{{ page.artist }}" class="header-image">
+                <div class="header-image">
                     <h2 class="caption">{{ page.artist }}</h2>
                     <div data-picture data-alt="{{ page.artist }}">
                         <div data-src="{{ page.header-image-s }}"></div>
@@ -35,7 +35,7 @@
                     <noscript>
                         <img src="{{ page.header-image-s }}" alt="{{ page.artist }}">
                     </noscript>
-                </a>
+                </div>
 
                 <span class="social">
                     <a class="icomoon" data-icon="&#xe000;" aria-hidden="true" href="{{ page.website }}" target="_blank"><span class="hide">website</span></a>

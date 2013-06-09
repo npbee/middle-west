@@ -447,6 +447,7 @@ article {
     opacity: .8;
     color: #f7f7f7 !important;
     z-index: 2;
+    border-radius:3px;
     h3 {
         margin-top:35%;
     }
@@ -466,6 +467,13 @@ article {
     position:absolute;
     right:5px;
     top:5px;
+    background: url(../img/icons/sprite.png) no-repeat 0 0; 
+    background-size: 50px; 
+    background-position:-25px -22px;
+    height:24px;
+    width:25px;
+    opacity:.8;
+    border-radius:3px;
 }
 
 .show {
@@ -528,26 +536,26 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
 .flex-direction-nav a {
-    width: 33px; 
-    height: 33px; 
+    width: 25px; 
+    height: 45px; 
     margin: -20px 0 0; 
     display: block; 
-    background: url(../img/icons/bg_direction_nav.png) no-repeat 0 0; 
-    background-size: 66px; 
+    background: url(../img/icons/sprite.png) no-repeat 0 0; 
+    background-size: 100px; 
     position: absolute; 
-    top: 48%; 
+    top: 49%; 
     z-index: 10; 
     cursor: pointer; 
     text-indent: -9999px; 
     opacity: 0; 
     -webkit-transition: all .3s ease;
 }
-.flex-direction-nav .flex-next {background-position: 100%; }
+.flex-direction-nav .flex-next {background-position: -25px 0; }
 .flexslider:hover .flex-next {opacity: 0.8; right: 0px;}
 .flexslider:hover .flex-prev {opacity: 0.8; left: 0px;}
 @include breakpoint(large) {
-    .flexslider:hover .flex-next {opacity: 0.8; right: -33px;}
-    .flexslider:hover .flex-prev {opacity: 0.8; left: -33px;}
+    .flexslider:hover .flex-next {opacity: 0.8; right: -30px;}
+    .flexslider:hover .flex-prev {opacity: 0.8; left: -30px;}
 }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
@@ -823,29 +831,36 @@ footer .social {
 
         #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
         #cboxPrevious, #cboxNext {
+            width: 25px; 
+            height: 45px; 
+            background: url(../img/icons/sprite.png) no-repeat 0 0; 
+            background-size: 100px; 
             position:absolute;
             bottom:0;
-            width:50px;
-            height:60px;
-            opacity:.2;
             text-indent:-9999px;
+        }
+        #cboxPrevious, #cboxNext, #cboxClose {
+            opacity:.2;
             @include transition(opacity 200ms);
             &:hover {
-                opacity:1 !important;
+                opacity:1
             }
         }
         #cboxPrevious{
             left:0; 
-            background:url(../img/icons/carousel-l.png) no-repeat; }
+            background-position:0 0 }
         #cboxNext{
-            right:15px; 
-            background:url(../img/icons/carousel-r.png) no-repeat; 
+            left:50px; 
+            background-position:-25px 0; 
         }
-        #cboxContent:hover #cboxPrevious, #cboxContent:hover #cboxNext {
-            opacity:.4;
-        }
-        #cboxClose{position:absolute; top:-8px; left:-8px; background:url(../img/colorbox/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
-        #cboxClose:hover{background-position:-25px -25px;}
+        #cboxClose{
+            position:absolute; 
+            bottom: 8px; 
+            right:0;
+            background:url(../img/icons/sprite.png) no-repeat -50px 0; 
+            width:50px; 
+            height:45px; 
+            text-indent:-9999px;}
 
 /*
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill

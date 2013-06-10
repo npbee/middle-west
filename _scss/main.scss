@@ -694,7 +694,7 @@ footer .social {
 
 .mailing-list-container {
     @include breakpoint(max) {
-        width:134%;
+        width:321px;
         &:after {
             content:"";
             display:table;
@@ -705,9 +705,16 @@ footer .social {
 
 .mailing-list {
     text-align:center;
-    position:relative;
-    top:15px;
+    margin: 15px 0;
+    &:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
     @include breakpoint(max) {
+        position:relative;
+        margin:0;
+        top:15px;
         float:left;
         width:25%;
         overflow:hidden;
@@ -719,7 +726,7 @@ footer .social {
         padding: 10px;
         border:1px solid #d9d9d9;
         border-radius:3px 0 0 3px;
-        width:75%;
+        width:80%;
         float:left;
         height:35px;
         @include transition(border 200ms, width 200ms);
@@ -731,7 +738,7 @@ footer .social {
             padding-left:5px;
             text-align:left;
             &:focus {
-                width:50%;
+                width:60%;
             }
         }
     }
@@ -740,7 +747,7 @@ footer .social {
         background:$black;
         border:none;
         border-radius: 0 3px 3px 0;
-        width:25%;
+        width:20%;
         float:left;
         color: #f7f7f7;
         cursor: pointer;

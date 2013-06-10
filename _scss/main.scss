@@ -30,7 +30,7 @@
    =BASE
    ========================================================================== */
 *{
-    -webkit-box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 html{
@@ -39,7 +39,7 @@ html{
 
 body {
     line-height: 1.4;
-    font: 18px/26px "futura-pt", Arial;
+    font: 18px/28px "futura-pt", Arial;
     font-weight:normal;
     background: #fff;
     margin:0;
@@ -132,7 +132,7 @@ p {margin: .5em 0}
     position:relative;
     @include transition(border 500ms);
 }
-    .scrollable::-webkit-scrollbar {
+    .scrollable::-webkit-scrollbar, .scrollable::-moz-scrollbar {
         width:0px;
         height:10px;
     }
@@ -394,6 +394,11 @@ article {
     }
 }
 
+.no-fade {
+    &:after {
+        background-image:none !important;
+    }
+}
 
 .news img {
     width: auto;
@@ -459,6 +464,10 @@ article {
     .read-less a:before {
         content: "\e004";
     }
+
+.details p:first-child {
+    margin-top:0;
+}
 
 /*  ----------------------------------------=Discography */
 .album_thumb {
@@ -672,8 +681,10 @@ footer .social {
     font-size:.9em;
     position:relative;
     margin:15px 0;
-    padding:5px 0;
     text-align:center;
+    p {
+        margin:0;
+    }
     @include breakpoint(max) {
         text-align:right;
         width:25%;
@@ -683,44 +694,49 @@ footer .social {
 
 .mailing-list-container {
     @include breakpoint(max) {
-        width:133.5%;
+        width:134%;
+        &:after {
+            content:"";
+            display:table;
+            clear:both;
+        }
     }
 }
 
 .mailing-list {
     text-align:center;
+    position:relative;
+    top:15px;
     @include breakpoint(max) {
         float:left;
-        position:relative;
         width:25%;
-        overflow:hidden
+        overflow:hidden;
+        border-right: 1px solid $grey;
+        border-radius: 3px;
     }
     input[type='email'] {
         -webkit-appearance: none;
-        margin: 15px 0;
         padding: 10px;
         border:1px solid #d9d9d9;
         border-radius:3px 0 0 3px;
         width:75%;
         float:left;
+        height:35px;
         @include transition(border 200ms, width 200ms);
         &:focus {
             outline:none;
             border:1px solid $black;
-            border-radius:3px 0 0 3px;
         }
         @include breakpoint(max) {
             padding-left:5px;
             text-align:left;
-            border-radius:3px;
             &:focus {
                 width:50%;
             }
         }
     }
     input[type='submit'] {
-        margin: 15px 0;
-        padding:11px;
+        padding:10px;
         background:$black;
         border:none;
         border-radius: 0 3px 3px 0;
@@ -729,6 +745,7 @@ footer .social {
         color: #f7f7f7;
         cursor: pointer;
         @include transition(all 200ms);
+        height:35px;
         &:hover {
             background: lighten($black, 5%);
         }

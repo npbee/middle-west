@@ -24,13 +24,23 @@ $(document).ready(function(){
     });
 
     $('.news .scrollable').scroll(function() {
+        var elem = $(this);
         var scroll = $(this).scrollTop();
-        console.log(scroll);
+
+        //Add bottom border if actively scrolling
         if (scroll >= 1) {
             $(this).parent().addClass('bordered');
         } else {
             $(this).parent().removeClass('bordered');
         }
+
+        //remove fade if scrolled to the bottom of the section
+        if ( elem[0].scrollHeight - elem.scrollTop() == elem.outerHeight() ) {
+            $(this).parent().addClass('no-fade');
+        } else {
+            $(this).parent().removeClass('no-fade');
+        }
+        
     });
 
     var width = $(window).width();

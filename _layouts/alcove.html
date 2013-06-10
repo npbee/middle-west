@@ -60,17 +60,6 @@
                         {% endfor %}
                 </article>
 
-                <!-- Video embeds -->
-                <article class="videos">
-                    <h2>Videos</h2>
-                    <hr>
-                    {% for video in page.videos %}
-                        <div class="col{% cycle 'videos': '1', '2' %}of2">
-                            {{ video.embed }}
-                        </div>
-                    {% endfor %}
-                </article>
-
                 <article class="photos" id="photos">
                     <h2>Photos</h2>
                     <hr>
@@ -105,6 +94,17 @@
                     </section>
                     {% endfor %}
                     
+                </article>
+
+                <!-- Video embeds -->
+                <article class="videos">
+                    <h2>Videos</h2>
+                    <hr>
+                    {% for video in page.videos %}
+                        <div class="col{% cycle 'videos': '1', '2' %}of2">
+                            {{ video.embed }}
+                        </div>
+                    {% endfor %}
                 </article>
 
                 <article class="press">

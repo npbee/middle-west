@@ -57,7 +57,8 @@ $(document).ready(function(){
             $('.colorbox-iframe').colorbox({
                 iframe: true,
                 width:"80%",
-                height:"80%"
+                height:"80%",
+                rel: 'group-videos'
             });
     } else {
         $('.colorbox').click(function() {

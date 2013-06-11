@@ -364,7 +364,7 @@ article {
     display: block;
     margin:15px auto 15px; 
     text-align:center;
-    padding:5px 0;
+    //padding:5px 0;
 }
 
 .icon-globe {
@@ -537,6 +537,27 @@ article {
     left:0;
 }
 
+/*  ----------------------------------------=VIDEOS */
+.video-popout {
+    display:block;
+    font-size:.8em;
+    color:$grey;
+    text-align:center;
+    background:$black;
+    width:100%;
+    text-transform:uppercase;
+    &:hover {
+        color:#f7f7f7;
+        text-decoration:none;
+    }
+}
+
+.fluid-width-video-wrapper{
+    margin-bottom: 20px;
+}
+
+
+
 /* --------------------=Contact */
 .contacts li{
     padding-bottom: 1em;
@@ -545,9 +566,6 @@ article {
     display:block
 }
 
-.fluid-width-video-wrapper{
-    margin-bottom: 20px;
-}
 
 
 /*  ----------------------------------------=Flexslider */
@@ -919,7 +937,7 @@ footer .social {
     Colorbox Core Style:
     The following CSS is consistent between example themes and should not be altered.
 */
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:visible !important;}
 #cboxOverlay{position:fixed; width:100%; height:100%;}
 #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
 #cboxContent{position:relative;}
@@ -946,7 +964,7 @@ footer .social {
     #cboxMiddleRight{width:21px; background:url(../img/colorbox/controls.png) right top repeat-y;}
     #cboxTopCenter{height:21px; background:url(../img/colorbox/border.png) 0 0 repeat-x;}
     #cboxBottomCenter{height:21px; background:url(../img/colorbox/border.png) 0 -29px repeat-x;}
-    #cboxContent{background:#fff; overflow:hidden;}
+    #cboxContent{background:#fff;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{}
@@ -970,29 +988,31 @@ footer .social {
             position:absolute;
             bottom:0;
             text-indent:-9999px;
+            top:45%;
         }
         #cboxPrevious, #cboxNext, #cboxClose {
-            opacity:.2;
+            //opacity:.2;
             @include transition(opacity 200ms);
             &:hover {
-                opacity:1
+                opacity:.7;
             }
         }
         #cboxPrevious{
-            left:0; 
-            background-position:0 0 }
+            left:-100px;
+            background-position:0 -45px }
         #cboxNext{
-            left:50px; 
-            background-position:-25px 0; 
+            right:-100px; 
+            background-position:-25px -45px; 
         }
         #cboxClose{
             position:absolute; 
-            bottom: 0; 
-            right:0;
+            top: -75px; 
+            right:-75px;
             background:url(../img/icons/sprite.png) no-repeat -25px 0; 
             background-size:50px;
+            background-position: -25px -22px;
             width:25px; 
-            height:24px; 
+            height:46px; 
             text-indent:-9999px;}
 
 /*

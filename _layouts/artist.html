@@ -113,8 +113,9 @@
                     <hr>
                         {% for video in page.videos %}
                             <div class="col{% cycle 'videos': '1', '2' %}of2">
-                            {{ video.embed-code }}
-                        </div>
+                                <a class="group-videos colorbox-iframe video-popout" href="{{ video.embed-URL }}">Popout</a>
+                                <iframe width="280" height="170" src="{{ video.embed-URL }}" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         {% endfor %}
                 </div>
 

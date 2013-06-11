@@ -1299,8 +1299,8 @@ footer .social {
 /* line 1007, ../_scss/main.scss */
 #cboxClose {
   position: absolute;
-  top: -75px;
-  right: -75px;
+  top: -30px;
+  right: -30px;
   background: url(../img/icons/sprite.png) no-repeat -25px 0;
   background-size: 50px;
   background-position: -25px -22px;

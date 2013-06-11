@@ -49,13 +49,14 @@
             <div class="main wrapper clearfix">
 
             	   <article class="media">
+
                     <h2>Download Links</h2>
                     <hr>       
                     <!-- Zip Files here -->
                         {% for download in page.downloads %}
                         <h3>{{ download.title }}</h3>
                         <ul>
-                            <li><a href="{{ download.path }}">Download</a></li>
+                            <li><a href="../../download.php/?filename={{ page.downloadPath }}/{{ download.filename }}">Download</a></li>
                         </ul>
                         {% endfor %}
                 </article>

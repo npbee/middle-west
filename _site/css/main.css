@@ -598,6 +598,7 @@ article {
 
 /* line 586, ../_scss/main.scss */
 .flexslider .slides > li {
+  position: relative;
   display: none;
   -webkit-backface-visibility: hidden; }
 

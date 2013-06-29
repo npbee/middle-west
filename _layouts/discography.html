@@ -1,14 +1,15 @@
 
-{% for album in page.album %}
+{% for album in page.albums %}
 <div class="album-container">
-    <img class="album-cover" src="{{ album.artwork }}" alt="{{ album.name }} cover" height="600" width="600" />
+    <img class="album-cover" src="{{ album.full-image }}" alt="{{ album.name }} cover" height="600" width="600" />
 
     <h3>{{ album.name }} ({{ album.year }})</h3>
     <span class="album-label">{{ album.label }}</span>
 
     <div class="album-links">
-        <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify }}" target="_blank"><span class="hide">spotify</span></a>
-        <a class="rondo" data-icon="apple" href="{{ album.itunes }}" target="_blank"><span class="hide">apple</span></a>
+        <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
+        <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
+        <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
     </div>
 </div>
 {% endfor %}

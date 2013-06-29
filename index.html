@@ -8,9 +8,9 @@ layout: home
                 <a href="artists/bon-iver">
                     <h2 class="caption">Bon Iver</h2>
                     <div data-picture data-alt="Bon Iver">
-                        <div data-src="img/artists/bon-iver/featured_boniver_s.jpg"></div>
-                        <div data-src="img/artists/bon-iver/featured_boniver_m.jpg" data-media="(min-width: 480px)"></div>
-                        <div data-src="img/artists/bon-iver/featured_boniver_l.jpg" data-media="(min-width: 660px)"></div>
+                        <div data-src="img/artists/bon-iver/featured/featured_boniver_s.jpg"></div>
+                        <div data-src="img/artists/bon-iver/featured/featured_boniver_m.jpg" data-media="(min-width: 480px)"></div>
+                        <div data-src="img/artists/bon-iver/featured/featured_boniver_l.jpg" data-media="(min-width: 660px)"></div>
                         <!--[if lte IE 8]><div data-src="img/artists/bon-iver/featured_boniver_l.jpg"></div><![endif]-->
                     </div>
                     <noscript>
@@ -142,10 +142,19 @@ layout: home
 </article>
 <div class="main wrapper clearfix">
 
-    <div class="news">
+    <div class="news col1_2of3">
         <h1>News</h1>
         <hr>
         <div class="scrollable"></div>
+    </div>
+
+    <div class="tweets col3of3">
+        <h1>Latest</h1>
+        <span class="twitter-branding"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="img/icons/twitter-brand.png" /></a></span>
+        <hr>
+        <a class="twitter-timeline" data-chrome="noheader nofooter noscrollbar" height="500" width="100%" href="https://twitter.com/middlewestmgmt" data-widget-id="350968348483407872">Tweets by @middlewestmgmt</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
     </div>
 
 </div> <!-- #main -->

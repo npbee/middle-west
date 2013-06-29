@@ -163,6 +163,12 @@ p {margin: .5em 0}
         margin:0 2% 2% 0;
     }
 
+    .col1_2of3 {
+        width: 64%;
+        float: left;
+        margin: 0 2% 2% 0;
+    }
+
     .col3of3 {
         width:32%;
         float:right;
@@ -340,7 +346,7 @@ article {
     position:relative;
     min-height:200px;
     @include breakpoint(max) {
-        min-height:500px;
+        //min-height:500px;
     }
 }
 
@@ -405,7 +411,7 @@ article {
     border:1px solid $grey;
     border-radius:3px;
 }
-.home .news {
+.home .news, .home .tweets {
     margin: 2em 0;
 }
 
@@ -427,6 +433,18 @@ article {
     }
 }
 
+
+/* --------------------=Latest */
+.tweets {
+    h1, h2 {
+        float: left;
+    }
+    .twitter-branding {
+        float: right;
+        position: relative;
+        bottom: 3px;
+    }
+}
 
 /* --------------------=Bio */
 .read-more, .read-less {

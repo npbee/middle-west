@@ -84,29 +84,35 @@
                 <article class="discography col1of2">
                         <h2>Discography</h2>
                         <hr>
+                        <div class="flexslider-albums">
+                            <ul class="slides">
+                                <li>
+                                    {% for album in page.albums limit:6 %}
+                                        <div class="album_thumb col{% cycle '1', '2', '3' %}of3">
+                                            <div id="card-container">
+                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
+                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
+                                                </a>
+                                            </div>
 
-                        {% for album in page.albums %}
-                        <div class="album_thumb col{% cycle '1', '2', '3' %}of3">
-                            <div id="card-container">
-                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
-                                </a>
-                            </div>
+                                            <div class="mobile-album-info">
+                                                <span class="mobile-album-info-close"></span>
+                                                <h3>{{ album.name }} ({{ album.year }})</h3>
+                                                <span class="album-label">{{ album.label }}</span>
 
-                            <div class="mobile-album-info">
-                                <span class="mobile-album-info-close"></span>
-                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                <span class="album-label">{{ album.label }}</span>
+                                                <div class="album-links">
+                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
+                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
+                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
+                                                </div>
 
-                                <div class="album-links">
-                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
-                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </li>
 
-                            </div>
+                            </ul>
                         </div>
-                        {% endfor %}
 
                 </article>
 
@@ -115,8 +121,8 @@
                     <hr>
                         {% for video in page.videos %}
                             <div class="col{% cycle 'videos': '1', '2' %}of2">
-                                <a class="group-videos colorbox-iframe video-popout" href="{{ video.embed-URL }}">Popout</a>
-                                <iframe width="280" height="170" src="{{ video.embed-URL }}" frameborder="0" allowfullscreen></iframe>
+                                <a class="group-videos colorbox-iframe" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
+                                <!-- <iframe width="280" height="170" src="{{ video.embed-URL }}" frameborder="0" allowfullscreen></iframe> -->
                             </div>
                         {% endfor %}
                 </div>

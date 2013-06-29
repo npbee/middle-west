@@ -4,6 +4,11 @@ $(document).ready(function(){
         animation: "slide"
     });
 
+    $('.flexslider-albums').flexslider({
+        animation: "slide",
+        slideshow: false
+    });
+
     // fits iframe videos to fluid column widths
     $("div.main").fitVids();
 
@@ -22,6 +27,17 @@ $(document).ready(function(){
         lessClass: "read-less",
         slicePoint: 800
     });
+
+    //Album carousel
+    var groups = $('.album__thumb__carousel__group');
+    var images = $('.album__thumb__carousel__group .album-cover');
+
+    console.log(groups.width());
+
+
+
+
+
 
     $('.news .scrollable').scroll(function() {
         var elem = $(this);
@@ -42,6 +58,11 @@ $(document).ready(function(){
         }
         
     });
+
+    //Mobile carousel
+    
+
+    //mask.css('width', groupWidth*(lastElem+1) + 'px');
 
     var width = $(window).width();
 

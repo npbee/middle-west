@@ -555,18 +555,46 @@ article {
     left:0;
 }
 
+/*  ----------------------------------------=Carousel */
+
+.flexslider-albums {
+    position: relative;
+}
+
+.flexslider-albums .flex-control-nav {
+    width: auto;
+    top: -45px;
+    height: 20px;
+    right: 0;
+}
+
+.flexslider-albums .flex-direction-nav {
+    display: none;
+}
+
+.flexslider-albums .flex-control-paging li a {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    @include breakpoint(medium) {
+        width: 15px;
+        height: 15px;
+    }
+}
+
 /*  ----------------------------------------=VIDEOS */
-.video-popout {
+
+.group-videos {
     display:block;
-    font-size:.8em;
-    color:$grey;
-    text-align:center;
-    background:$black;
-    width:100%;
-    text-transform:uppercase;
-    &:hover {
-        color:#f7f7f7;
-        text-decoration:none;
+    margin-bottom: 2%;
+}
+.group-videos img {
+    width: 100%;
+    height: auto;
+    @include breakpoint(medium) {
+        width: 300px;
+        height: 170px;
     }
 }
 

@@ -42,7 +42,7 @@
                     <a class="icomoon" data-icon="&#xe000;" aria-hidden="true" href="{{ page.website }}" target="_blank"><span class="hide">website</span></a>
                     <a class="rondo" data-icon="facebook" href="{{ page.facebook }}"  target="_blank"><span class="hide">facebook</span></a>
                     <a class="rondo" data-icon="twitter" href="{{ page.twitter }}"  target="_blank"><span class="hide">twitter</span></a>
-                    <a class="rondo" data-icon="instagram" href="{{ page.instagram }}"  target="_blank"><span class="hide">instagram</span></a>
+                    {% if page.instagram %}<a class="rondo" data-icon="instagram" href="{{ page.instagram }}"  target="_blank"><span class="hide">instagram</span></a>{% endif %}
                 </span>
 
             </article>
@@ -156,7 +156,7 @@
 
                                     {% else %}
                                     <li>
-                                        <span>{% if contact.comspanany %}{{ contact.company }}: {% endif %}{{ contact.name }}</span>
+                                        <span>{% if contact.company %}{{ contact.company }}: {% endif %}{{ contact.name }}</span>
                                         <span><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></span>
                                     </li>
                                 {% endif %}

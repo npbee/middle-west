@@ -28,11 +28,11 @@ $(document).ready(function(){
         slicePoint: 800
     });
 
-    //Album carousel
-    var groups = $('.album__thumb__carousel__group');
-    var images = $('.album__thumb__carousel__group .album-cover');
-
-    console.log(groups.width());
+    //Alcove mobile menu
+    $('#mobile__menu__button').click(function() {
+        $('nav ul').toggleClass('mobile__menu--open');
+        return false;
+    });
 
 
 

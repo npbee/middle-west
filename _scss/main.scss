@@ -476,11 +476,11 @@ article {
         text-decoration: none
     }
     .read-more a:before, .news-exander:before {
-        content: "\e003";
+        content: "\e002";
     }
 
     .read-less a:before {
-        content: "\e004";
+        content: "\e003";
     }
 
 .details p:first-child {
@@ -1043,6 +1043,10 @@ footer .social {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.about p {
+    margin: 1em;
+}
 .selected {
     text-decoration:underline;
 }

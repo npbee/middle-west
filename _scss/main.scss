@@ -133,7 +133,7 @@ p {margin: .5em 0}
     @include transition(border 500ms);
 }
     .scrollable::-webkit-scrollbar, .scrollable::-moz-scrollbar {
-        width:0px;
+        width:0;
         height:10px;
     }
 
@@ -843,8 +843,10 @@ footer .social {
 }
 
 .alcove nav {
-    float: none;
-    margin-top: 0;
+    // float: none;
+    // margin-top: 0;
+    position: relative;
+    min-width: 130px;
 }
 
 .alcove nav ul {
@@ -855,12 +857,16 @@ footer .social {
     z-index: 2;
     @include breakpoint(medium) {
         display: block;
-        height: auto;
-        text-align: center;
+        //height: auto;
+        //text-align: center;
+        text-align: left;
         font-size: .8em;
         float: none;
-        position: static;
-        background: none;
+        left: 0;
+        width: 100%;
+        min-width:200px;
+        // position: static;
+        // background: none;
     }
 }
 
@@ -887,13 +893,16 @@ footer .social {
         height:80px;
         @include breakpoint(medium) {
             height: auto;
-            padding:5px;
-            width: auto;
+            padding:15px 20px;
+            //width: auto;
+            color: #fff;
+            text-align: left;
         }
     }
     @include breakpoint(medium) {
         width: auto;
-        display: inline;
+        //display: inline;
+        display: block;
         float: none;
         border: none;
     }
@@ -915,13 +924,15 @@ footer .social {
         clear: both;
     }
     @include breakpoint(medium) {
-        display: none;
+        //display: none;
+        color: $black !important;
     }
 }
 
-// .mobile__menu__button[data-icon]:before {
-//     float: right;
-// }
+.mobile__menu__button[data-icon]:before {
+    float: right;
+    padding-left: 10px;
+}
 
 
 .media ul {

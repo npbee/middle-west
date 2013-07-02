@@ -127,7 +127,7 @@ p {margin: .5em 0}
    ====================================== */
 /* ----------------------------------------=SCROLLABLE */
 .scrollable {
-    height:500px;
+    max-height:500px;
     overflow-y:scroll;
     position:relative;
     @include transition(border 500ms);
@@ -136,6 +136,11 @@ p {margin: .5em 0}
         width:0;
         height:10px;
     }
+
+.no-js .scrollable {
+    //height: 500px;
+    
+}
 
 .bordered {
     border-bottom: 1px solid $grey
@@ -846,7 +851,14 @@ footer .social {
     // float: none;
     // margin-top: 0;
     position: relative;
-    min-width: 130px;
+    min-width: 170px;
+    @include breakpoint(large) {
+        &:hover {
+            .mobile__menu__button[data-icon]:before {
+                color: $black;
+            }
+        }
+    }
 }
 
 .alcove nav ul {
@@ -855,7 +867,7 @@ footer .social {
     position: absolute;
     background: $black;
     z-index: 2;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         display: block;
         //height: auto;
         //text-align: center;
@@ -864,7 +876,7 @@ footer .social {
         float: none;
         left: 0;
         width: 100%;
-        min-width:200px;
+        //min-width:200px;
         // position: static;
         // background: none;
     }
@@ -881,7 +893,7 @@ footer .social {
     border-bottom: 1px solid #fff;
     &:first-child, &:nth-child(2) {
         border-top: 1px solid #fff;
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
             border: none;
         }
     }
@@ -891,7 +903,7 @@ footer .social {
     a {
         width: 100%;
         height:80px;
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
             height: auto;
             padding:15px 20px;
             //width: auto;
@@ -899,7 +911,7 @@ footer .social {
             text-align: left;
         }
     }
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         width: auto;
         //display: inline;
         display: block;
@@ -923,7 +935,7 @@ footer .social {
         display: table;
         clear: both;
     }
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         //display: none;
         color: $black !important;
     }
@@ -931,7 +943,11 @@ footer .social {
 
 .mobile__menu__button[data-icon]:before {
     float: right;
-    padding-left: 10px;
+    @include breakpoint(large) {
+        padding-left: 10px;
+        color: $grey;
+        @include transition(color 200ms);
+    }
 }
 
 

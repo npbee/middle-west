@@ -43,7 +43,7 @@ $(" .expandable ").expander({
 * Alcove mobile menu
 *********************************************/
 $(" #mobile__menu__button ").click(function() {
-    $(" nav ul ").toggleClass(" mobile__menu--open ");
+    $("nav ul").toggleClass("mobile__menu--open");
     return false;
 });
 

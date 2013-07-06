@@ -865,13 +865,16 @@ footer .social {
     @include clearfix;
     height: 0;
     position: absolute;
-    background: $black;
+    background: lighten($black, 10%);
     z-index: 2;
+    text-align: left;
+    max-height: 0;
+    cursor:pointer;
     @include breakpoint(large) {
         display: block;
         //height: auto;
         //text-align: center;
-        text-align: left;
+        background: $black;
         font-size: .8em;
         float: none;
         left: 0;
@@ -884,31 +887,28 @@ footer .social {
 
 .alcove .mobile__menu--open {
     height: auto;
+    max-height: 2000px;
 }
 
 .alcove nav li {
-    width: 50%;
-    float: left;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    &:first-child, &:nth-child(2) {
+    width: 100%;
+    //float: left;
+    border-bottom: 1px solid $grey;
+    &:first-child {
         border-top: 1px solid #fff;
         @include breakpoint(large) {
             border: none;
         }
     }
-    &:nth-child(even) {
-        border-right: none;
-    }
     a {
         width: 100%;
-        height:80px;
+        display: block;
+        text-align: left;
         @include breakpoint(large) {
             height: auto;
             padding:15px 20px;
             //width: auto;
             color: #fff;
-            text-align: left;
         }
     }
     @include breakpoint(large) {

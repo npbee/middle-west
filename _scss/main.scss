@@ -578,14 +578,10 @@ article {
 }
 
 .flexslider-albums .flex-control-paging li a {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     margin-left: 10px;
     display: inline-block;
-    @include breakpoint(medium) {
-        width: 15px;
-        height: 15px;
-    }
 }
 
 /*  ----------------------------------------=VIDEOS */
@@ -1074,7 +1070,7 @@ footer .social {
 .about p {
     margin: 1em;
 }
-.selected {
+.about .about-nav, .artists .artists-nav, .selected {
     text-decoration:underline;
 }
 

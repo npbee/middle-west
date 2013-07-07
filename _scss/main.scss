@@ -584,6 +584,10 @@ article {
     display: inline-block;
 }
 
+.flexslider-albums .flex-viewport {
+    max-height: none;
+}
+
 /*  ----------------------------------------=VIDEOS */
 
 .group-videos {

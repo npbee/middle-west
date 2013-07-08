@@ -132,9 +132,10 @@ p {margin: .5em 0}
     position:relative;
     @include transition(border 500ms);
 }
-    .scrollable::-webkit-scrollbar, .scrollable::-moz-scrollbar {
-        width:0;
-        height:10px;
+    .scrollable::-webkit-scrollbar {
+        width:0 !important;
+        //display: none;
+        //height:10px;
     }
 
 .no-js .scrollable {

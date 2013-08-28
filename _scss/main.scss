@@ -6,16 +6,6 @@
    ========================================================================== */
 
 @font-face {
-    font-family: 'rondo';
-    src: url('../fonts/rondo.eot?#') format('eot'),
-         url('../fonts/rondo.svg#rondo') format('svg'),
-         url('../fonts/rondo.woff') format('woff'),
-         url('../fonts/rondo.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'icomoon';
     src:url('../fonts/icomoon.eot');
     src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
@@ -88,6 +78,9 @@ a {
     color: #0989b8;
     text-decoration: none;
     @include transition(color 200ms);
+    img {
+        border: none;
+    }
 }
 
     a:hover{
@@ -101,7 +94,7 @@ ul {
     list-style:none;
 }
 
-p {margin: .5em 0}
+p {margin: 1.5em 0}
 
 
 /* ======================================
@@ -127,10 +120,12 @@ p {margin: .5em 0}
    ====================================== */
 /* ----------------------------------------=SCROLLABLE */
 .scrollable {
-    max-height:500px;
-    overflow-y:scroll;
     position:relative;
     @include transition(border 500ms);
+    @include breakpoint(medium) {
+        max-height:900px;
+        overflow-y:scroll;
+    }
 }
     .scrollable::-webkit-scrollbar {
         width:0 !important;
@@ -140,12 +135,37 @@ p {margin: .5em 0}
 
 .no-js .scrollable {
     //height: 500px;
-    
+}
+
+.scrollable iframe {
+    max-width: 100% !important;
 }
 
 .bordered {
     border-bottom: 1px solid $grey
 }
+
+
+
+
+/* ----------------------------------------=LOAD MORE POSTS */
+.load-more-posts {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    background: $black;
+    text-align: center;
+    img {
+        border: none !important;
+    }
+    span {
+        padding-left: 10px;
+    }
+}
+
+
+
 
 /* ----------------------------------------=GRID */
 @include breakpoint(large) {
@@ -195,6 +215,7 @@ p {margin: .5em 0}
 }
 
 [data-icon]:before {
+    font-family: 'icomoon';
     content: attr(data-icon);
     speak:none;
     font-weight:normal;
@@ -208,12 +229,10 @@ p {margin: .5em 0}
 }
 
 .icomoon[data-icon]:before {
-    font-family: 'icomoon';
     font-size:31px;
 }
 
 .rondo[data-icon]:before {
-    font-family: 'rondo';
     font-size:32px;
 }
 
@@ -247,6 +266,7 @@ p {margin: .5em 0}
 /* ----------------------------------------=Navigation */
 nav{
     background: $black;
+    margin-bottom: 10px;
     @include breakpoint(large) {
         float:right;
         background:#fff;
@@ -294,8 +314,6 @@ nav{
     }
 }
 
-    
-
 /*  ----------------------------------------=Logo */
 .logo-container a {
     text-align:center
@@ -303,15 +321,18 @@ nav{
 
 .logo{
     display: block;
-    background-image: url(../img/logo/mw_logo-horizontal.png);
-    width:300px;
-    height:80px;
+    background-image: url(../img/logo/logo-2.png);
+    width:210px;
+    height:75px;
     background-size: 100%;
-    margin:20px auto;
+    margin:10px auto;
     @include breakpoint(large) {
         float:left;
-        width: 275px;
+        width: 210px;
         height: 75px;
+    }
+    @include breakpoint(retina) {
+        background-image: url(../img/logo/logo-2@2x.png);
     }
 }
 
@@ -374,7 +395,7 @@ article {
 /* --------------------=Social Links */
 .social{
     display: block;
-    margin:15px auto 15px; 
+    margin:15px auto 15px;
     text-align:center;
     //padding:5px 0;
 }
@@ -392,17 +413,22 @@ article {
     //border-bottom:1px solid $grey;
     position:relative;
     &:after {
-        //background:#333;
-        content: "";
-        background-size: 100%;
-         @include background-image(linear-gradient(rgba(231,231,231,0), rgba(231,231,231,0) 30%, lighten($grey, 15%)));
-        display: block;
-        position: absolute;
-        pointer-events: none;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 30%;
+        @include breakpoint(medium) {
+            //background:#333;
+            content: "";
+            background-size: 100%;
+             @include background-image(linear-gradient(rgba(231,231,231,0), rgba(231,231,231,0) 30%, lighten($grey, 15%)));
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 15%;
+        }
+    }
+    &.news--nofade:after {
+        background: none;
     }
 }
 
@@ -413,7 +439,7 @@ article {
 }
 
 .news img {
-    width: auto;
+    //width: auto;
     border:1px solid $grey;
     border-radius:3px;
 }
@@ -438,6 +464,8 @@ article {
         margin: .4em 0 1em;
     }
 }
+
+
 
 
 /* --------------------=Latest */
@@ -548,11 +576,11 @@ article {
     position:absolute;
     right:5px;
     top:5px;
-    background: url(../img/icons/sprite.png) no-repeat 0 0; 
-    background-size: 50px; 
-    background-position:-25px -22px;
-    height:24px;
-    width:25px;
+    background: url(../img/icons/sprite.png) no-repeat 0 0;
+    background-size: 100px;
+    background-position:-50px -44px;
+    height:48px;
+    width:50px;
     opacity:.8;
     border-radius:3px;
 }
@@ -561,36 +589,43 @@ article {
     left:0;
 }
 
-/*  ----------------------------------------=Carousel */
+/*  ----------------------------------------=Mini Flex slider */
 
-.flexslider-albums {
+.flexslider-mini {
     position: relative;
 }
 
-.flexslider-albums .flex-control-nav {
-    width: auto;
-    top: -45px;
-    height: 20px;
-    right: 0;
-}
-
-.flexslider-albums .flex-direction-nav {
+.flexslider-mini .flex-control-nav {
     display: none;
 }
 
-.flexslider-albums .flex-control-paging li a {
-    width: 12px;
-    height: 12px;
-    margin-left: 10px;
-    display: inline-block;
+.flexslider-mini .flex-direction-nav {
+    display:block !important;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    width: 75px;
+    a {
+        width:30px;
+        height:30px;
+        //background-size: 174px;
+        opacity: 1;
+    }
 }
 
-.flexslider-albums .flex-viewport {
-    max-height: none;
+.flexslider-mini .flex-prev {
+    background-position: 0 -180px;
+}
+
+.flexslider-mini .flex-direction-nav .flex-next {
+    background-position: -25px -180px;
+    right:0;
 }
 
 /*  ----------------------------------------=VIDEOS */
-
+.videos {
+    margin-bottom: 40px;
+}
 .group-videos {
     display:block;
     margin-bottom: 2%;
@@ -599,8 +634,8 @@ article {
     width: 100%;
     height: auto;
     @include breakpoint(medium) {
-        width: 300px;
-        height: 170px;
+        // width: 300px;
+        // height: 170px;
     }
 }
 
@@ -622,7 +657,7 @@ article {
 
 /*  ----------------------------------------=Flexslider */
 
- 
+
 /* Browser Resets */
 .flex-container a:active,
 .flexslider a:active,
@@ -630,18 +665,18 @@ article {
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
 /* FlexSlider Necessary Styles
-*********************************/ 
+*********************************/
 .flexslider {margin: 0; padding: 0;}
 .flexslider .slides > li {position:relative; display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block;} 
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
 * html .slides {height: 1%;}
 
 /* No JavaScript Fallback */
@@ -661,28 +696,34 @@ html[xmlns] .slides {display: block;}
 
 
 /* Direction Nav */
+.flex-direction-nav {
+    display: none;
+    @include breakpoint(medium) {
+        display: block;
+    }
+}
 .flex-direction-nav {*height: 0;}
 .flex-direction-nav a {
-    width: 25px; 
-    height: 45px; 
-    margin: -20px 0 0; 
-    display: block; 
-    background: url(../img/icons/sprite.png) no-repeat 0 0; 
-    background-size: 100px; 
-    position: absolute; 
-    top: 49%; 
-    z-index: 10; 
-    cursor: pointer; 
-    text-indent: -9999px; 
-    opacity: 0; 
+    width: 50px;
+    height: 90px;
+    margin: -20px 0 0;
+    display: block;
+    background: url(../img/icons/sprite-mini.png) no-repeat 0 0;
+    background-size: 200px;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 0;
     -webkit-transition: all .3s ease;
 }
-.flex-direction-nav .flex-next {background-position: -25px 0; }
+.flex-direction-nav .flex-next {background-position: -50px 0; }
 .flexslider:hover .flex-next {opacity: 0.8; right: 0px;}
 .flexslider:hover .flex-prev {opacity: 0.8; left: 0px;}
 @include breakpoint(large) {
-    .flexslider:hover .flex-next {opacity: 0.8; right: -26px;}
-    .flexslider:hover .flex-prev {opacity: 0.8; left: -26px;}
+    .flexslider:hover .flex-next {opacity: 0.8; right: -50px;}
+    .flexslider:hover .flex-prev {opacity: 0.8; left: -50px;}
 }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
@@ -710,6 +751,9 @@ html[xmlns] .slides {display: block;}
 }
 
 /*----------------------------------------=FOOTER */
+footer.wrapper {
+    position: relative;
+}
 
 .footer-container {
     padding-bottom:40px;
@@ -763,14 +807,7 @@ footer .social {
 }
 
 .mailing-list-container {
-    @include breakpoint(max) {
-        width:321px;
-        &:after {
-            content:"";
-            display:table;
-            clear:both;
-        }
-    }
+
 }
 
 .mailing-list {
@@ -787,8 +824,8 @@ footer .social {
         top:15px;
         float:left;
         width:25%;
-        overflow:hidden;
-        border-right: 1px solid $grey;
+        //overflow:hidden;
+        //border-right: 1px solid $grey;
         border-radius: 3px;
     }
     input[type='email'] {
@@ -805,11 +842,9 @@ footer .social {
             border:1px solid $black;
         }
         @include breakpoint(max) {
+            width:70%;
             padding-left:5px;
             text-align:left;
-            &:focus {
-                width:60%;
-            }
         }
     }
     input[type='submit'] {
@@ -823,6 +858,10 @@ footer .social {
         cursor: pointer;
         @include transition(all 200ms);
         height:35px;
+        z-index:100;
+        @include breakpoint(max) {
+            width: 30%;
+        }
         &:hover {
             background: lighten($black, 5%);
         }
@@ -830,10 +869,34 @@ footer .social {
     }
 }
 
+.error {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    color: red;
+    @include breakpoint(large) {
+        top: -45px;
+    }
+}
+
+.error--empty, .error--invalid {
+    display: none;
+}
+
+.thanks {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    color: green;
+    @include breakpoint(large) {
+        top: -35px;
+    }
+}
+
 
 /*----------------------------------------=ALCOVE */
 
-.alcove-header {
+.small-header {
     text-transform: uppercase;
     text-align: center;
     display: block;
@@ -844,7 +907,7 @@ footer .social {
         float: left;
         margin-left: 5px;
         font-size: 1.2em;
-        top: 47px;
+        top: 36px;
     }
 }
 
@@ -926,7 +989,7 @@ footer .social {
     width: 100%;
     display: block;
     span {
-        float: left;
+        //float: left;
     }
     &[data-icon]:before {
         float: right;
@@ -1068,6 +1131,103 @@ footer .social {
         }
 
 
+
+.bit-event-data  {
+    font-size: 15px !important;
+}
+
+
+/*------------------------------------*\
+    $MODULES
+\*------------------------------------*/
+.sub-nav {
+    // float: none;
+    // margin-top: 0;
+    //position: relative;
+    min-width: 130px;
+    margin-top: 0;
+    @include breakpoint(large) {
+        &:hover {
+            .mobile__menu__button[data-icon]:before {
+                color: $black;
+            }
+        }
+        position: relative;
+    }
+}
+
+.sub-nav ul {
+    @include clearfix;
+    height: 0;
+    position: absolute;
+    background: lighten($black, 10%);
+    z-index: 2;
+    text-align: left;
+    max-height: 0;
+    cursor:pointer;
+    min-width: 170px;
+    width: 100%;
+    left: 0;
+    @include breakpoint(large) {
+        display: block;
+        //height: auto;
+        //text-align: center;
+        background: $black;
+        font-size: .8em;
+        float: none;
+        right: 0;
+        left: auto;
+        min-width:200px;
+        // position: static;
+        // background: none;
+    }
+}
+
+.sub-nav .mobile__menu--open {
+    height: auto;
+    max-height: 2000px;
+}
+
+.sub-nav li {
+    width: 100%;
+    //float: left;
+    border-bottom: 1px solid $grey;
+    &:first-child {
+        border-top: 1px solid #fff;
+        @include breakpoint(large) {
+            border: none;
+        }
+    }
+    a {
+        width: 100%;
+        display: block;
+        text-align: left;
+        @include breakpoint(large) {
+            height: auto;
+            padding:15px 20px;
+            //width: auto;
+            color: #fff;
+        }
+    }
+    @include breakpoint(large) {
+        width: auto;
+        //display: inline;
+        display: block;
+        float: none;
+        border: none;
+    }
+}
+
+.main-head {
+    float: left;
+}
+.sub-head {
+    float: right;
+    position: relative;
+    bottom: 3px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1106,6 +1266,10 @@ footer .social {
     top:-9999px;
 }
 
+.float-left {
+    float:left;
+}
+
 
 //Colorbox
 /*
@@ -1124,7 +1288,7 @@ footer .social {
 .cboxIframe{width:100%; height:100%; display:block; border:0;}
 #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
 
-/* 
+/*
     User Style:
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
@@ -1150,20 +1314,20 @@ footer .social {
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
-        
+
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
         #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
         #cboxPrevious, #cboxNext {
-            width: 25px; 
-            height: 45px; 
-            background: url(../img/icons/sprite.png) no-repeat 0 0; 
-            background-size: 100px; 
+            width: 50px;
+            height: 90px;
+            background: url(../img/icons/sprite.png) no-repeat 0 0;
+            background-size: 200px;
             position:absolute;
             bottom:0;
             text-indent:-9999px;
-            top:45%;
+            top:40%;
         }
         #cboxPrevious, #cboxNext, #cboxClose {
             //opacity:.2;
@@ -1174,20 +1338,20 @@ footer .social {
         }
         #cboxPrevious{
             left:-100px;
-            background-position:0 -45px }
+            background-position:0 -90px }
         #cboxNext{
-            right:-100px; 
-            background-position:-25px -45px; 
+            right:-100px;
+            background-position:-50px -90px;
         }
         #cboxClose{
-            position:absolute; 
-            top: -30px; 
-            right:-30px;
-            background:url(../img/icons/sprite.png) no-repeat -25px 0; 
-            background-size:50px;
-            background-position: -25px -22px;
-            width:25px; 
-            height:46px; 
+            position:absolute;
+            top: -45px;
+            right:-45px;
+            background:url(../img/icons/sprite.png) no-repeat -25px 0;
+            background-size:100px;
+            background-position: -50px -44px;
+            width:50px;
+            height:92px;
             text-indent:-9999px;}
 
 /*

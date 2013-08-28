@@ -7,19 +7,23 @@
 
     <div class="header-container">
         <header class="clearfix">
-            <nav>
-                <ul>
-                    <!-- <li><a href="../">Home</a></li> -->
-                    <li><a href="../../about">About</a></li>
-                    <li><a class="selected" href="../">Artists</a></li>
-                </ul>
-            </nav>
+
             <div class="logo-container">
                 <a href="/">
                         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Middle West Management" class="logo">
                         <!-- <h1 class="title">Middle West</h1> -->
                 </a>
             </div>
+
+            <nav>
+                <ul>
+                    <!-- <li class="selected"><a href="index">Home</a></li> -->
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/artists">Artists</a></li>
+                    <li><a href="/shows">Shows</a></li>
+                </ul>
+            </nav>
+
         </header>
     </div>
 
@@ -49,29 +53,158 @@
 
             <div class="main wrapper clearfix">
 
-                <div class="news">
-                    <h2>News</h2>
-                    <hr>
-                    <div class="scrollable"></div>
-                </div>
+                <section class="col1_2of3">
 
-                <div class="col1of2">
-                    <article class="tweets">
-                        <h2>Latest</h2>
-                        <span class="twitter-branding"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="../../img/icons/twitter-brand.png" /></a></span>
+                    <div class="news news--nofade">
+                        <h2>News</h2>
                         <hr>
-                        <div class="">
-                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="500" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter noheader">Tweets by @boniver</a>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <div class="news-feed"></div>
+                    </div>
 
+                    <article class="bio">
+                        <h2>Bio</h2>
+                        <hr>
+                        <div class="expandable">
+                            {% for section in page.bio %}
+                                {{ section.paragraph }}
+                            {% endfor %}
                         </div>
-                        
                     </article>
+
+                </section><!-- End main section -->
+
+                <section class="col3of3">
+
+                    <article class="discography">
+                        <h2>Discography</h2>
+                        <hr>
+
+
+                        <div class="flexslider-mini">
+                            <ul class="slides">
+                                <li>
+                                    {% for album in page.albums limit:2 %}
+                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
+                                            <div id="card-container">
+                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
+                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
+                                                </a>
+                                            </div>
+
+                                            <div class="mobile-album-info">
+                                                <span class="mobile-album-info-close"></span>
+                                                <h3>{{ album.name }} ({{ album.year }})</h3>
+                                                <span class="album-label">{{ album.label }}</span>
+
+                                                <div class="album-links">
+                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
+                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
+                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </li>
+                                {% if page.album-count > 2 %}
+                                <li>
+                                    {% for album in page.albums limit:2 offset:2 %}
+                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
+                                            <div id="card-container">
+                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
+                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
+                                                </a>
+                                            </div>
+
+                                            <div class="mobile-album-info">
+                                                <span class="mobile-album-info-close"></span>
+                                                <h3>{{ album.name }} ({{ album.year }})</h3>
+                                                <span class="album-label">{{ album.label }}</span>
+
+                                                <div class="album-links">
+                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
+                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
+                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </li>
+                                {% endif %}
+                                {% if page.album-count > 4 %}
+                                <li>
+                                    {% for album in page.albums limit:2 offset:4 %}
+                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
+                                            <div id="card-container">
+                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
+                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
+                                                </a>
+                                            </div>
+
+                                            <div class="mobile-album-info">
+                                                <span class="mobile-album-info-close"></span>
+                                                <h3>{{ album.name }} ({{ album.year }})</h3>
+                                                <span class="album-label">{{ album.label }}</span>
+
+                                                <div class="album-links">
+                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
+                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
+                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </li>
+                                {% endif %}
+                                {% if page.album-count > 6 %}
+                                <li>
+                                    {% for album in page.albums limit:2 offset:6 %}
+                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
+                                            <div id="card-container">
+                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
+                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
+                                                </a>
+                                            </div>
+
+                                            <div class="mobile-album-info">
+                                                <span class="mobile-album-info-close"></span>
+                                                <h3>{{ album.name }} ({{ album.year }})</h3>
+                                                <span class="album-label">{{ album.label }}</span>
+
+                                                <div class="album-links">
+                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
+                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
+                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+
+                </article>
+
+                <div class="videos">
+                    <h2>Videos</h2>
+                    <hr>
+                        <div class="flexslider-mini">
+                            <ul class="slides">
+                            {% for video in page.videos %}
+                                <li>
+                                    <a class="group-videos colorbox-iframe" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        </div>
                 </div>
 
-                <div class="col2of2">
-                    <article>
-                        <h2>Shows</h2>
+                <article>
+                        <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#{{ page.hash}}">Full Show List</a></span>
                         <hr>
                         <div class="scroll">
                             <div id="shows" class="shows scrollable">
@@ -79,188 +212,54 @@
                             </div>
                         </div>
                     </article>
-                </div>
 
-                <article class="discography col1of2">
-                        <h2>Discography</h2>
+                    <article class="tweets">
+                        <h2 class="main-head">Latest</h2>
+                        <span class="sub-head"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="../../img/icons/twitter-brand.png" /></a></span>
                         <hr>
-                        {% if page.album-count <= 6 %}
-                        <div class="flexslider-albums">
-                            <ul class="slides">
-                                <li>
-                                    {% for album in page.albums limit:6 %}
-                                        <div class="album_thumb col{% cycle '1', '2', '3' %}of3">
-                                            <div id="card-container">
-                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
-                                                </a>
-                                            </div>
+                        <div class="">
+                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="500" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter noheader">Tweets by @boniver</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-                                            <div class="mobile-album-info">
-                                                <span class="mobile-album-info-close"></span>
-                                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                                <span class="album-label">{{ album.label }}</span>
-
-                                                <div class="album-links">
-                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </li>
-                            </ul>
                         </div>
-                        {% endif %}
 
-                        {% if page.album-count > 6 %}
-                        <div class="flexslider-albums">
-                            <ul class="slides">
-                                <li>
-                                    {% for album in page.albums limit:6 %}
-                                        <div class="album_thumb col{% cycle '1', '2', '3' %}of3">
-                                            <div id="card-container">
-                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
-                                                </a>
-                                            </div>
+                </section> <!-- end sidebar -->
 
-                                            <div class="mobile-album-info">
-                                                <span class="mobile-album-info-close"></span>
-                                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                                <span class="album-label">{{ album.label }}</span>
+                <section class="col1_2of3">
 
-                                                <div class="album-links">
-                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
-                                                </div>
+                    <article>
+                        <h2>Contact</h2>
+                        <hr>
+                        {% for contact in page.contact %}
+                        <div class="col{% cycle 'contact': '1', '2' %}of2">
+                                <h3>{{ contact.type }}</h3>
+                                <ul class="contacts">
+                                    {% if contact.regions %}
+                                        {% for region in contact.regions %}
+                                        <li>
+                                            <span>{{ region.region }} / {{ region.company }}: {{ region.name }}</span>
+                                            <span><a href="mailto: {{ region.email }}">{{ region.email }}</a></span>
+                                        </li>
+                                        {% endfor %}
 
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </li>
-                                <li>
-                                    {% for album in page.albums limit:6 offset:6 %}
-                                        <div class="album_thumb col{% cycle '1', '2', '3' %}of3">
-                                            <div id="card-container">
-                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                                    <img class="album-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
-                                                </a>
-                                            </div>
-
-                                            <div class="mobile-album-info">
-                                                <span class="mobile-album-info-close"></span>
-                                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                                <span class="album-label">{{ album.label }}</span>
-
-                                                <div class="album-links">
-                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                                    <a class="rondo" data-icon="apple" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                                    <a class="rondo" data-icon="amazon" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </li>
-                            </ul>
+                                        {% else %}
+                                        <li>
+                                            <span>{% if contact.company %}{{ contact.company }}: {% endif %}{{ contact.name }}</span>
+                                            <span><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></span>
+                                        </li>
+                                    {% endif %}
+                                </ul>
                         </div>
-                        {% endif %}
 
-                </article>
-
-                <div class="videos col2of2">
-                    <h2>Videos</h2>
-                    <hr>
-                        {% for video in page.videos %}
-                            <div class="col{% cycle 'videos': '1', '2' %}of2">
-                                <a class="group-videos colorbox-iframe" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
-                                <!-- <iframe width="280" height="170" src="{{ video.embed-URL }}" frameborder="0" allowfullscreen></iframe> -->
-                            </div>
                         {% endfor %}
-                </div>
+                    </article>
 
-                <article class="bio">
-                    <h2>Bio</h2>
-                    <hr>
-                    <div class="expandable">
-                        {% for section in page.bio %}
-                            {{ section.paragraph }}
-                        {% endfor %}
-                    </div>
-                </article>          
 
-                
+                </section>
 
-                <article>
-                    <h2>Contact</h2>
-                    <hr>
-                    {% for contact in page.contact %}
-                    <div class="col{% cycle 'contact': '1', '2' %}of2">
-                            <h3>{{ contact.type }}</h3>
-                            <ul class="contacts">
-                                {% if contact.regions %}
-                                    {% for region in contact.regions %}
-                                    <li>
-                                        <span>{{ region.region }} / {{ region.company }}: {{ region.name }}</span>
-                                        <span><a href="mailto: {{ region.email }}">{{ region.email }}</a></span>
-                                    </li>                                      
-                                    {% endfor %}
-
-                                    {% else %}
-                                    <li>
-                                        <span>{% if contact.company %}{{ contact.company }}: {% endif %}{{ contact.name }}</span>
-                                        <span><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></span>
-                                    </li>
-                                {% endif %}
-                            </ul>
-                    </div>
-
-                    {% endfor %}
-                </article>
 
             </div> <!-- .main -->
         </div> <!-- .main-container -->
 {% include footer-artist.html %}
-
-<script>
-    $(function() {
-        $.ajax({
-            type: 'GET',
-            dataType: 'jsonp',
-            url: 'http://api.tumblr.com/v2/blog/middlewestmgmt.tumblr.com/posts?api_key=5cHAhSpCdCiLOdeoWeJAAwCbqFUW4LCvfe9GxwVJXWcgUH4XSl&tag={{ page.tumblr-tag }}',
-            data: { get_param: 'value'},
-            success: function(data) {
-                for (i = 0; i <= 5; i++) {
-                    var full_date = data.response.posts[i].date;
-                    var month = parseInt(full_date.substr(5,6), 10);
-                    var day = parseInt(full_date.substr(8,9), 10);
-                    var year = parseInt(full_date.substr(0,4), 10);
-                    $('.news .scrollable').append(""+
-                        "<article>"+
-                            "<h3 class='post-title'>"+
-                                data.response.posts[i].title +
-                            "</h3>" +
-                            
-                            "<div class='post-date'>" +
-                                month + '/' + day + '/' + year +
-                            "</div>"+
-                            "<div>" + 
-                                data.response.posts[i].body + 
-                            "</div>" +
-                            "<div class='post-meta'>tags:  "+
-                                "<span><a target='_blank' href='http://tumblr.com/tagged/" + data.response.posts[i].tags + "''>" + data.response.posts[i].tags + "</a></span>" + 
-                                "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" + 
-                            "</div>" +
-                        "</article>"
-                    );
-                }
-            }
-        });
-    });
-</script>
 
 {% include foot.html %}

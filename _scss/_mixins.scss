@@ -12,4 +12,7 @@ $grey: #d9d9d9;
 	@else if $point == max {
 		@media only screen and (min-width: 1140px) { @content; }
 	}
+            @else if $point == retina {
+                        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+            }
 }

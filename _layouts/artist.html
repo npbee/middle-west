@@ -203,7 +203,9 @@
                         </div>
                 </div>
 
-                <article>
+                {% if page.shows == 1 %}
+
+                    <article>
                         <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#{{ page.hash}}">Full Show List</a></span>
                         <hr>
                         <div class="scroll">
@@ -212,6 +214,29 @@
                             </div>
                         </div>
                     </article>
+
+                    <!-- <article class="tweets">
+                        <h2 class="main-head">Latest</h2>
+                        <span class="sub-head"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="../../img/icons/twitter-brand.png" /></a></span>
+                        <hr>
+                        <div class="">
+                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="500" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter noheader">Tweets by @boniver</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                        </div>
+                    </article> -->
+
+                {% else %}
+
+                    <!-- <article>
+                        <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#{{ page.hash}}">Full Show List</a></span>
+                        <hr>
+                        <div class="scroll">
+                            <div id="shows" class="shows scrollable">
+                                {{ page.bandsintown-widget }}
+                            </div>
+                        </div>
+                    </article> -->
 
                     <article class="tweets">
                         <h2 class="main-head">Latest</h2>
@@ -222,6 +247,9 @@
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                         </div>
+                    </article>
+
+                {% endif %}
 
                 </section> <!-- end sidebar -->
 

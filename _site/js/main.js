@@ -210,7 +210,9 @@ $.ajax({
                         "</div>" +
                     "</article>"
                 );
+            $('.news').fitVids();
         }
+
         $('.news .news-feed').append("<a class='load-more-posts' target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + mwmTumblr.tag +"'>Read More Posts</a>");
     }
 });

@@ -111,7 +111,7 @@ if (width >= 728) {
         url: 'http://api.tumblr.com/v2/blog/middlewestmgmt.tumblr.com/posts?api_key=5cHAhSpCdCiLOdeoWeJAAwCbqFUW4LCvfe9GxwVJXWcgUH4XSl&tag=' + mwmTumblr.tag,
         data: { get_param: 'value'},
         success: function(data) {
-            for (i = 0; i <= 9; i++) {
+            for (i = 0; i <= 5; i++) {
                 var full_date = data.response.posts[i].date;
                 var split_date = full_date.split('-');
                 var split_day = split_date[2].split(' ');

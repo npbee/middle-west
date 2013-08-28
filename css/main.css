@@ -1137,7 +1137,7 @@ footer .social {
     /* line 1008, ../_scss/main.scss */
     .mobile__menu__button[data-icon]:before {
       padding-left: 10px;
-      color: #d9d9d9;
+      color: #74676a;
       -webkit-transition: color 200ms;
       -moz-transition: color 200ms;
       -o-transition: color 200ms;

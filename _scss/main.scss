@@ -1009,7 +1009,7 @@ footer .social {
     float: right;
     @include breakpoint(large) {
         padding-left: 10px;
-        color: $grey;
+        color: lighten($black, 30%);
         @include transition(color 200ms);
     }
 }

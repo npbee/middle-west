@@ -270,7 +270,7 @@ nav{
     @include breakpoint(large) {
         float:right;
         background:#fff;
-        margin-top:30px;
+        margin-top:22px;
     }
 }
 
@@ -300,9 +300,14 @@ nav{
 
     nav li{
         display: inline-block;
+        //width: 25%
     }
 
 @include breakpoint(medium) {
+
+    nav li {
+        width: auto;
+    }
 
     nav li:first-child a {
         margin-left: 0;
@@ -984,20 +989,25 @@ footer .social {
     }
 }
 
+
+.shows-nav {
+    position: relative;
+}
+
 .mobile__menu__button {
+    position: relative;
     color: #fff !important;
     width: 100%;
     display: block;
-    span {
-        //float: left;
-    }
-    &[data-icon]:before {
-        float: right;
-    }
     &:after {
         content:"";
         display: table;
         clear: both;
+    }
+    @include breakpoint(medium) {
+        span {
+            padding-right: 40px;
+        }
     }
     @include breakpoint(large) {
         //display: none;
@@ -1006,7 +1016,9 @@ footer .social {
 }
 
 .mobile__menu__button[data-icon]:before {
-    float: right;
+    //float: right;
+    position: absolute;
+    right:-8px;
     @include breakpoint(large) {
         padding-left: 10px;
         color: lighten($black, 30%);
@@ -1144,7 +1156,7 @@ footer .social {
     // float: none;
     // margin-top: 0;
     //position: relative;
-    min-width: 130px;
+    //min-width: 130px;
     margin-top: 0;
     @include breakpoint(large) {
         &:hover {
@@ -1192,6 +1204,7 @@ footer .social {
     width: 100%;
     //float: left;
     border-bottom: 1px solid $grey;
+    text-align: right;
     &:first-child {
         border-top: 1px solid #fff;
         @include breakpoint(large) {
@@ -1204,9 +1217,10 @@ footer .social {
         text-align: left;
         @include breakpoint(large) {
             height: auto;
-            padding:15px 20px;
+            padding:15px 20px !important;
             //width: auto;
             color: #fff;
+            text-align: right;
         }
     }
     @include breakpoint(large) {

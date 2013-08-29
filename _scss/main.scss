@@ -703,7 +703,7 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav {
     display: none;
-    @include breakpoint(medium) {
+    @include breakpoint(max) {
         display: block;
     }
 }

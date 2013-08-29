@@ -13,7 +13,9 @@ if ((width>= 768)) {
             iframe: true,
             width:"80%",
             height:"80%",
-            rel: "group-videos"
+            rel: "group-videos",
+            transition: "none",
+            reposition: false
         });
 } else {
     $(" .colorbox ").click(function() {

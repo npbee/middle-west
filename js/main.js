@@ -47,13 +47,15 @@ $(" .expandable ").expander({
 * Flexslider
 ******/
 $(" .flexslider ").flexslider({
-    animation: "slide"
+    animation: "slide",
+    useCSS: true
 });
 
 // Flexsider for album thumbnails when count > 6
 $(" .flexslider-mini ").flexslider({
     animation: "slide",
-    slideshow: false
+    slideshow: false,
+    useCSS: true
 });
 
 
@@ -61,7 +63,7 @@ $(" .flexslider-mini ").flexslider({
 /*****
 * Lazy Load
 ******/
-$(" img.lazy ").unveil();
+$(" img.lazy ").unveil(500);
 
 
 

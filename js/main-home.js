@@ -4,13 +4,15 @@ $(function() {
 * Flexslider
 ******/
 $(" .flexslider ").flexslider({
-    animation: "slide"
+    animation: "slide",
+    useCSS: true
 });
 
 // Flexsider for album thumbnails when count > 6
 $(" .flexslider-albums ").flexslider({
     animation: "slide",
-    slideshow: false
+    slideshow: false,
+    useCSS: true
 });
 
 
@@ -136,8 +138,8 @@ if (width >= 728) {
                         "</div>" +
                     "</article>"
                 );
-                $('.news').fitVids();
             }
+            $('.news').fitVids();
             $('.news .scrollable').append("<a class='load-more-posts'>Load More Posts</a>");
         }
     });
@@ -174,6 +176,7 @@ if (width >= 728) {
                     "</article>"
                     );
             }
+            $('.news').fitVids();
             $('.news .scrollable').append("<a class='load-more-posts'>Load More Posts</a>");
         }
     });
@@ -216,9 +219,9 @@ $('.load-more-posts').live('click', function() {
                         "</div>" +
                     "</article>"
                     );
-                $('.news').fitVids();
                 $this.fadeOut();
             }
+            $('.news').fitVids();
             $('.news .scrollable').append("<a class='load-more-posts'>Load More Posts</a>");
         }
     });

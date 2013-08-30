@@ -448,6 +448,12 @@ article {
     }
 }
 
+.fade {
+    &:after {
+
+    }
+}
+
 .news img {
     //width: auto;
     border:1px solid $grey;

@@ -122,6 +122,7 @@ p {margin: 1.5em 0}
 /* ----------------------------------------=SCROLLABLE */
 .scrollable {
     position:relative;
+    -webkit-overflow-scrolling: touch;
     @include transition(border 500ms);
     @include breakpoint(medium) {
         max-height:900px;

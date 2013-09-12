@@ -64,7 +64,7 @@
                     <article class="bio">
                         <h2>Bio</h2>
                         <hr>
-                        <div class="expandable">
+                        <div class="__expandable">
                             {% for section in page.bio %}
                                 {{ section.paragraph }}
                             {% endfor %}
@@ -194,18 +194,25 @@
                     <hr>
                         <div class="flexslider-mini">
                             <ul class="slides">
-                            {% for video in page.videos %}
                                 <li>
-                                    <a class="group-videos colorbox-iframe" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
+                                    {% for video in page.videos limit:2 %}
+                                        <a class="group-videos colorbox-iframe" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
+                                    {% endfor %}
                                 </li>
-                            {% endfor %}
+                                <li>
+                                    {% for video in page.videos limit:2 offset:2 %}
+                                        <a class="group-videos colorbox-iframe" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
+                                    </li>
+                                    {% endfor %}
+                                </li>
+
                             </ul>
                         </div>
                 </div>
 
                 {% if page.shows == 1 %}
 
-                    <article>
+                    <article class="shows">
                         <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#{{ page.hash}}">Full Show List</a></span>
                         <hr>
                         <div class="scroll">
@@ -243,7 +250,7 @@
                         <span class="sub-head"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="../../img/icons/twitter-brand.png" /></a></span>
                         <hr>
                         <div class="">
-                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="500" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter noheader" data-tweet-limit="4">Tweets by @boniver</a>
+                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="500" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter noheader" data-tweet-limit="5">Tweets by @boniver</a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                         </div>
@@ -251,15 +258,11 @@
 
                 {% endif %}
 
-                </section> <!-- end sidebar -->
-
-                <section class="col1_2of3">
-
-                    <article>
+                    <article class="contact">
                         <h2>Contact</h2>
                         <hr>
                         {% for contact in page.contact %}
-                        <div class="col{% cycle 'contact': '1', '2' %}of2">
+                        <div class="__col{% cycle 'contact': '1', '2' %}of2">
                                 <h3>{{ contact.type }}</h3>
                                 <ul class="contacts">
                                     {% if contact.regions %}
@@ -282,8 +285,9 @@
                         {% endfor %}
                     </article>
 
+                </section> <!-- end sidebar -->
 
-                </section>
+
 
 
             </div> <!-- .main -->

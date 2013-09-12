@@ -276,7 +276,7 @@ nav{
     @include breakpoint(large) {
         float:right;
         background:#fff;
-        margin-top:22px;
+        margin-top:30px;
     }
 }
 
@@ -332,18 +332,18 @@ nav{
 
 .logo{
     display: block;
-    background-image: url(../img/logo/logo-2.png);
-    width:210px;
-    height:75px;
+    background-image: url(../img/logo/logo.png);
+    width:253px;
+    height:90px;
     background-size: 100%;
     margin:10px auto;
     @include breakpoint(large) {
         float:left;
-        width: 210px;
-        height: 75px;
+        // width: 210px;
+        // height: 75px;
     }
     @include breakpoint(retina) {
-        background-image: url(../img/logo/logo-2@2x.png);
+        background-image: url(../img/logo/logo@2x.png);
     }
 }
 
@@ -1403,4 +1403,31 @@ footer .social {
 .cboxIE #cboxMiddleRight {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
+
+
+/*------------------------------------*\
+    $CONTENT CHOREOGRAPHY
+\*------------------------------------*/
+// .main {
+//     @include display-box;
+//     @include box-orient(vertical);
+// }
+
+// //order of content
+// .videos {
+//     @include box-ordinal-group(1);
+// }
+
+// .news-feed {
+//     @include box-ordinal-group(2);
+// }
+
+// .bio {
+//     @include box-ordinal-group(3);
+// }
+
+// .discography {
+//     @include box-ordinal-group(4);
+// }
+
 

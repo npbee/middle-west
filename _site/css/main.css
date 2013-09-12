@@ -276,7 +276,7 @@ nav {
     nav {
       float: right;
       background: #fff;
-      margin-top: 22px; } }
+      margin-top: 30px; } }
 
 /* line 283, ../_scss/main.scss */
 nav a {
@@ -328,21 +328,19 @@ nav li {
 /* line 333, ../_scss/main.scss */
 .logo {
   display: block;
-  background-image: url(../img/logo/logo-2.png);
-  width: 210px;
-  height: 75px;
+  background-image: url(../img/logo/logo.png);
+  width: 253px;
+  height: 90px;
   background-size: 100%;
   margin: 10px auto; }
   @media only screen and (min-width: 750px) {
     /* line 333, ../_scss/main.scss */
     .logo {
-      float: left;
-      width: 210px;
-      height: 75px; } }
+      float: left; } }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     /* line 333, ../_scss/main.scss */
     .logo {
-      background-image: url(../img/logo/logo-2@2x.png); } }
+      background-image: url(../img/logo/logo@2x.png); } }
 
 /*  ----------------------------------------=Sections */
 /* line 352, ../_scss/main.scss */
@@ -1657,3 +1655,7 @@ footer .social {
 .cboxIE #cboxMiddleLeft,
 .cboxIE #cboxMiddleRight {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); }
+
+/*------------------------------------*\
+    $CONTENT CHOREOGRAPHY
+\*------------------------------------*/

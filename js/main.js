@@ -1,4 +1,30 @@
 $(function() {
+
+/****
+* Element Orders
+****/
+// var     news = $('.news'),
+//           bio = $('.bio'),
+//           disc = $('.discography'),
+//           vids = $('.videos'),
+//           tweets = $('.tweets'),
+//           shows = $('.shows'),
+//           contact = $('.contact');
+
+
+// var elemOrder = [
+//         disc,
+//         bio,
+//         news,
+//         vids,
+//         tweets,
+//         shows,
+//         contact
+// ];
+
+
+
+
 /*****
 * Colorbox
 ******/
@@ -17,6 +43,8 @@ if ((width>= 768)) {
             transition: "none",
             reposition: false
         });
+
+
 } else {
     $(" .colorbox ").click(function() {
         var info = $(this).parent().next();
@@ -26,6 +54,11 @@ if ((width>= 768)) {
     $(" .mobile-album-info-close ").click(function() {
         $(" .mobile-album-info ").removeClass("show");
     });
+
+    // for ( var o=0; o<elemOrder.length; o++) {
+    //     elemOrder[o].remove();
+    //     $('.main').append(elemOrder[o]);
+    // }
 }
 
 

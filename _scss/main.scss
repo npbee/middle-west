@@ -151,7 +151,7 @@ p {margin: 1.5em 0}
 
 
 /* ----------------------------------------=LOAD MORE POSTS */
-.load-more-posts {
+.read-more-posts, .load-more-posts {
     cursor: pointer;
     display: block;
     padding: 10px;
@@ -569,12 +569,13 @@ article {
 }
 
 .mobile-album-info {
-    @include transition(left 200ms ease-in-out);
+    @include transition(all 400ms ease-in-out);
+    @include translate3d(-9999px,0,0);
     transform: translateZ(0);
     text-align: center;
     position: absolute;
     top: 0;
-    left:-9999px;
+    //left:-9999px;
     width: 100%;
     height: 100%;
     background: $black;
@@ -611,7 +612,8 @@ article {
 }
 
 .show {
-    left:0;
+    //left:0;
+    @include translate3d(0,0,0);
 }
 
 /*  ----------------------------------------=Mini Flex slider */

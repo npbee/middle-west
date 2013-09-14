@@ -133,6 +133,45 @@ p {margin: .5em 0}
     border-bottom: 1px solid $grey
 }
 
+
+/* ----------------------------------------=LOAD MORE POSTS */
+.read-more-posts, .load-more-posts {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    background: $black;
+    text-align: center;
+    @include transition(max-height 200ms);
+    img {
+        border: none !important;
+    }
+    span {
+        padding-left: 10px;
+    }
+}
+
+.loading {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        margin-left: 10px;
+        background: url('/img/misc/loading.gif');
+        height: 16px;
+        width: 16px;
+        margin-top: 5px;
+    }
+}
+
+.destroy {
+    position: relative;
+
+   display: none;
+}
+
+
+
 /* ----------------------------------------=GRID */
     .col1of2, .col2of2{
         width: 48%;
@@ -253,6 +292,11 @@ nav{
 
 
 /*  ----------------------------------------=Logo */
+.logo-container {
+    float: left;
+    width: 50%;
+}
+
 .logo-container a {
     text-align:center;
     color: #fff;
@@ -721,6 +765,74 @@ footer .social {
     }
 }
 
+/*------------------------------------*\
+    $MODULES
+\*------------------------------------*/
+.sub-nav {
+
+    margin-top: 0;
+    &:hover {
+        .mobile__menu__button[data-icon]:before {
+            color: $black;
+        }
+    }
+    position: relative;
+}
+
+.sub-nav ul {
+    @include clearfix;
+    height: 0;
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    max-height: 0;
+    cursor:pointer;
+    width: 100%;
+        display: block;
+        background: $black;
+        font-size: .8em;
+        float: none;
+        right: 0;
+        left: auto;
+        min-width:200px;
+}
+
+.sub-nav .mobile__menu--open {
+    height: auto;
+    max-height: 2000px;
+}
+
+.sub-nav li {
+    width: 100%;
+    //float: left;
+    border-bottom: 1px solid $grey;
+    text-align: right;
+    &:first-child {
+        border: none;
+    }
+    a {
+        width: 100%;
+        display: block;
+            height: auto;
+            padding:15px 20px !important;
+            color: #fff;
+            text-align: right;
+    }
+        width: auto;
+        //display: inline;
+        display: block;
+        float: none;
+        border: none;
+}
+
+.main-head {
+    float: left;
+}
+.sub-head {
+    float: right;
+    position: relative;
+    bottom: 3px;
+}
 
 /*----------------------------------------=ALCOVE */
 
@@ -765,6 +877,31 @@ footer .social {
     border-radius: 3px;
 }
 
+
+.shows-nav {
+    position: relative;
+}
+
+.mobile__menu__button {
+    position: relative;
+    color: $black !important;
+    width: 100%;
+    display: block;
+    &:after {
+        content:"";
+        display: table;
+        clear: both;
+    }
+}
+
+.mobile__menu__button[data-icon]:before {
+    //float: right;
+    position: absolute;
+    right:-8px;
+    padding-left: 10px;
+    color: lighten($black, 30%);
+    @include transition(color 200ms);
+}
 
 /*-------------------------=PRESS */
 #press-collage {

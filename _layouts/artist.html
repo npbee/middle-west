@@ -199,11 +199,13 @@
                                         <a class="group-videos colorbox-extContent" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
                                     {% endfor %}
                                 </li>
+                                {% if page.video-count > 2 %}
                                 <li>
                                     {% for video in page.videos limit:2 offset:2 %}
                                         <a class="group-videos colorbox-extContent" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
                                     {% endfor %}
                                 </li>
+                                {% endif %}
 
                             </ul>
                         </div>

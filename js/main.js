@@ -120,7 +120,9 @@ var mwm = (function($, window, document) {
                                         "</div>" +
                                     "</article>"
                                 );
-                            $('.news').fitVids();
+                            $('.news').fitVids({
+                                customSelector: "iframe[src^='http:///nbc.com']"
+                            });
                         })(i);
 
                     }

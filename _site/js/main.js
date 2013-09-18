@@ -171,7 +171,7 @@ var mwm = (function($, window, document) {
                                         data.response.posts[i].body +
                                     "</div>" +
                                     "<div class='post-meta'>tags: "+
-                                        "<span><a target='_blank' href='http://tumblr.com/tagged/" + data.response.posts[i].tags + "''>" + data.response.posts[i].tags + "</span>" +
+                                        "<span><a target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + data.response.posts[i].tags + "''>" + data.response.posts[i].tags + "</span>" +
                                         "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" +
                                     "</div>" +
                                 "</article>"

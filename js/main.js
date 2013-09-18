@@ -121,7 +121,7 @@ var mwm = (function($, window, document) {
                                     "</article>"
                                 );
                             $('.news').fitVids({
-                                customSelector: "iframe[src^='http:///nbc.com']"
+                                customSelector: "iframe[src*='nbc.com']"
                             });
                         })(i);
 

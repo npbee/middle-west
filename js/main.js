@@ -181,7 +181,9 @@ var mwm = (function($, window, document) {
                             //$this.fadeOut();
                             $this.addClass('destroy');
                         }
-                        $('.news').fitVids();
+                        $('.news').fitVids({
+                            customSelector: "iframe[src*='nbc.com']"
+                        });
                         $('.news .scrollable').append(readmore);
                     }
                 });
@@ -324,20 +326,15 @@ var mwm = (function($, window, document) {
             var page = $(' body ').attr('class');
             tumblr.init(tag, page);
             tumblr.loadMore();
-        },
-
-        setBase: function() {
-            if (document.location.hostname !== "localhost") {
-                $('base').attr('href', "http://middlewestmgmt.com/production");
-            }
         }
+
+
     };
 
 
 }(window.jQuery, window, document));
 
 $(function() {
-    mwm.setBase();
     mwm.colorbox();
     mwm.mobileAlbum();
     mwm.expander();

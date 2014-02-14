@@ -65,7 +65,6 @@ var mwm = (function($, window, document) {
         init: function(tag, page) {
             var     postCount,
                       readMore;
-
             if ( page == "home" && isDesk() ) {
                 postCount = 5;
                 readMore = "<a class='load-more-posts'>Load More Posts</a>";
@@ -102,24 +101,47 @@ var mwm = (function($, window, document) {
                             var year = split_date[0];
                             var month = split_date[1];
                             var day = split_day[0];
-                            $('.news .news-feed').append(""+
-                                    "<article>"+
-                                        "<h3 class='post-title'>"+
-                                            data.response.posts[n].title +
-                                        "</h3>" +
+                            var tags = data.response.posts[n].tags;
 
-                                        "<div class='post-date'>" +
-                                            month + '/' + day + '/' + year +
-                                        "</div>"+
-                                        "<div>" +
-                                            data.response.posts[n].body +
-                                        "</div>" +
-                                        "<div class='post-meta'>tags: "+
-                                            "<span><a target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + data.response.posts[n].tags + "''>" + data.response.posts[n].tags + "</span>" +
-                                            "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" +
-                                        "</div>" +
-                                    "</article>"
-                                );
+                            $('.news .news-feed').append(function() {
+                                var $container = $('<article/>');
+
+                                var $title = $('<h3/>', {
+                                    class: 'post-title',
+                                    text: data.response.posts[n].title
+                                });
+
+                                var $date = $('<div/>', {
+                                    class: 'post-date',
+                                    text: month + '/' + day + '/' + year
+                                });
+
+                                var $body = $('<div/>', {
+                                    html: data.response.posts[n].body
+                                });
+
+                                var $tags = $('<div/>', {
+                                    class: 'post-meta'
+                                });
+
+                                $.each(tags, function(t, item) {
+                                    $tags.append("<span><a target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + data.response.posts[n].tags[t] + "''>" + data.response.posts[n].tags[t] + "</span>");
+                                });
+
+                                var $permalink = $('<span/>', {
+                                    html: "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>"
+                                });
+
+                                $tags.append($permalink);
+
+                                $container.append($title);
+                                $container.append($date);
+                                $container.append($body);
+                                $container.append($tags);
+
+                                return $container;
+                            });
+
                             $('.news').fitVids({
                                 customSelector: "iframe[src*='nbc.com']"
                             });
@@ -154,30 +176,58 @@ var mwm = (function($, window, document) {
                             readmore = "<a class='load-more-posts'>Load More Posts</a>";
                         }
                         for (i = 0; i < 5; i++) {
-                            var full_date = data.response.posts[i].date;
+                            (function(n) {
+                            var full_date = data.response.posts[n].date;
                             var split_date = full_date.split('-');
                             var split_day = split_date[2].split(' ');
                             var year = split_date[0];
                             var month = split_date[1];
                             var day = split_day[0];
-                            $('.news .scrollable').append(""+
-                                    "<article>"+
-                                    "<h3 class='post-title'>"+
-                                        data.response.posts[i].title +
-                                    "</h3>" +
+                            var tags = data.response.posts[n].tags;
 
-                                    "<div class='post-date'>" +
-                                        month + '/' + day + '/' + year +
-                                    "</div>"+
-                                    "<div>" +
-                                        data.response.posts[i].body +
-                                    "</div>" +
-                                    "<div class='post-meta'>tags: "+
-                                        "<span><a target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + data.response.posts[i].tags + "''>" + data.response.posts[i].tags + "</span>" +
-                                        "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>" +
-                                    "</div>" +
-                                "</article>"
-                                );
+                            $('.news .news-feed').append(function() {
+                                var $container = $('<article/>');
+
+                                var $title = $('<h3/>', {
+                                    class: 'post-title',
+                                    text: data.response.posts[n].title
+                                });
+
+                                var $date = $('<div/>', {
+                                    class: 'post-date',
+                                    text: month + '/' + day + '/' + year
+                                });
+
+                                var $body = $('<div/>', {
+                                    html: data.response.posts[n].body
+                                });
+
+                                var $tags = $('<div/>', {
+                                    class: 'post-meta'
+                                });
+
+                                $.each(tags, function(t, item) {
+                                    $tags.append("<span><a target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + data.response.posts[n].tags[t] + "''>" + data.response.posts[n].tags[t] + "</span>");
+                                });
+
+                                var $permalink = $('<span/>', {
+                                    html: "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>"
+                                });
+
+                                $tags.append($permalink);
+
+                                $container.append($title);
+                                $container.append($date);
+                                $container.append($body);
+                                $container.append($tags);
+
+                                return $container;
+                            });
+
+                            $('.news').fitVids({
+                                customSelector: "iframe[src*='nbc.com']"
+                            });
+                        })(i);
                             //$this.fadeOut();
                             $this.addClass('destroy');
                         }
@@ -190,7 +240,7 @@ var mwm = (function($, window, document) {
             });
 
         }
-    }
+    };
 
 
 

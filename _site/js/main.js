@@ -90,75 +90,74 @@ var mwm = (function($, window, document) {
                 url: 'http://api.tumblr.com/v2/blog/middlewestmgmt.tumblr.com/posts?api_key=5cHAhSpCdCiLOdeoWeJAAwCbqFUW4LCvfe9GxwVJXWcgUH4XSl&offset=' + offset + '&limit=' + postCount + '&tag=' + tag,
                 data: { get_param: 'value'},
                 success: function(data) {
-                    if (data.response.posts.length < postCount) {
-                        postCount = data.response.posts.length;
-                    }
-                    for ( var i = 0; i < postCount; i++) {
-                        (function(n) {
-                            var full_date = data.response.posts[n].date;
-                            var split_date = full_date.split('-');
-                            var split_day = split_date[2].split(' ');
-                            var year = split_date[0];
-                            var month = split_date[1];
-                            var day = split_day[0];
-                            var tags = data.response.posts[n].tags;
-
-                            $('.news .news-feed').append(function() {
-                                var $container = $('<article/>');
-
-                                var $title = $('<h3/>', {
-                                    class: 'post-title',
-                                    text: data.response.posts[n].title
-                                });
-
-                                var $date = $('<div/>', {
-                                    class: 'post-date',
-                                    text: month + '/' + day + '/' + year
-                                });
-
-                                var $body = $('<div/>', {
-                                    html: data.response.posts[n].body
-                                });
-
-                                var $tags = $('<div/>', {
-                                    class: 'post-meta'
-                                });
-
-                                $.each(tags, function(t, item) {
-                                    $tags.append("<span><a target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + data.response.posts[n].tags[t] + "''>" + data.response.posts[n].tags[t] + "</span>");
-                                });
-
-                                var $permalink = $('<span/>', {
-                                    html: "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>"
-                                });
-
-                                $tags.append($permalink);
-
-                                $container.append($title);
-                                $container.append($date);
-                                $container.append($body);
-                                $container.append($tags);
-
-                                return $container;
-                            });
-
-                            $('.news').fitVids({
-                                customSelector: "iframe[src*='nbc.com']"
-                            });
-                        })(i);
-
-                    }
-
-                    $('.news .news-feed').append(readMore);
-                    //$('.news .news-feed').append("<a class='load-more-posts' target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + mwmTumblr.tag +"'>Read More Posts</a>");
+                    tumblr.display(data, 0, postCount, readMore);
                 }
             });
+        },
+
+        display: function(data, offset, postCount, readMore) {
+
+            for ( var i = 0; i < postCount; i++) {
+                (function(n) {
+                    var full_date = data.response.posts[n].date;
+                    var split_date = full_date.split('-');
+                    var split_day = split_date[2].split(' ');
+                    var year = split_date[0];
+                    var month = split_date[1];
+                    var day = split_day[0];
+                    var tags = data.response.posts[n].tags;
+
+                    $('.news .news-feed').append(function() {
+                        var $container = $('<article/>');
+
+                        var $title = $('<h3/>', {
+                            class: 'post-title',
+                            text: data.response.posts[n].title
+                        });
+
+                        var $date = $('<div/>', {
+                            class: 'post-date',
+                            text: month + '/' + day + '/' + year
+                        });
+
+                        var $body = $('<div/>', {
+                            html: data.response.posts[n].body
+                        });
+
+                        var $tags = $('<div/>', {
+                            class: 'post-meta'
+                        });
+
+                        $.each(tags, function(t, item) {
+                            $tags.append("<span><a target='_blank' href='http://middlewestmgmt.tumblr.com/tagged/" + data.response.posts[n].tags[t] + "''>" + data.response.posts[n].tags[t] + "</span>");
+                        });
+
+                        var $permalink = $('<span/>', {
+                            html: "<span><a href=" + data.response.posts[i].post_url + " target='_blank'>permalink</a></span>"
+                        });
+
+                        $tags.append($permalink);
+
+                        $container.append($title);
+                        $container.append($date);
+                        $container.append($body);
+                        $container.append($tags);
+
+                        return $container;
+                    });
+
+                    $('.news').fitVids({
+                        customSelector: "iframe[src*='nbc.com']"
+                    });
+                })(i);
+            }
+            $('.news .news-feed').append(readMore);
         },
 
         loadMore: function(tag) {
             $('.load-more-posts').live('click', function() {
                 var     postCount = $('.news article').length,
-                          offset = postCount,
+                          offset = postCount + 1,
                           $this = $(this),
                           readmore;
                 //$(this).append("<span class='loading'><img src='/img/misc/loading.gif' >");

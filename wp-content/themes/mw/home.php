@@ -32,7 +32,27 @@ Template Name: Home
     </div>
 
     <div class="main-container">
-        <article></article>
+        <article>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <a href="artists/bon-iver">
+                            <h2 class="caption">Bon Iver</h2>
+                            <div data-picture data-alt="Bon Iver">
+                                <div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-s.jpg"></div>
+                                <div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-m.jpg" data-media="(min-width: 480px)"></div>
+                                <div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-l.jpg" data-media="(min-width: 660px)"></div>
+                                <!--[if lte IE 8]><div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-l.jpg"></div><![endif]-->
+                            </div>
+                            <noscript>
+                                <img src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-s.jpg" alt="Bon Iver">
+                            </noscript>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
         <div class="main wrapper clearfix">
 
             <div class="news col1_2of3">

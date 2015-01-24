@@ -112,10 +112,11 @@
                                 <li> 
                                     <?php 
                                         foreach($page as $index=>$album) {
+                                        $query_string = 'artist=' . urlencode(get_the_id()) . '&album=' . urlencode($album['album_name']);
                                     ?>
                                         <div class="album_thumb col<?php echo ($index + 1) ?>of2">
                                             <div class="thumb-container">
-                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
+                                            <a class="group colorbox" href="../../wordpress/wp-admin/admin-ajax.php?action=my_user_vote&post_id=<?php get_the_id() ?>">
                                                 <img class="album-cover" src="<?php echo $album['thumbnail']['url']; ?>" alt="<?php echo $album['album_name'] ?>" height="300" width="300" />
                                                 </a>
                                             </div>

@@ -9,6 +9,16 @@
     $instagram_url = get_field('instagram_url');
 
     $bio = get_field('bio');
+
+    $per_page = 2;
+
+    $album_pages = array_chunk(get_field('albums'), $per_page);
+    $video_pages = array_chunk(get_field('videos'), $per_page);
+    $booking_contacts = get_field('booking');
+    $licensing_contacts = get_field('licensing');
+    $publicity_contacts = get_field('publicity');
+    $management_contacts = get_field('management');
+
 ?>
 
 <?php get_header(); ?>
@@ -94,111 +104,38 @@
                         <h2>Discography</h2>
                         <hr>
 
-
                         <div class="flexslider-mini">
                             <ul class="slides">
-                                <li>
-                                    {% for album in page.albums limit:2 %}
-                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
+                                <?php 
+                                    foreach($album_pages as $page) { 
+                                ?>
+                                <li> 
+                                    <?php 
+                                        foreach($page as $index=>$album) {
+                                    ?>
+                                        <div class="album_thumb col<?php echo ($index + 1) ?>of2">
                                             <div class="thumb-container">
                                                 <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                                    <img class="album-cover" src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
+                                                <img class="album-cover" src="<?php echo $album['thumbnail']['url']; ?>" alt="<?php echo $album['album_name'] ?>" height="300" width="300" />
                                                 </a>
                                             </div>
 
                                             <div class="mobile-album-info">
                                                 <span class="mobile-album-info-close"></span>
-                                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                                <span class="album-label">{{ album.label }}</span>
+                                                <h3><?php echo $album['album_name']; ?> (<?php echo $album['release_year']; ?>)</h3>
+                                                <span class="album-label"><?php echo $album['label']; ?></span>
 
                                                 <div class="album-links">
-                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                                    <a class="rondo" data-icon="&#x26;" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                                    <a class="rondo" data-icon="&#x27;" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
+                                                    <a class="icomoon" data-icon="&#xe001;" href="<?php echo $album['spotify_link']; ?>" target="_blank"><span class="hide">spotify</span></a>
+                                                    <a class="rondo" data-icon="&#x26;" href="<?php echo $album['itunes_link']; ?>" target="_blank"><span class="hide">apple</span></a>
+                                                    <a class="rondo" data-icon="&#x27;" href="<?php echo $album['amazon_link']; ?>" target="_blank"><span class="hide">amazon</span></a>
                                                 </div>
 
                                             </div>
                                         </div>
-                                    {% endfor %}
+                                    <?php } ?>
                                 </li>
-                                {% if page.album-count > 2 %}
-                                <li>
-                                    {% for album in page.albums limit:2 offset:2 %}
-                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
-                                            <div class="thumb-container">
-                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                                    <img class="album-cover" src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
-                                                </a>
-                                            </div>
-
-                                            <div class="mobile-album-info">
-                                                <span class="mobile-album-info-close"></span>
-                                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                                <span class="album-label">{{ album.label }}</span>
-
-                                                <div class="album-links">
-                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                                    <a class="rondo" data-icon="&#x26;" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                                    <a class="rondo" data-icon="&#x27;" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </li>
-                                {% endif %}
-                                {% if page.album-count > 4 %}
-                                <li>
-                                    {% for album in page.albums limit:2 offset:4 %}
-                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
-                                            <div class="thumb-container">
-                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                                    <img class="album-cover" src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
-                                                </a>
-                                            </div>
-
-                                            <div class="mobile-album-info">
-                                                <span class="mobile-album-info-close"></span>
-                                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                                <span class="album-label">{{ album.label }}</span>
-
-                                                <div class="album-links">
-                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                                    <a class="rondo" data-icon="&#x26;" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                                    <a class="rondo" data-icon="&#x27;" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </li>
-                                {% endif %}
-                                {% if page.album-count > 6 %}
-                                <li>
-                                    {% for album in page.albums limit:2 offset:6 %}
-                                        <div class="album_thumb col{% cycle '1', '2' %}of2">
-                                            <div class="thumb-container">
-                                                <a class="group colorbox" href="discography/{{ album.hash }}.html">
-                                                    <img class="album-cover" src="{{ album.thumb-image }}" alt="{{ album.name }} cover" height="300" width="300" />
-                                                </a>
-                                            </div>
-
-                                            <div class="mobile-album-info">
-                                                <span class="mobile-album-info-close"></span>
-                                                <h3>{{ album.name }} ({{ album.year }})</h3>
-                                                <span class="album-label">{{ album.label }}</span>
-
-                                                <div class="album-links">
-                                                    <a class="icomoon" data-icon="&#xe001;" href="{{ album.spotify-link }}" target="_blank"><span class="hide">spotify</span></a>
-                                                    <a class="rondo" data-icon="&#x26;" href="{{ album.itunes-link }}" target="_blank"><span class="hide">apple</span></a>
-                                                    <a class="rondo" data-icon="&#x27;" href="{{ album.amazon-link }}" target="_blank"><span class="hide">amazon</span></a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </li>
-                                {% endif %}
+                                <?php } ?>
                             </ul>
                         </div>
 
@@ -209,95 +146,92 @@
                     <hr>
                         <div class="flexslider-mini">
                             <ul class="slides">
+                                <?php 
+                                    foreach($video_pages as $page) { 
+                                ?>
                                 <li>
-                                    {% for video in page.videos limit:2 %}
-                                        <a class="group-videos colorbox-extContent" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
-                                    {% endfor %}
+                                    <?php 
+                                        foreach($page as $index=>$video) {
+                                    ?>
+                                        <a class="group-videos colorbox-extContent" href="<?php echo $video['embed_url']; ?>"><img src="<?php echo $video['thumbnail']; ?>" /></a>
+                                    <?php } ?>
                                 </li>
-                                {% if page.video-count > 2 %}
-                                <li>
-                                    {% for video in page.videos limit:2 offset:2 %}
-                                        <a class="group-videos colorbox-extContent" href="{{ video.embed-URL }}"><img src="{{ video.thumbnail }}" /></a>
-                                    {% endfor %}
-                                </li>
-                                {% endif %}
-
+                                <?php } ?>
                             </ul>
                         </div>
                 </div>
 
-                {% if page.shows == 1 %}
-
+                <?php if (get_field('show_bandsintown_widget')) { ?>
                     <article class="shows">
-                        <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#{{ page.hash}}">Full Show List</a></span>
+                    <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#<?php echo the_title(); ?>">Full Show List</a></span>
                         <hr>
                         <div class="scroll">
                             <div id="shows" class="shows scrollable">
-                                {{ page.bandsintown-widget }}
+                                <?php the_field('bands_in_town_widget'); ?>
                             </div>
                         </div>
                     </article>
+                <?php } ?>
 
-                    <!-- <article class="tweets">
-                        <h2 class="main-head">Latest</h2>
-                        <span class="sub-head"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="../../img/icons/twitter-brand.png" /></a></span>
-                        <hr>
-                        <div class="">
-                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="500" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter noheader" data-tweet-limit="4">Tweets by @{{ page.twitter-username }}</a>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                        </div>
-                    </article> -->
-
-                {% else %}
-
-                    <!-- <article>
-                        <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#{{ page.hash}}">Full Show List</a></span>
-                        <hr>
-                        <div class="scroll">
-                            <div id="shows" class="shows scrollable">
-                                {{ page.bandsintown-widget }}
-                            </div>
-                        </div>
-                    </article> -->
-
+                <?php if (get_field('show_twitter_widget')) { ?>
                     <article class="tweets">
                         <h2 class="main-head">Latest</h2>
-                        <span class="sub-head"><a href="https://twitter.com/{{ page.twitter-username }}" target="_blank"><img src="../../img/icons/twitter-brand.png" /></a></span>
+                        <span class="sub-head"><a href="<?php echo get_field('twitter_url'); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" /></a></span>
                         <hr>
                         <div class="">
-                            <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter-username }}" height="500" data-widget-id="{{ page.twitter-widgetid }}" data-chrome="noscrollbar nofooter noheader" data-tweet-limit="5">Tweets by @{{ page.twitter-username }}</a>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+                            <?php the_field('twitter_widget'); ?>
                         </div>
                     </article>
+                <?php } ?>
 
-                {% endif %}
 
                     <article class="contact">
                         <h2>Contact</h2>
                         <hr>
-                        {% for contact in page.contact %}
-                        <div class="__col{% cycle 'contact': '1', '2' %}of2">
-                                <h3>{{ contact.type }}</h3>
+                        <?php foreach($management_contacts as $contact) { ?>
+                        <div class="">
+                            <h3>Management</h3>
                                 <ul class="contacts">
-                                    {% if contact.regions %}
-                                        {% for region in contact.regions %}
-                                        <li>
-                                            <span>{{ region.region }} / {{ region.company }}: {{ region.name }}</span>
-                                            <span><a href="mailto: {{ region.email }}">{{ region.email }}</a></span>
-                                        </li>
-                                        {% endfor %}
-
-                                        {% else %}
-                                        <li>
-                                            <span>{% if contact.company %}{{ contact.company }}: {% endif %}{{ contact.name }}</span>
-                                            <span><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></span>
-                                        </li>
-                                    {% endif %}
+                                    <li>
+                                        <span><?php echo $contact['name']; ?></span>
+                                        <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
+                                    </li>
                                 </ul>
                         </div>
-
-                        {% endfor %}
+                        <?php } ?>
+                        <?php foreach($licensing_contacts as $contact) { ?>
+                        <div class="">
+                            <h3>Licensing</h3>
+                                <ul class="contacts">
+                                    <li>
+                                        <span><?php echo $contact['company'] . ': ' . $contact['name']; ?></span>
+                                        <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
+                                    </li>
+                                </ul>
+                        </div>
+                        <?php } ?>
+                        <?php foreach($publicity_contacts as $contact) { ?>
+                        <div class="">
+                            <h3>Publicity</h3>
+                                <ul class="contacts">
+                                    <li>
+                                        <span><?php echo $contact['region'] .  ' / ' . $contact['company'] . ': ' .  $contact['name']; ?></span>
+                                        <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
+                                    </li>
+                                </ul>
+                        </div>
+                        <?php } ?>
+                        <?php foreach($booking_contacts as $contact) { ?>
+                        <div class="">
+                            <h3>Booking</h3>
+                                <ul class="contacts">
+                                    <li>
+                                        <span><?php echo $contact['region'] .  ' / ' . $contact['company'] . ': ' .  $contact['name']; ?></span>
+                                        <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
+                                    </li>
+                                </ul>
+                        </div>
+                        <?php } ?>
                     </article>
 
                 </section> <!-- end sidebar -->

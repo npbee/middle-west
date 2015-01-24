@@ -1,6 +1,14 @@
 <?php 
-/*
- */
+    $large_image = get_field('large_featured_image');
+    $medium_image = get_field('medium_featured_image');
+    $small_image = get_field('small_featured_image');
+
+    $website_url = get_field('website_url');
+    $twitter_url = get_field('twitter_url');
+    $facebook_url = get_field('facebook_url');
+    $instagram_url = get_field('instagram_url');
+
+    $bio = get_field('bio');
 ?>
 
 <?php get_header(); ?>
@@ -33,23 +41,31 @@
     <div class="main-container">
         <article>
                 <div class="header-image">
-                    <h2 class="caption">{{ page.artist }}</h2>
-                    <div data-picture data-alt="{{ page.artist }}">
-                        <div data-src="{{ page.header-image-s }}"></div>
-                        <div data-src="{{ page.header-image-m }}"     data-media="(min-width: 480px)"></div>
-                        <div data-src="{{ page.header-image-l }} "     data-media="(min-width: 660px)"></div>
-                        <!--[if lte IE 8]><div data-src="{{ page.header-image-l }}"></div><![endif]-->
+                    <h2 class="caption"><?php the_title(); ?></h2>
+                    <div data-picture data-alt="<?php the_title(); ?>">
+                        <div data-src="<?php echo $small_image['url'] ?>"></div>
+                        <div data-src="<?php echo $medium_image['url'] ?>" data-media="(min-width: 480px)"></div>
+                        <div data-src="<?php echo $large_image['url'] ?>" data-media="(min-width: 660px)"></div>
+                        <!--[if lte IE 8]><div data-src="<?php echo $small_image['url'] ?>"></div><![endif]-->
                     </div>
                     <noscript>
-                        <img src="{{ page.header-image-s }}" alt="{{ page.artist }}">
+                        <img src="<?php echo $small_image['url'] ?>" alt="<?php the_title() ?>" />
                     </noscript>
                 </div>
 
                 <span class="social">
-                    <a class="icomoon" data-icon="&#xe000;" aria-hidden="true" href="{{ page.website }}" target="_blank"><span class="hide">website</span></a>
-                    <a class="rondo" data-icon="&#x24;" href="{{ page.facebook }}"  target="_blank"><span class="hide">facebook</span></a>
-                    <a class="rondo" data-icon="&#x22;" href="{{ page.twitter }}"  target="_blank"><span class="hide">twitter</span></a>
-                    {% if page.instagram %}<a class="rondo" data-icon="&#x23;" href="{{ page.instagram }}"  target="_blank"><span class="hide">instagram</span></a>{% endif %}
+                    <?php if (!empty($website_url)) { ?>
+                    <a class="icomoon" data-icon="&#xe000;" aria-hidden="true" href="<?php echo $website_url ?>" target="_blank"><span class="hide">website</span></a>
+                    <? } ?>
+                    <?php if (!empty($facebook_url)) { ?>
+                    <a class="rondo" data-icon="&#x24;" href="<?php echo $facebook_url ?>"  target="_blank"><span class="hide">facebook</span></a>
+                    <? } ?>
+                    <?php if (!empty($twitter_url)) { ?>
+                    <a class="rondo" data-icon="&#x22;" href="<?php echo $twitter_url ?>"  target="_blank"><span class="hide">twitter</span></a>
+                    <? } ?>
+                    <?php if (!empty($instagram_url)) { ?>
+                    <a class="rondo" data-icon="&#x23;" href="<?php echo $instagram_url ?>"  target="_blank"><span class="hide">instagram</span></a>
+                    <? } ?>
                 </span>
 
             </article>
@@ -66,9 +82,7 @@
                         <h2>Bio</h2>
                         <hr>
                         <div class="_expandable">
-                            {% for section in page.bio %}
-                                {{ section.paragraph }}
-                            {% endfor %}
+                            <?php echo $bio ?>
                         </div>
                     </article>
 

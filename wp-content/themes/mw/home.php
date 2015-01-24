@@ -31,21 +31,32 @@ Template Name: Home
         </header>
     </div>
 
+
     <div class="main-container">
         <article>
             <div class="flexslider">
                 <ul class="slides">
+
+                    <?php 
+                        $args = array('post_type' => 'artist');
+                        $loop = new WP_Query($args);
+                        while ($loop -> have_posts() ) : $loop->the_post();
+                            $large_image = get_field('large_featured_image');
+                            $medium_image = get_field('medium_featured_image');
+                            $small_image = get_field('small_featured_image');
+                        endwhile;
+                    ?>
                     <li>
                         <a href="artists/bon-iver">
-                            <h2 class="caption">Bon Iver</h2>
-                            <div data-picture data-alt="Bon Iver">
-                                <div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-s.jpg"></div>
-                                <div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-m.jpg" data-media="(min-width: 480px)"></div>
-                                <div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-l.jpg" data-media="(min-width: 660px)"></div>
-                                <!--[if lte IE 8]><div data-src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-l.jpg"></div><![endif]-->
+                            <h2 class="caption"><?php the_title(); ?></h2>
+                            <div data-picture data-alt="<?php the_title(); ?>">
+                                <div data-src="<?php echo $small_image['url'] ?>"></div>
+                                <div data-src="<?php echo $medium_image['url'] ?>" data-media="(min-width: 480px)"></div>
+                                <div data-src="<?php echo $large_image['url'] ?>" data-media="(min-width: 660px)"></div>
+                                <!--[if lte IE 8]><div data-src="<?php echo $small_image['url'] ?>"></div><![endif]-->
                             </div>
                             <noscript>
-                                <img src="<?php bloginfo('template_url'); ?>/img/artists/bon-iver/featured/featured-boniver-s.jpg" alt="Bon Iver">
+                                <img src="<?php echo $small_image['url'] ?>" alt="<?php the_title() ?>" />
                             </noscript>
                         </a>
                     </li>

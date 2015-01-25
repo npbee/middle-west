@@ -26,16 +26,16 @@ Template Name: Shows
                     <li class="sub-nav">
                         <a href="#" id="mobile__menu__button" class="mobile__menu__button icomoon" data-icon="&#x21;"><span>Shows</span></a>
                             <ul>
-                                <li><a  href="#bon-iver" >Bon Iver</a></li>
-                                <li><a  href="#gayngs" >Gayngs</a></li>
-                                <li><a  href="#polica" >Poliça</a></li>
-                                <li><a  href="#s-carey" >S. Carey</a></li>
-                                <li><a  href="#solid-gold" >Solid Gold</a></li>
-                                <li><a  href="#supreme-cuts" >Supreme Cuts</a></li>
-                                <li><a  href="#the-4onthefloor" >The 4onthefloor</a></li>
-                                <li><a  href="#the-farewell-circuit" >The Farewell Circuit</a></li>
-                                <li><a  href="#the-shouting-matches" >The Shouting Matches</a></li>
-                                <li><a  href="#volcano-choir" >Volcano Choir</a></li>
+                            <?php 
+                                $args = array('post_type' => 'artist');
+                                $loop = new WP_Query($args);
+                                while ($loop -> have_posts()): $loop->the_post();
+                            ?>
+                            <li><a href="#<?php echo the_title(); ?>"><?php echo the_title(); ?></a></li>
+                            <?php
+                                endwhile;
+                                wp_reset_postdata();
+                            ?>
                             </ul>
                     </li>
                 </ul>
@@ -46,17 +46,19 @@ Template Name: Shows
 
     <div class="main-container">
         <div class="main wrapper clearfix">
-            <article id="bon-iver">
-                <h2>Bon Iver</h2>
+            <?php while($loop -> have_posts()) : $loop->the_post(); ?>
+                <article id="<?php echo the_title(); ?>">
+                <h2><?php echo the_title(); ?></h2>
                 <hr>
 
                 <div class="scroll">
                     <div id="shows" class="shows">
-                        <script async type='text/javascript' src='http://www.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Bon&Iver" class="bit-widget-placeholder" data-artist="Bon Iver" data-separator-color="#d9d9d9" data-facebook-comments="false" data-link-color="#0989b8" data-force-narrow-layout="true"></a>
+                    <?php the_field('bands_in_town_widget'); ?>
                     </div>
                 </div>
 
             </article>
+            <?php endwhile; ?>
         </div>
     </div>
 

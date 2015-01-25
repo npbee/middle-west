@@ -205,7 +205,8 @@
                             <h3>Licensing</h3>
                                 <ul class="contacts">
                                     <li>
-                                        <span><?php echo $contact['company'] . ': ' . $contact['name']; ?></span>
+                                        <?php $separator = empty($contact['name']) ? ' ' : ': '; ?>
+                                        <span><?php echo $contact['company'] . $separator . $contact['name']; ?></span>
                                         <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
                                     </li>
                                 </ul>

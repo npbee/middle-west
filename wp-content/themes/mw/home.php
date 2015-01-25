@@ -44,10 +44,9 @@ Template Name: Home
                             $large_image = get_field('large_featured_image');
                             $medium_image = get_field('medium_featured_image');
                             $small_image = get_field('small_featured_image');
-                        endwhile;
                     ?>
                     <li>
-                        <a href="artists/bon-iver">
+                        <a href="<?php echo get_permalink(); ?>">
                             <h2 class="caption"><?php the_title(); ?></h2>
                             <div data-picture data-alt="<?php the_title(); ?>">
                                 <div data-src="<?php echo $small_image['url'] ?>"></div>
@@ -60,6 +59,7 @@ Template Name: Home
                             </noscript>
                         </a>
                     </li>
+                    <?php endwhile; ?>
                 </ul>
             </div>
         </article>

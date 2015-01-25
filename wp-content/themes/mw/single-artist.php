@@ -112,11 +112,11 @@
                                 <li> 
                                     <?php 
                                         foreach($page as $index=>$album) {
-                                        $query_string = 'artist=' . urlencode(get_the_id()) . '&album=' . urlencode($album['album_name']);
+                                        $link = admin_url('admin-ajax.php?action=open_album_lightbox&post_id=' . get_the_id() . '&album=' . urlencode($album['album_name']));
                                     ?>
                                         <div class="album_thumb col<?php echo ($index + 1) ?>of2">
                                             <div class="thumb-container">
-                                            <a class="group colorbox" href="../../wordpress/wp-admin/admin-ajax.php?action=open_album_lightbox&post_id=<?php echo get_the_id() ?>">
+                                            <a class="group colorbox" href="<?php echo $link; ?>">
                                                 <img class="album-cover" src="<?php echo $album['thumbnail']['url']; ?>" alt="<?php echo $album['album_name'] ?>" height="300" width="300" />
                                                 </a>
                                             </div>

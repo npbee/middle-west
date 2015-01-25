@@ -1,4 +1,7 @@
+/*
 !wp-content/
+!README.md
+!index.php
 .*
 
 !.gitignore

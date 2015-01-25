@@ -27,7 +27,11 @@ Template Name: Shows
                         <a href="#" id="mobile__menu__button" class="mobile__menu__button icomoon" data-icon="&#x21;"><span>Shows</span></a>
                             <ul>
                             <?php 
-                                $args = array('post_type' => 'artist');
+                                $args = array(
+                                    'post_type' => 'artist',
+                                    'orderby' => 'title',
+                                    'order' => 'ASC'
+                                );
                                 $loop = new WP_Query($args);
                                 while ($loop -> have_posts()): $loop->the_post();
                             ?>

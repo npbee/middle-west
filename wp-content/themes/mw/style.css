@@ -392,7 +392,7 @@ article {
   position: relative;
   min-height: 200px; }
 
-.caption {
+.caption, .profile-card__name {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -403,7 +403,7 @@ article {
   font-size: 1.4em;
   line-height: 1; }
   @media only screen and (min-width: 750px) {
-    .caption {
+    .caption, .profile-card__name {
       font-size: 2em; } }
 
 /* --------------------=Social Links */
@@ -1484,3 +1484,13 @@ footer .social {
     margin-right: 5px;
     width: 35px;
     text-align: center; }
+
+/*------------------------------------*\
+    $Profile Card (about page)
+\*------------------------------------*/
+.profile-card {
+  background: #313131; }
+
+.profile-card__image {
+  display: block;
+  position: relative; }

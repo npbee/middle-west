@@ -120,12 +120,13 @@
                         <hr>
 
                         <div class="">
-                        <?php foreach($downloads as $download) {
-                            $title = $download['file']['title'];
-                            $url = $download['file']['url'];
+                            <?php if (!empty($downloads)) {
+                                foreach($downloads as $download) {
+                                    $title = $download['file']['title'];
+                                    $url = $download['file']['url'];
                         ?>
                         <a class="download-link" data-icon="&#x21;" href="<?php echo $url; ?>"><?php echo $title; ?></a>
-                        <?php } ?>
+                        <?php } } ?>
                         </div>
 
                 </article>

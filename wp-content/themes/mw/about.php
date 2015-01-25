@@ -33,7 +33,32 @@ Template Name: About
 
     <div class="main-container">
         <div class="main wrapper clearfix">
+            <h2>About</h2>
             <p>Middle West is an artist management firm dedicated to managing musicians as best it can in the most professional and diverse of ways within the ever-changing music industry. Founded by Kyle Frenette in 2010, Middle West specializes in artists' career development and business management.</p>
+            
+            <h2>Employees</h2>
+            <?php 
+                $args = array(
+                    'post_type' => 'employee'
+                );
+                $loop = new WP_Query($args);
+                while ($loop -> have_posts() ) : $loop->the_post();
+                $photo = get_field('photo');
+                $role = get_field('position');
+                $office = get_field('office');
+                $about_fact = get_field('about_fact');
+                $twitter_widget = get_field('twitter_widget');
+            ?>
+            <div class="profile-card col<?php echo ($current_post + 1); ?>of2">
+                <a class="profile-card__image">
+                    <img class="" src="<?php echo $photo['url']; ?>" />
+                    <h3 class="profile-card__name"><?php the_title(); ?></h3>
+                </a>
+                <p class="profile-card__fact"><?php echo $about_fact; ?></p>
+                <p class="profile-card__location"><?php echo $office; ?></p>
+                <?php echo $twitter_widget; ?>
+            </div>
+            <?php endwhile; ?>
         </div>
     </div>
 

@@ -1477,3 +1477,20 @@ footer .social {
         text-align: center;
     }
 }
+
+
+/*------------------------------------*\
+    $Profile Card (about page)
+\*------------------------------------*/
+.profile-card {
+    background: #313131;
+}
+
+.profile-card__image {
+    display: block;
+    position: relative;
+}
+
+.profile-card__name {
+    @extend .caption;
+}

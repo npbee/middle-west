@@ -1464,5 +1464,23 @@ footer .social {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); }
 
 /*------------------------------------*\
-    $CONTENT CHOREOGRAPHY
+    $Download links
 \*------------------------------------*/
+.download-link {
+  border: 1px solid #231f20;
+  color: #231f20;
+  display: block;
+  margin-bottom: 5px; }
+  .download-link:hover {
+    background: #fcfcfc;
+    text-decoration: none; }
+    .download-link:hover:before {
+      color: #087da8; }
+  .download-link:before {
+    background: #231f20;
+    color: #fff;
+    display: inline-block;
+    line-height: 35px;
+    margin-right: 5px;
+    width: 35px;
+    text-align: center; }

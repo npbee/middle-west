@@ -1453,28 +1453,27 @@ footer .social {
 
 
 /*------------------------------------*\
-    $CONTENT CHOREOGRAPHY
+    $Download links
 \*------------------------------------*/
-// .main {
-//     @include display-box;
-//     @include box-orient(vertical);
-// }
-
-// //order of content
-// .videos {
-//     @include box-ordinal-group(1);
-// }
-
-// .news-feed {
-//     @include box-ordinal-group(2);
-// }
-
-// .bio {
-//     @include box-ordinal-group(3);
-// }
-
-// .discography {
-//     @include box-ordinal-group(4);
-// }
-
-
+.download-link {
+    border: 1px solid $black;
+    color: $black;
+    display: block;
+    margin-bottom: 5px;
+    &:hover {
+        background: darken(#fff, 1%);
+        text-decoration: none;
+        &:before {
+            color: lighten(#065977, 10%);
+        }
+    }
+    &:before {
+        background: $black;
+        color: #fff;
+        display: inline-block;
+        line-height: 35px;
+        margin-right: 5px;
+        width: 35px;
+        text-align: center;
+    }
+}

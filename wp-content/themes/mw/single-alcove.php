@@ -22,6 +22,9 @@
             $licensing_contacts = get_field('licensing');
             $publicity_contacts = get_field('publicity');
             $management_contacts = get_field('management');
+
+            $stream = get_field('stream');
+            $downloads = get_field('downloads');
 ?>
 
 <?php get_header(); ?>
@@ -89,7 +92,7 @@
                         <h2>STREAM</h2>
                         <hr>
                         <div>
-Some stuff
+                        <?php echo $stream ?>
                         </div>
                     </div>
 
@@ -117,7 +120,12 @@ Some stuff
                         <hr>
 
                         <div class="">
-                            Downlaods
+                        <?php foreach($downloads as $download) {
+                            $title = $download['file']['title'];
+                            $url = $download['file']['url'];
+                        ?>
+                        <a class="download-link" data-icon="&#x21;" href="<?php echo $url; ?>"><?php echo $title; ?></a>
+                        <?php } ?>
                         </div>
 
                 </article>

@@ -53,7 +53,9 @@
             <article>
     <ul class="artist-list">
     <?php 
-        if (have_posts()) : while (have_posts()) : the_post();
+    if (have_posts()) : 
+        query_posts('post_type=artist&orderby=title&order=ASC');
+        while (have_posts()) : the_post();
         $image = get_field('medium_featured_image');
     ?>
         <li class="col<?php echo ($wp_query->current_post + 1); ?>of3"><a href="<?php echo get_permalink(); ?>">

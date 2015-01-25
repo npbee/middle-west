@@ -38,7 +38,11 @@ Template Name: Home
                 <ul class="slides">
 
                     <?php 
-                        $args = array('post_type' => 'artist');
+                        $args = array(
+                            'post_type' => 'artist',
+                            'orderby' => 'title',
+                            'order' => 'ASC'
+                        );
                         $loop = new WP_Query($args);
                         while ($loop -> have_posts() ) : $loop->the_post();
                             $large_image = get_field('large_featured_image');

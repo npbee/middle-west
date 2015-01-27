@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18270",
+"creatorBuild": "18493",
 "files": {
 	"\/404.php": {
 		"fileType": 8192,
@@ -67,6 +67,99 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/about.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/album.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/album.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/apple-touch-icon-114x114-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2215,
+		"inputAbbreviatedPath": "\/apple-touch-icon-114x114-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-114x114-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-144x144-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2592,
+		"inputAbbreviatedPath": "\/apple-touch-icon-144x144-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-144x144-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-57x57-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1485,
+		"inputAbbreviatedPath": "\/apple-touch-icon-57x57-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-57x57-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-72x72-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1685,
+		"inputAbbreviatedPath": "\/apple-touch-icon-72x72-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-72x72-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1608,
+		"inputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/apple-touch-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1469,
+		"inputAbbreviatedPath": "\/apple-touch-icon.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/archive-artist.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/archive-artist.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/archive.php": {
 		"fileType": 8192,
@@ -167,6 +260,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1343,
+		"inputAbbreviatedPath": "\/favicon.png",
+		"outputAbbreviatedPath": "\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -194,6 +298,1973 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/img\/artists\/bon-iver\/bon-iver_artists.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14325,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/bon-iver_artists.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/bon-iver_artists.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/blood-bank-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 412600,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/blood-bank-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/blood-bank-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/blood-bank-low.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83514,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/blood-bank-low.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/blood-bank-low.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/blood-bank-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51385,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/blood-bank-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/blood-bank-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/boniver-boniver-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.59555e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/boniver-boniver-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/boniver-boniver-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/boniver-boniver-low.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 193491,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/boniver-boniver-low.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/boniver-boniver-low.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/boniver-boniver-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 124540,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/boniver-boniver-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/boniver-boniver-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/calgary-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 537751,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/calgary-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/calgary-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/calgary-low.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75282,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/calgary-low.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/calgary-low.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/calgary-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50079,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/calgary-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/calgary-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/for-emma-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.59755e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/for-emma-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/for-emma-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/for-emma-low.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 210006,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/for-emma-low.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/for-emma-low.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/for-emma-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141453,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/for-emma-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/for-emma-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/holocene-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.19986e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/holocene-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/holocene-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/holocene-low.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 245752,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/holocene-low.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/holocene-low.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/holocene-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 149319,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/holocene-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/holocene-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/towers-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 839246,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/towers-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/towers-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/towers-low.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 263021,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/towers-low.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/towers-low.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/covers\/towers-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 150893,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/towers-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/covers\/towers-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/featured\/boniver_pres2_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35958,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/boniver_pres2_thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/boniver_pres2_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/featured\/featured-boniver-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129843,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/featured\/featured-boniver-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73966,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/featured\/featured-boniver-original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7.72955e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/featured\/featured-boniver-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38308,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/featured\/featured-boniver-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64001,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/featured\/featured-boniver-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/logo\/BonIverLogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4302,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/logo\/BonIverLogo.png",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/logo\/BonIverLogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/bon-iver-press-thumb-sundaytimes.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29320,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/bon-iver-press-thumb-sundaytimes.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/bon-iver-press-thumb-sundaytimes.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/bon-iver-press-thumb-underTheRadar.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32087,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/bon-iver-press-thumb-underTheRadar.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/bon-iver-press-thumb-underTheRadar.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_pres1_l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126573,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_pres1_m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69805,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_pres1_s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44967,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_pres1_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32036,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_pres1_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_press2_l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83916,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_press2_m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32986,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_press2_s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7085,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/bon-iver\/press\/boniver_press2_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14602,
+		"inputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/bon-iver\/press\/boniver_press2_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/covers\/relayted-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112112,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/covers\/relayted-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/covers\/relayted-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/covers\/relayted-original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 228371,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/covers\/relayted-original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/covers\/relayted-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/covers\/relayted-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38261,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/covers\/relayted-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/covers\/relayted-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/featured\/featured-gayngs-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 118699,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/featured\/featured-gayngs-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94631,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/featured\/featured-gayngs-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45735,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/featured\/featured-gayngs-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52645,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/featured\/featured-gayngs-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/featured_MDS_l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 121891,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/featured_MDS_l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/featured_MDS_l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/gayngs_artists.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43448,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/gayngs_artists.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/gayngs_artists.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/GayngsPress1-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142024,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress1-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress1-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/GayngsPress1-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74364,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress1-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress1-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/GayngsPress1-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45982,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress1-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress1-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/GayngsPress2-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175985,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress2-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress2-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/GayngsPress2-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79680,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress2-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress2-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/gayngs\/GayngsPress2-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45201,
+		"inputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress2-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/gayngs\/GayngsPress2-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/covers\/give-you-the-ghost-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 560581,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/covers\/give-you-the-ghost-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/covers\/give-you-the-ghost-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/covers\/give-you-the-ghost-original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 561543,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/covers\/give-you-the-ghost-original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/covers\/give-you-the-ghost-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/covers\/give-you-the-ghost-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30690,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/covers\/give-you-the-ghost-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/covers\/give-you-the-ghost-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/covers\/tiff-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37880,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/covers\/tiff-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/covers\/tiff-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/featured\/featured-polica-l-old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48924,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-l-old.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-l-old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/featured\/featured-polica-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95384,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/featured\/featured-polica-m-old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29978,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-m-old.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-m-old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/featured\/featured-polica-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52418,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/featured\/featured-polica-s-old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19806,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-s-old.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-s-old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/featured\/featured-polica-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 176743,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/featured\/featured-polica-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29543,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/featured\/featured-polica-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_027-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54749,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_027-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_027-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_027-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29835,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_027-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_027-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_027-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18744,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_027-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_027-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_069-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 211994,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_069-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_069-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_069-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99086,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_069-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_069-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_069-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56071,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_069-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_069-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_artists.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29978,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_artists.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_artists.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/polica\/polica_shulamith.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.42164e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/polica\/polica_shulamith.png",
+		"outputAbbreviatedPath": "\/img\/artists\/polica\/polica_shulamith.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/covers\/all-we-grow-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.67501e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/all-we-grow-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/all-we-grow-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/covers\/all-we-grow-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23794,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/all-we-grow-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/all-we-grow-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/covers\/hoyas-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.07696e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/hoyas-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/hoyas-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/covers\/hoyas-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22102,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/hoyas-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/covers\/hoyas-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/featured\/featured-scarey-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 87165,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/featured\/featured-scarey-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61363,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/featured\/featured-scarey-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40663,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/featured\/featured-scarey-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34909,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/featured\/featured-scarey-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/scarey1_l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53961,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey1_l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey1_l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/scarey1_m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29610,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey1_m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey1_m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/scarey1_s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19176,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey1_s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey1_s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/scarey4_l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100553,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey4_l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey4_l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/scarey4_m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51401,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey4_m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey4_m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/s-carey\/scarey4_s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32076,
+		"inputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey4_s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/s-carey\/scarey4_s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/covers\/bodies-of-water-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 425836,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/bodies-of-water-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/bodies-of-water-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/covers\/bodies-of-water-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40412,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/bodies-of-water-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/bodies-of-water-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/covers\/eat-your-young-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 131459,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/eat-your-young-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/eat-your-young-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/covers\/eat-your-young-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22314,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/eat-your-young-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/eat-your-young-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/covers\/synchronize-ep-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 355894,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/synchronize-ep-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/synchronize-ep-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/covers\/synchronize-ep-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29005,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/synchronize-ep-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/covers\/synchronize-ep-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/featured\/featured-solidgold-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 118672,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/featured\/featured-solidgold-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55498,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/featured\/featured-solidgold-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62185,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/featured\/featured-solidgold-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34022,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured-solidgold-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/featured\/featured_solidgold-original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.81844e+07,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured_solidgold-original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/featured\/featured_solidgold-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/SG-3-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69575,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/SG-3-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/SG-3-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/SG-3-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34472,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/SG-3-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/SG-3-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/SG-3-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20825,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/SG-3-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/SG-3-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/solid-gold\/solid-gold_artists.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21858,
+		"inputAbbreviatedPath": "\/img\/artists\/solid-gold\/solid-gold_artists.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/solid-gold\/solid-gold_artists.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/covers\/chrome-lips-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 283910,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/chrome-lips-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/chrome-lips-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/covers\/chrome-lips-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117333,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/chrome-lips-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/chrome-lips-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/covers\/trouble-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 140366,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/trouble-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/trouble-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/covers\/trouble-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57852,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/trouble-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/trouble-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/covers\/whispers-in-the-dark-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 456237,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/whispers-in-the-dark-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/whispers-in-the-dark-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/covers\/whispers-in-the-dark-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191542,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/whispers-in-the-dark-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/covers\/whispers-in-the-dark-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109283,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119968,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38861,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66828,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/featured\/featured-supremecuts-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80094,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43730,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28054,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-live-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57847,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32449,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21411,
+		"inputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/supreme-cuts\/other\/bt-supreme-cuts-white-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/covers\/4x4-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 740913,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/4x4-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/4x4-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/covers\/4x4-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31217,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/4x4-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/4x4-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 801513,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22721,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis_original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.60648e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis_original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/covers\/spirit-of-minneapolis_original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117934,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100423,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.85348e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 128729,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21111,
+		"inputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-4onthefloor\/featured\/featured-the4onthefloor-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/birdless-sky-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59558,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/birdless-sky-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/birdless-sky-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/birdless-sky-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53398,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/birdless-sky-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/birdless-sky-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/brothers-eyes-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.75804e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/brothers-eyes-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/brothers-eyes-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/brothers-eyes-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92453,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/brothers-eyes-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/brothers-eyes-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/in-our-bones-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56893,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/in-our-bones-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/in-our-bones-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/in-our-bones-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33305,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/in-our-bones-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/in-our-bones-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/sky-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.14566e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/sky-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/sky-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/sky-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36745,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/sky-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/sky-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/we-were-wolves-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 456586,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/we-were-wolves-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/we-were-wolves-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/covers\/we-were-wolves-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73037,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/we-were-wolves-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/covers\/we-were-wolves-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 149447,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101579,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s-old2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55706,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s-old2.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s-old2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s-sq.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129328,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s-sq.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s-sq.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22179,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured-tfc-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-farewell-circuit\/featured\/featured_tfc_original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 483683,
+		"inputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured_tfc_original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-farewell-circuit\/featured\/featured_tfc_original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/covers\/grownass-man-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 231313,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/covers\/grownass-man-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/covers\/grownass-man-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/covers\/grownass-man-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30505,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/covers\/grownass-man-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/covers\/grownass-man-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99730,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49671,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30515,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/featured\/featured-tsm-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 154549,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56874,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28364,
+		"inputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/the-shouting-matches\/other\/SMnegs-18-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/covers\/repave-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.29559e+06,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/repave-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/repave-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/covers\/repave-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25404,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/repave-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/repave-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/covers\/unmap-full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 288759,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/unmap-full.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/unmap-full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/covers\/unmap-thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60222,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/unmap-thumb.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/covers\/unmap-thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88568,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77016,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33383,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured-volcanochoir-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/featured\/featured_volcanochoir_original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 622984,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured_volcanochoir_original.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/featured\/featured_volcanochoir_original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_l.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88553,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_l.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_l.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_m.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57986,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_m.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_m.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34352,
+		"inputAbbreviatedPath": "\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_s.jpg",
+		"outputAbbreviatedPath": "\/img\/artists\/volcano-choir\/other\/blankets_volcanochoir_s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/colorbox\/border.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112,
+		"inputAbbreviatedPath": "\/img\/colorbox\/border.png",
+		"outputAbbreviatedPath": "\/img\/colorbox\/border.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/colorbox\/controls.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2893,
+		"inputAbbreviatedPath": "\/img\/colorbox\/controls.png",
+		"outputAbbreviatedPath": "\/img\/colorbox\/controls.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/colorbox\/loading_background.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 157,
+		"inputAbbreviatedPath": "\/img\/colorbox\/loading_background.png",
+		"outputAbbreviatedPath": "\/img\/colorbox\/loading_background.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/colorbox\/overlay.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 182,
+		"inputAbbreviatedPath": "\/img\/colorbox\/overlay.png",
+		"outputAbbreviatedPath": "\/img\/colorbox\/overlay.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/bg_direction_nav.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 473,
+		"inputAbbreviatedPath": "\/img\/icons\/bg_direction_nav.png",
+		"outputAbbreviatedPath": "\/img\/icons\/bg_direction_nav.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/carousel-l.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 306,
+		"inputAbbreviatedPath": "\/img\/icons\/carousel-l.png",
+		"outputAbbreviatedPath": "\/img\/icons\/carousel-l.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/carousel-r.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 302,
+		"inputAbbreviatedPath": "\/img\/icons\/carousel-r.png",
+		"outputAbbreviatedPath": "\/img\/icons\/carousel-r.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/sprite-mini.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4667,
+		"inputAbbreviatedPath": "\/img\/icons\/sprite-mini.png",
+		"outputAbbreviatedPath": "\/img\/icons\/sprite-mini.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3113,
+		"inputAbbreviatedPath": "\/img\/icons\/sprite.png",
+		"outputAbbreviatedPath": "\/img\/icons\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/twitter-brand.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2602,
+		"inputAbbreviatedPath": "\/img\/icons\/twitter-brand.png",
+		"outputAbbreviatedPath": "\/img\/icons\/twitter-brand.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21312,
+		"inputAbbreviatedPath": "\/img\/logo\/logo.png",
+		"outputAbbreviatedPath": "\/img\/logo\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/logo@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51402,
+		"inputAbbreviatedPath": "\/img\/logo\/logo@2x.png",
+		"outputAbbreviatedPath": "\/img\/logo\/logo@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/mw_logo-horizontal-ie.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23075,
+		"inputAbbreviatedPath": "\/img\/logo\/mw_logo-horizontal-ie.png",
+		"outputAbbreviatedPath": "\/img\/logo\/mw_logo-horizontal-ie.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/mw_logo-horizontal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101042,
+		"inputAbbreviatedPath": "\/img\/logo\/mw_logo-horizontal.png",
+		"outputAbbreviatedPath": "\/img\/logo\/mw_logo-horizontal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/mwm-logo-FINAL.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 506326,
+		"inputAbbreviatedPath": "\/img\/logo\/mwm-logo-FINAL.png",
+		"outputAbbreviatedPath": "\/img\/logo\/mwm-logo-FINAL.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/mwm-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2023,
+		"inputAbbreviatedPath": "\/img\/logo\/mwm-logo.png",
+		"outputAbbreviatedPath": "\/img\/logo\/mwm-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/mwm-logo_16x16.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1801,
+		"inputAbbreviatedPath": "\/img\/logo\/mwm-logo_16x16.png",
+		"outputAbbreviatedPath": "\/img\/logo\/mwm-logo_16x16.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo\/mwm-logo_32x32.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3650,
+		"inputAbbreviatedPath": "\/img\/logo\/mwm-logo_32x32.png",
+		"outputAbbreviatedPath": "\/img\/logo\/mwm-logo_32x32.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -202,6 +2273,193 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/js\/_old\/main--old.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/_old\/main--old.js",
+		"outputAbbreviatedPath": "\/js\/_old\/min\/main--old-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/_old\/plugins-home--old.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/_old\/plugins-home--old.js",
+		"outputAbbreviatedPath": "\/js\/_old\/min\/plugins-home--old-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/main-ck.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/main-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/main-ck-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/main.js",
+		"outputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/main-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/main-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/plugins-ck.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/plugins-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/plugins-ck-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/plugins.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/plugins.js",
+		"outputAbbreviatedPath": "\/js\/min\/plugins-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/colorbox.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/colorbox.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/colorbox-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/expander.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/expander.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/expander-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/fitvids.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/fitvids.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/fitvids-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/flexslider.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/flexslider.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/flexslider-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/lazyload.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/lazyload.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/lazyload-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/modernizr-2.6.1.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/modernizr-2.6.1.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/modernizr-2.6.1.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/picture-fill.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/picture-fill.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/picture-fill-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/stratus-ck.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/stratus-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/stratus-ck-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/stratus.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/stratus.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/stratus-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/vendor\/unveil.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/unveil.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/min\/unveil-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/nav-below-single.php": {
 		"fileType": 8192,
@@ -230,6 +2488,51 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/php\/mailing-list-submit.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/mailing-list-submit.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/php\/partials\/footer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/partials\/footer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/php\/partials\/header-alcove.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/partials\/header-alcove.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/php\/partials\/header-shows.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/partials\/header-shows.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/php\/partials\/header.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/partials\/header.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/screenshot.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -250,11 +2553,38 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/shows.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shows.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/sidebar.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sidebar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/single-alcove.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single-alcove.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/single-artist.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single-artist.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -299,7 +2629,7 @@
 	"iconImageName": "compass_darkGray"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -335,6 +2665,10 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -428,12 +2762,16 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/localhost",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
@@ -484,6 +2822,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -506,6 +2848,10 @@
 			},
 		"dojo": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -560,6 +2906,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"jquery": {
 			"active": 1,
 			"flagValue": -1
@@ -603,6 +2953,10 @@
 		"maxstatements": {
 			"active": 0,
 			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
 			},
 		"mootools": {
 			"active": 0,
@@ -669,6 +3023,10 @@
 			"flagValue": -1
 			},
 		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -896,6 +3254,7 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -920,8 +3279,9 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -958,6 +3318,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1001,6 +3365,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -1013,8 +3381,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {

@@ -375,6 +375,15 @@ var mwm = (function($, window, document) {
             var page = $(' body ').attr('class');
             tumblr.init(tag, page);
             tumblr.loadMore();
+        },
+
+        profile: function() {
+            var profiles = $('.js-profile-card');
+            profiles.each(function(index, profile) {
+                var twitterHandle = $(this).attr('data-twitter-handle');
+                var instagramHandle = $(this).attr('data-instagram-handle');
+                console.log(twitterHandle, instagramHandle);
+            });
         }
 
 
@@ -394,5 +403,6 @@ $(function() {
     mwm.scrollable();
     mwm.soundcloud();
     mwm.tumblr();
+    mwm.profile();
 });
 

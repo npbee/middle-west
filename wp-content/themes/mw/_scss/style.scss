@@ -1314,7 +1314,7 @@ footer .social {
    ========================================================================== */
 
 .about p {
-    margin: 1em;
+    /*margin: 1em;*/
 }
 .about .about-nav, .artists .artists-nav, .selected {
     text-decoration:underline;
@@ -1482,15 +1482,161 @@ footer .social {
 /*------------------------------------*\
     $Profile Card (about page)
 \*------------------------------------*/
-.profile-card {
-    background: #313131;
+.caption{
+    position:absolute;
+    bottom:0;
+    margin: 0;
+    width:100%;
+    background:rgba(black, .5);
+    color:#f7f7f7;
+    padding:10px 13px;
+    font-size: 1.4em;
+    line-height: 1;
+    @include breakpoint(large) {
+        font-size:2em;
+    }
 }
 
-.profile-card__image {
-    display: block;
+$inner-wrapper-height: 50px;
+
+.profile-card-v1 {
+    background: url('img/seamless_paper_texture.png');
+    overflow: hidden;
     position: relative;
+    margin: 20px 0;
+    &:hover {
+        .profile-card__wrapper {
+            margin-bottom: $inner-wrapper-height;
+        }
+    }
+
+    .profile-card__image {
+        opacity: 0.75;
+    }
+
+    .profile-card__role {
+        font-style: italic;
+    }
+
+    .profile-card__role,
+    .profile-card__fact, 
+    .profile-card__location p {
+        margin: 0;
+    }
+
+    .profile-card__fact {
+        margin: 15px 0;
+    }
+
+    .profile-card__location,
+    .profile-card__social {
+        line-height: 2;
+    }
+
+    .profile-card__social {
+        text-align: right;
+        .rondo {
+            &:before {
+                font-size: 1.2em;
+            }
+            display: inline-block;
+            color: #fff;
+        }
+    }
+
+    .profile-card__wrapper,
+    .profile-card__wrapper__inner {
+        @extend .caption;
+        font-size: 1em;
+        line-height: auto;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .profile-card__wrapper {
+        @include transition(margin-bottom 300ms);
+        &:hover {
+        }
+    }
+
+    .profile-card__wrapper__inner {
+        bottom: auto;
+        height: $inner-wrapper-height;
+        left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
 }
 
-.profile-card__name {
-    @extend .caption;
+.profile-card-v2 {
+    background: url('img/seamless_paper_texture.png');
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+    &:hover {
+        .profile-card__wrapper {
+            margin-bottom: $inner-wrapper-height;
+        }
+    }
+
+    .profile-card__image {
+        opacity: 0.75;
+    }
+
+    .profile-card__role,
+    .profile-card__fact, 
+    .profile-card__location p {
+        margin: 0;
+    }
+
+    .profile-card__fact {
+        margin: 15px 0;
+    }
+
+    .profile-card__location,
+    .profile-card__social {
+        line-height: 2;
+    }
+
+    .profile-card__social {
+        text-align: right;
+        .rondo {
+            &:before {
+                font-size: 1.2em;
+            }
+            display: inline-block;
+            color: #fff;
+        }
+    }
+
+    .profile-card__wrapper,
+    .profile-card__wrapper__inner {
+        @extend .caption;
+        font-size: 1em;
+        line-height: auto;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .profile-card__wrapper {
+        @include transition(margin-bottom 300ms);
+        &:hover {
+        }
+    }
+
+    .profile-card__wrapper__inner {
+        bottom: auto;
+        height: $inner-wrapper-height;
+        left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
 }

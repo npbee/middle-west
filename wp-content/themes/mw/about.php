@@ -43,22 +43,38 @@ Template Name: About
                 );
                 $loop = new WP_Query($args);
                 while ($loop -> have_posts() ) : $loop->the_post();
+
                 $photo = get_field('photo');
                 $role = get_field('position');
                 $office = get_field('office');
                 $about_fact = get_field('about_fact');
                 $twitter_widget = get_field('twitter_widget');
+                $twitter_handle = get_field('twitter_handle');
+                $tweets = getTweets(1, $twitter_handle);
+                $tweet = $tweets[0]['text'];
+                $instagram_user_id = get_field('instagram_user_id');
+                $instagram = get_instagram_post($instagram_user_id);
+                $low_res = ($instagram -> images -> low_resolution -> url);
+                $standard_res = ($instagram -> images -> standard_resolution -> url);
+                $instagram_link = $instagram -> link; 
             ?>
-            <div class="profile-card col<?php echo ($current_post + 1); ?>of2">
-                <a class="profile-card__image">
-                    <img class="" src="<?php echo $photo['url']; ?>" />
+            <div class="js-profile-card profile-card-v1 col<?php echo ($current_post + 1); ?>of2">
+                <img class="profile-card__image" src="<?php echo $photo['url']; ?>" />
                     <h3 class="profile-card__name"><?php the_title(); ?></h3>
-                </a>
-                <p class="profile-card__fact"><?php echo $about_fact; ?></p>
-                <p class="profile-card__location"><?php echo $office; ?></p>
-                <?php echo $twitter_widget; ?>
+                    <p class="profile-card__role"><?php echo $role; ?></p>
+                    <p class="profile-card__about_fact"><?php echo $about_fact; ?></p>
+                    <p class="profile-card__tweet"><?php echo $tweet; ?></p>
+                    <a class="profile-card__instagram" href="<?php echo $instagram_link; ?>">
+                        <img src="<?php echo $low_res; ?>" />
+                    </a>
+                    <div class="profile-card__location">
+                        <p class=""><?php echo $office; ?></p>
+                    </div>
             </div>
-            <?php endwhile; ?>
+            <?php 
+                endwhile;
+                wp_reset_postdata();
+            ?>
         </div>
     </div>
 

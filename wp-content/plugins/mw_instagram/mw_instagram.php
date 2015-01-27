@@ -13,13 +13,6 @@
         $result = json_decode($result['body']);
         $main_array = array();
 
-        foreach($result -> data as $d) {
-            $main_array['images'] = $d -> images;
-            $main_array['caption'] = $d -> caption;
-            $main_array['link'] = $d -> link;
-            $main_array['user'] = $d -> user;
-        }
-
         return $result -> data[0];
     }
 ?>

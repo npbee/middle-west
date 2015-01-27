@@ -77,8 +77,10 @@ Template Name: Home
             </div>
 
             <div class="tweets col3of3">
-                <h1>Latest</h1>
-                <span class="twitter-branding"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
+                <header>
+                    <h1>Latest</h1>
+                    <span class="twitter-branding branding-icon"><a href="https://twitter.com/middlewestmgmt" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
+                </header>
                 <hr>
                 <div class="scrollable">
                     <a class="twitter-timeline" href="https://twitter.com/middlewestmgmt" data-widget-id="323618451409207297" data-chrome="noheader nofooter noscrollbar" height="500" data-tweet-limit="5">Tweets by @middlewestmgmt</a>

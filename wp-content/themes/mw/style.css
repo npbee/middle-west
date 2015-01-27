@@ -472,13 +472,22 @@ article {
 .news p {
   text-align: justify; }
 
+/* --------------------=Branding */
+.branding-icon {
+  max-width: 25px; }
+
 /* --------------------=Latest */
+.news h1,
+.tweets h1 {
+  line-height: 1; }
+
+.tweets header {
+  overflow: hidden;
+  *zoom: 1; }
 .tweets h1, .tweets h2 {
   float: left; }
 .tweets .twitter-branding {
-  float: right;
-  position: relative;
-  bottom: 3px; }
+  float: right; }
 
 /* --------------------=Bio */
 .read-more, .read-less {
@@ -1492,37 +1501,81 @@ footer .social {
 /*------------------------------------*\
     $Profile Card (about page)
 \*------------------------------------*/
-.caption, .profile-card-v1 .profile-card__wrapper,
-.profile-card-v1 .profile-card__wrapper__inner, .profile-card-v2 .profile-card__wrapper,
-.profile-card-v2 .profile-card__wrapper__inner {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f7f7f7;
-  padding: 10px 13px;
-  font-size: 1.4em;
-  line-height: 1; }
-  @media only screen and (min-width: 750px) {
-    .caption, .profile-card-v1 .profile-card__wrapper,
-    .profile-card-v1 .profile-card__wrapper__inner, .profile-card-v2 .profile-card__wrapper,
-    .profile-card-v2 .profile-card__wrapper__inner {
-      font-size: 2em; } }
-
 .profile-card-v1 {
-  background: url("img/seamless_paper_texture.png");
   overflow: hidden;
   position: relative;
   margin: 20px 0; }
-  .profile-card-v1:hover .profile-card__wrapper {
-    margin-bottom: 50px; }
+  .profile-card-v1 .profile-card__1,
+  .profile-card-v1 .profile-card__2,
+  .profile-card-v1 .profile-card__3 {
+    /*float: left;*/ }
+  .profile-card-v1 .profile-card__2 p,
+  .profile-card-v1 .profile-card__3 p {
+    margin: 0; }
+  .profile-card-v1 .profile-card__2 > span,
+  .profile-card-v1 .profile-card__3 > span {
+    float: left;
+    width: 15%; }
+  .profile-card-v1 .profile-card__2 header,
+  .profile-card-v1 .profile-card__3 header {
+    margin-bottom: 15px; }
+    .profile-card-v1 .profile-card__2 header > span,
+    .profile-card-v1 .profile-card__2 header > a,
+    .profile-card-v1 .profile-card__3 header > span,
+    .profile-card-v1 .profile-card__3 header > a {
+      display: inline-block;
+      width: 50%; }
+    .profile-card-v1 .profile-card__2 header > a,
+    .profile-card-v1 .profile-card__3 header > a {
+      text-align: right; }
+  .profile-card-v1 .profile-card__tweet,
+  .profile-card-v1 .profile-card__instagram {
+    /*padding: 10px 0;*/
+    float: right;
+    width: 85%; }
+  .profile-card-v1 .profile-card__instagram {
+    display: block;
+    margin: 0 auto; }
+    .profile-card-v1 .profile-card__instagram span {
+      line-height: 1; }
+  .profile-card-v1 .profile-card__tweet {
+    padding-bottom: 10px; }
+  .profile-card-v1 .profile-card__1 {
+    /*margin: 0 2% 2% 0;*/
+    text-align: center;
+    /*width: 18%;*/ }
+  .profile-card-v1 .profile-card__1:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 1px;
+    background: #231f20;
+    width: 30px;
+    margin: 10px auto; }
+  .profile-card-v1 .profile-card__2,
+  .profile-card-v1 .profile-card__3 {
+    margin: 0 auto;
+    max-width: 80%;
+    clear: both;
+    font-size: 0.8em;
+    /*margin: 0 2% 2% 0;*/
+    /*width: 38%;*/ }
+  .profile-card-v1 .profile-card__3 {
+    /*margin-right: 0;*/ }
+  .profile-card-v1 .profile-card__hidden {
+    display: none; }
   .profile-card-v1 .profile-card__image {
-    opacity: 0.75; }
+    background: url("img/seamless_paper_texture.png");
+    border-radius: 50%;
+    margin-bottom: 2%;
+    /*max-width: 200px;*/
+    overflow: hidden; }
+    .profile-card-v1 .profile-card__image img {
+      opacity: 0.75; }
   .profile-card-v1 .profile-card__role {
     font-style: italic; }
   .profile-card-v1 .profile-card__role,
-  .profile-card-v1 .profile-card__fact,
+  .profile-card-v1 .profile-card__about_fact,
   .profile-card-v1 .profile-card__location p {
     margin: 0; }
   .profile-card-v1 .profile-card__fact {
@@ -1549,15 +1602,6 @@ footer .social {
     -o-transition: margin-bottom 300ms;
     -webkit-transition: margin-bottom 300ms;
     transition: margin-bottom 300ms; }
-  .profile-card-v1 .profile-card__wrapper__inner {
-    bottom: auto;
-    height: 50px;
-    left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    position: absolute;
-    top: 100%;
-    width: 100%; }
 
 .profile-card-v2 {
   background: url("img/seamless_paper_texture.png");
@@ -1565,7 +1609,7 @@ footer .social {
   position: relative;
   margin: 20px 0; }
   .profile-card-v2:hover .profile-card__wrapper {
-    margin-bottom: 50px; }
+    margin-bottom: 60px; }
   .profile-card-v2 .profile-card__image {
     opacity: 0.75; }
   .profile-card-v2 .profile-card__role,
@@ -1598,7 +1642,7 @@ footer .social {
     transition: margin-bottom 300ms; }
   .profile-card-v2 .profile-card__wrapper__inner {
     bottom: auto;
-    height: 50px;
+    height: 60px;
     left: 0;
     padding-top: 0;
     padding-bottom: 0;

@@ -56,20 +56,33 @@ Template Name: About
                 $instagram = get_instagram_post($instagram_user_id);
                 $low_res = ($instagram -> images -> low_resolution -> url);
                 $standard_res = ($instagram -> images -> standard_resolution -> url);
+                $thumb = ($instagram -> images -> thumbnail -> url);
                 $instagram_link = $instagram -> link; 
             ?>
-            <div class="js-profile-card profile-card-v1 col<?php echo ($current_post + 1); ?>of2">
-                <img class="profile-card__image" src="<?php echo $photo['url']; ?>" />
+            <div class="js-profile-card profile-card-v1 col1of3">
+                <div class="profile-card__1">
+                    <div class="profile-card__image">
+                        <img class="" src="<?php echo empty($photo['url']) ? '' : $photo['url']; ?>" />
+                    </div>
+                    <div class="profile-card__hidden">
+                        <p class="profile-card__about_fact"><?php echo $about_fact; ?></p>
+                        <div class="profile-card__location">
+                            <p class=""><?php echo $office; ?></p>
+                        </div>
+                    </div>
                     <h3 class="profile-card__name"><?php the_title(); ?></h3>
                     <p class="profile-card__role"><?php echo $role; ?></p>
-                    <p class="profile-card__about_fact"><?php echo $about_fact; ?></p>
+                </div>
+                <div class="profile-card__2">
+                    <span class="twitter-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
                     <p class="profile-card__tweet"><?php echo $tweet; ?></p>
+                </div>
+                <div class="profile-card__3">
+                    <span class="instagram-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand.png" alt="instagram logo" /></a></span>
                     <a class="profile-card__instagram" href="<?php echo $instagram_link; ?>">
-                        <img src="<?php echo $low_res; ?>" />
+                        <img src="<?php echo $thumb; ?>" />
                     </a>
-                    <div class="profile-card__location">
-                        <p class=""><?php echo $office; ?></p>
-                    </div>
+                </div>
             </div>
             <?php 
                 endwhile;

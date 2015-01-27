@@ -2144,6 +2144,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/instagram-brand.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 428661,
+		"inputAbbreviatedPath": "\/img\/icons\/instagram-brand.png",
+		"outputAbbreviatedPath": "\/img\/icons\/instagram-brand.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/sprite-mini.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2261,6 +2272,17 @@
 		"initialSize": 3650,
 		"inputAbbreviatedPath": "\/img\/logo\/mwm-logo_32x32.png",
 		"outputAbbreviatedPath": "\/img\/logo\/mwm-logo_32x32.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/seamless_paper_texture.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33145,
+		"inputAbbreviatedPath": "\/img\/seamless_paper_texture.png",
+		"outputAbbreviatedPath": "\/img\/seamless_paper_texture.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

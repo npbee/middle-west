@@ -529,17 +529,26 @@ article {
 }
 
 
+/* --------------------=Branding */
+.branding-icon {
+    max-width: 25px;
+}
 
 
 /* --------------------=Latest */
+.news h1, 
+.tweets h1 {
+    line-height: 1;
+}
 .tweets {
+    header {
+        @include clearfix;
+    }
     h1, h2 {
         float: left;
     }
     .twitter-branding {
         float: right;
-        position: relative;
-        bottom: 3px;
     }
 }
 
@@ -1482,36 +1491,105 @@ footer .social {
 /*------------------------------------*\
     $Profile Card (about page)
 \*------------------------------------*/
-.caption{
-    position:absolute;
-    bottom:0;
-    margin: 0;
-    width:100%;
-    background:rgba(black, .5);
-    color:#f7f7f7;
-    padding:10px 13px;
-    font-size: 1.4em;
-    line-height: 1;
-    @include breakpoint(large) {
-        font-size:2em;
-    }
-}
-
-$inner-wrapper-height: 50px;
-
+$inner-wrapper-height: 60px;
 .profile-card-v1 {
-    background: url('img/seamless_paper_texture.png');
     overflow: hidden;
     position: relative;
     margin: 20px 0;
-    &:hover {
-        .profile-card__wrapper {
-            margin-bottom: $inner-wrapper-height;
+
+    .profile-card__1,
+    .profile-card__2, 
+    .profile-card__3 {
+        /*float: left;*/
+    }
+
+    .profile-card__2,
+    .profile-card__3 {
+        p {
+            margin: 0;
+        }
+        > span {
+            float: left;
+            width: 15%;
+        }
+        header {
+            margin-bottom: 15px;
+            > span,
+            > a {
+                display: inline-block;
+                width: 50%;
+            }
+            >a {
+                text-align: right;
+            }
         }
     }
 
+    .profile-card__tweet,
+    .profile-card__instagram {
+        /*padding: 10px 0;*/
+        float: right;
+        width: 85%;
+    }
+
+    .profile-card__instagram {
+        display: block;
+        margin: 0 auto;
+        span {
+            line-height: 1;
+        }
+    }
+
+    .profile-card__tweet {
+        padding-bottom: 10px;
+    }
+
+    .profile-card__1 {
+        /*margin: 0 2% 2% 0;*/
+        text-align: center;
+        /*width: 18%;*/
+    }
+    
+    .profile-card__1 {
+        &:after {
+            clear: both;
+            content: '';
+            display: block;
+            height: 1px;
+            background: $black;
+            width: 30px;
+            margin: 10px auto;
+        }
+    }
+
+
+    .profile-card__2,
+    .profile-card__3 {
+        margin: 0 auto;
+        max-width: 80%;
+        clear: both;
+        font-size: 0.8em;
+        /*margin: 0 2% 2% 0;*/
+        /*width: 38%;*/
+    }
+
+    .profile-card__3 {
+        /*margin-right: 0;*/
+    }
+
+    .profile-card__hidden {
+        display: none;
+    }
+
     .profile-card__image {
-        opacity: 0.75;
+        background: url('img/seamless_paper_texture.png');
+        border-radius: 50%;
+        margin-bottom: 2%;
+        /*max-width: 200px;*/
+        overflow: hidden;
+        img {
+            opacity: 0.75;
+        }
     }
 
     .profile-card__role {
@@ -1519,7 +1597,7 @@ $inner-wrapper-height: 50px;
     }
 
     .profile-card__role,
-    .profile-card__fact, 
+    .profile-card__about_fact, 
     .profile-card__location p {
         margin: 0;
     }
@@ -1560,16 +1638,6 @@ $inner-wrapper-height: 50px;
         }
     }
 
-    .profile-card__wrapper__inner {
-        bottom: auto;
-        height: $inner-wrapper-height;
-        left: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-    }
 }
 
 .profile-card-v2 {

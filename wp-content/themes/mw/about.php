@@ -50,10 +50,11 @@ Template Name: About
                 $about_fact = get_field('about_fact');
                 $twitter_widget = get_field('twitter_widget');
                 $twitter_handle = get_field('twitter_handle');
-                $tweets = getTweets(1, $twitter_handle);
-                $tweet = $tweets[0]['text'];
                 $instagram_user_id = get_field('instagram_user_id');
-                $instagram = get_instagram_post($instagram_user_id);
+
+                $social = get_employee_social_data($twitter_handle, $instagram_user_id);
+
+                $instagram = $social['instagram'];
                 $low_res = ($instagram -> images -> low_resolution -> url);
                 $standard_res = ($instagram -> images -> standard_resolution -> url);
                 $thumb = ($instagram -> images -> thumbnail -> url);
@@ -75,7 +76,7 @@ Template Name: About
                 </div>
                 <div class="profile-card__2">
                     <span class="twitter-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
-                    <p class="profile-card__tweet"><?php echo $tweet; ?></p>
+                    <p class="profile-card__tweet"><?php echo $social['tweet']; ?></p>
                 </div>
                 <div class="profile-card__3">
                     <span class="instagram-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand.png" alt="instagram logo" /></a></span>

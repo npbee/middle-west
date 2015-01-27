@@ -80,7 +80,7 @@ Template Name: About
                 <div class="profile-card__3">
                     <span class="instagram-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand.png" alt="instagram logo" /></a></span>
                     <a class="profile-card__instagram" href="<?php echo $instagram_link; ?>">
-                        <img src="<?php echo $thumb; ?>" />
+                        <img src="<?php echo $low_res; ?>" />
                     </a>
                 </div>
             </div>

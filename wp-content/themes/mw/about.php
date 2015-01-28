@@ -44,6 +44,7 @@ Template Name: About
                 $loop = new WP_Query($args);
                 while ($loop -> have_posts() ) : $loop->the_post();
 
+                $index = $loop -> current_post === 3 ? 0 : $loop -> current_post;
                 $photo = get_field('photo');
                 $role = get_field('position');
                 $office = get_field('office');
@@ -59,8 +60,9 @@ Template Name: About
                 $standard_res = ($instagram -> images -> standard_resolution -> url);
                 $thumb = ($instagram -> images -> thumbnail -> url);
                 $instagram_link = $instagram -> link; 
+                
             ?>
-            <div class="js-profile-card profile-card-v1 col1of3">
+            <div class="js-profile-card profile-card-v1 col<?php echo ($index + 1); ?>of3">
                 <div class="profile-card__photo">
                     <div class="profile-card__photo-wrapper">
                         <div class="profile-card__photo__image">
@@ -76,16 +78,20 @@ Template Name: About
                     <h3 class="profile-card__name"><?php the_title(); ?></h3>
                     <p class="profile-card__role"><?php echo $role; ?></p>
                 </div>
+                <?php if (!empty($social['tweet'])) { ?>
                 <div class="profile-card__twitter">
                     <span class="twitter-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
                     <p class="profile-card__twitter__tweet"><?php echo $social['tweet']; ?></p>
                 </div>
+                <?php } ?>
+                <?php if (!empty($instagram)) { ?>
                 <div class="profile-card__instagram">
                     <span class="instagram-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand.png" alt="instagram logo" /></a></span>
                     <a class="profile-card__instagram__photo" href="<?php echo $instagram_link; ?>">
                         <img src="<?php echo $low_res; ?>" />
                     </a>
                 </div>
+                <?php } ?>
             </div>
             <?php 
                 endwhile;

@@ -1495,7 +1495,21 @@ $inner-wrapper-height: 60px;
 .profile-card-v1 {
     overflow: hidden;
     position: relative;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: right;
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 1px;
+        background: $black;
+        width: 30px;
+        margin: 10px auto;
+        @include breakpoint(large) {
+            display: none;
+        }
+    }
 
     .profile-card__photo {
         text-align: center;
@@ -1586,6 +1600,7 @@ $inner-wrapper-height: 60px;
         max-width: 80%;
         clear: both;
         font-size: 0.8em;
+        overflow: auto;
         p {
             margin: 0;
         }
@@ -1614,11 +1629,14 @@ $inner-wrapper-height: 60px;
             width: 85%;
         }
 
-        .profile-card__instagram__photo {
+        .profile-card__instagram {
             display: block;
             margin: 0 auto;
             span {
                 line-height: 1;
+            }
+            img {
+                width: 100%;
             }
         }
 

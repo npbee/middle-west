@@ -1502,7 +1502,20 @@ footer .social {
 .profile-card-v1 {
   overflow: hidden;
   position: relative;
-  margin: 20px 0; }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  clear: right; }
+  .profile-card-v1:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 1px;
+    background: #231f20;
+    width: 30px;
+    margin: 10px auto; }
+    @media only screen and (min-width: 750px) {
+      .profile-card-v1:after {
+        display: none; } }
   .profile-card-v1 .profile-card__photo {
     text-align: center; }
     .profile-card-v1 .profile-card__photo:after {
@@ -1572,7 +1585,8 @@ footer .social {
     margin: 0 auto;
     max-width: 80%;
     clear: both;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    overflow: auto; }
     .profile-card-v1 .profile-card__twitter p,
     .profile-card-v1 .profile-card__instagram p {
       margin: 0; }
@@ -1597,11 +1611,13 @@ footer .social {
     /*padding: 10px 0;*/
     float: right;
     width: 85%; }
-  .profile-card-v1 .profile-card__instagram__photo {
+  .profile-card-v1 .profile-card__instagram {
     display: block;
     margin: 0 auto; }
-    .profile-card-v1 .profile-card__instagram__photo span {
+    .profile-card-v1 .profile-card__instagram span {
       line-height: 1; }
+    .profile-card-v1 .profile-card__instagram img {
+      width: 100%; }
   .profile-card-v1 .profile-card__twitter__tweet {
     padding-bottom: 10px; }
 

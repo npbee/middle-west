@@ -1497,14 +1497,95 @@ $inner-wrapper-height: 60px;
     position: relative;
     margin: 20px 0;
 
-    .profile-card__1,
-    .profile-card__2, 
-    .profile-card__3 {
-        /*float: left;*/
+    .profile-card__photo {
+        text-align: center;
+        &:after {
+            clear: both;
+            content: '';
+            display: block;
+            height: 1px;
+            background: $black;
+            width: 30px;
+            margin: 10px auto;
+        }
     }
 
-    .profile-card__2,
-    .profile-card__3 {
+        .profile-card__role {
+            font-style: italic;
+            margin: 0;
+        }
+
+        .profile-card__photo-wrapper {
+            position: relative;
+            &:hover {
+                @extend .profile-card__photo--hover;
+            }
+        }
+
+            .profile-card__photo--hover {
+                .profile-card__hidden {
+                    background: rgba($black, 0.7);
+                }
+                .profile-card__fact {
+                    top: 20%;
+                }
+                .profile-card__location {
+                    bottom: 20%;
+                }
+            }
+
+            .profile-card__photo__image {
+                background: url('img/seamless_paper_texture.png');
+                border-radius: 50%;
+                margin-bottom: 2%;
+                /*max-width: 200px;*/
+                overflow: hidden;
+                img {
+                    opacity: 0.75;
+                }
+            }
+    
+            .profile-card__hidden {
+                @include transition(all 200ms);
+                background: rgba($black, 0);
+                border-radius: 50%;
+                color: #f7f7f7;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                .profile-card__fact,
+                .profile-card__location {
+                    position: absolute;
+                    margin: 0;
+                    text-align: center;
+                    width: 100%;
+                }
+                .profile-card__fact {
+                    @include transition(top 200ms);
+                    top: -50%;
+                }
+                .profile-card__location {
+                    @include transition(bottom 200ms);
+                    bottom: -50px;
+                }
+            }
+            
+                .profile-card__fact {
+                    margin: 15px 0;
+                }
+
+                .profile-card__location {
+                    line-height: 2;
+                }
+
+    .profile-card__twitter,
+    .profile-card__instagram {
+        margin: 0 auto;
+        max-width: 80%;
+        clear: both;
+        font-size: 0.8em;
         p {
             margin: 0;
         }
@@ -1525,141 +1606,29 @@ $inner-wrapper-height: 60px;
         }
     }
 
-    .profile-card__tweet,
-    .profile-card__instagram {
-        /*padding: 10px 0;*/
-        float: right;
-        width: 85%;
-    }
 
-    .profile-card__instagram {
-        display: block;
-        margin: 0 auto;
-        span {
-            line-height: 1;
+        .profile-card__twitter__tweet,
+        .profile-card__instagram__photo {
+            /*padding: 10px 0;*/
+            float: right;
+            width: 85%;
         }
-    }
 
-    .profile-card__tweet {
-        padding-bottom: 10px;
-    }
-
-    .profile-card__1 {
-        /*margin: 0 2% 2% 0;*/
-        text-align: center;
-        /*width: 18%;*/
-    }
-    
-    .profile-card__1 {
-        &:after {
-            clear: both;
-            content: '';
+        .profile-card__instagram__photo {
             display: block;
-            height: 1px;
-            background: $black;
-            width: 30px;
-            margin: 10px auto;
-        }
-    }
-
-
-    .profile-card__2,
-    .profile-card__3 {
-        margin: 0 auto;
-        max-width: 80%;
-        clear: both;
-        font-size: 0.8em;
-        /*margin: 0 2% 2% 0;*/
-        /*width: 38%;*/
-    }
-
-    .profile-card__3 {
-        /*margin-right: 0;*/
-    }
-
-    .profile-card__image-wrapper {
-        position: relative;
-    }
-
-    .profile-card__hidden {
-        /*display: none;*/
-        color: #f7f7f7;
-        height: 100%;
-        position: absolute;
-        top: 25%;
-        width: 100%;
-        .profile-card__about_fact,
-        .profile-card__location {
-            height: 50%;
-            margin: 0;
-            text-align: center;
-        }
-        .profile-card__about_fact {
-            position: relative;
-            top: -100%;
-        }
-        .profile-card__location {
-            position: relative;
-            bottom: -100%;
-        }
-    }
-
-    .profile-card__image {
-        background: url('img/seamless_paper_texture.png');
-        border-radius: 50%;
-        margin-bottom: 2%;
-        /*max-width: 200px;*/
-        overflow: hidden;
-        img {
-            opacity: 0.75;
-        }
-    }
-
-    .profile-card__role {
-        font-style: italic;
-    }
-
-    .profile-card__role,
-    .profile-card__about_fact, 
-    .profile-card__location p {
-        margin: 0;
-    }
-
-    .profile-card__fact {
-        margin: 15px 0;
-    }
-
-    .profile-card__location,
-    .profile-card__social {
-        line-height: 2;
-    }
-
-    .profile-card__social {
-        text-align: right;
-        .rondo {
-            &:before {
-                font-size: 1.2em;
+            margin: 0 auto;
+            span {
+                line-height: 1;
             }
-            display: inline-block;
-            color: #fff;
         }
-    }
 
-    .profile-card__wrapper,
-    .profile-card__wrapper__inner {
-        @extend .caption;
-        font-size: 1em;
-        line-height: auto;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .profile-card__wrapper {
-        @include transition(margin-bottom 300ms);
-        &:hover {
+        .profile-card__twitter__tweet {
+            padding-bottom: 10px;
         }
-    }
+
+
+
+
 
 }
 

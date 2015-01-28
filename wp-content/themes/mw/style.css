@@ -1562,8 +1562,26 @@ footer .social {
     /*width: 38%;*/ }
   .profile-card-v1 .profile-card__3 {
     /*margin-right: 0;*/ }
+  .profile-card-v1 .profile-card__image-wrapper {
+    position: relative; }
   .profile-card-v1 .profile-card__hidden {
-    display: none; }
+    /*display: none;*/
+    color: #f7f7f7;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    width: 100%; }
+    .profile-card-v1 .profile-card__hidden .profile-card__about_fact,
+    .profile-card-v1 .profile-card__hidden .profile-card__location {
+      height: 50%;
+      margin: 0;
+      text-align: center; }
+    .profile-card-v1 .profile-card__hidden .profile-card__about_fact {
+      position: relative;
+      top: -100%; }
+    .profile-card-v1 .profile-card__hidden .profile-card__location {
+      position: relative;
+      bottom: -100%; }
   .profile-card-v1 .profile-card__image {
     background: url("img/seamless_paper_texture.png");
     border-radius: 50%;

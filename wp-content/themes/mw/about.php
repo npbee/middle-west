@@ -62,13 +62,15 @@ Template Name: About
             ?>
             <div class="js-profile-card profile-card-v1 col1of3">
                 <div class="profile-card__1">
-                    <div class="profile-card__image">
-                        <img class="" src="<?php echo empty($photo['url']) ? '' : $photo['url']; ?>" />
-                    </div>
-                    <div class="profile-card__hidden">
-                        <p class="profile-card__about_fact"><?php echo $about_fact; ?></p>
-                        <div class="profile-card__location">
-                            <p class=""><?php echo $office; ?></p>
+                    <div class="profile-card__image-wrapper">
+                        <div class="profile-card__image">
+                            <img class="" src="<?php echo empty($photo['url']) ? '' : $photo['url']; ?>" />
+                        </div>
+                        <div class="profile-card__hidden">
+                            <p class="profile-card__about_fact"><?php echo $about_fact; ?></p>
+                            <p class="profile-card__location">
+                                <?php echo $office; ?>
+                            </p>
                         </div>
                     </div>
                     <h3 class="profile-card__name"><?php the_title(); ?></h3>

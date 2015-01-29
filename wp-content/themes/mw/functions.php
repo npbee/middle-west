@@ -64,7 +64,8 @@ function blankslate_comments_number( $count )
         return $count;
     }
 }
-
+?>
+<?php 
 if( function_exists('register_field_group') ):
 
 register_field_group(array (
@@ -1453,3 +1454,4 @@ register_field_group(array (
 ));
 
 endif;
+?>

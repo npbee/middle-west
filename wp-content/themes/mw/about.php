@@ -86,7 +86,7 @@ Template Name: About
                 <?php } ?>
                 <?php if (!empty($instagram)) { ?>
                 <div class="profile-card__instagram">
-                    <span class="instagram-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand.png" alt="instagram logo" /></a></span>
+                    <span class="instagram-branding"><a href="https://instagram.com/<?php echo $instagram -> user -> username; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand.png" alt="instagram logo" /></a></span>
                     <a class="profile-card__instagram__photo" href="<?php echo $instagram_link; ?>">
                         <img src="<?php echo $low_res; ?>" />
                     </a>

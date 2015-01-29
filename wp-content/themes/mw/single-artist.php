@@ -177,7 +177,7 @@
                 <?php if (get_field('show_twitter_widget')) { ?>
                     <article class="tweets">
                         <h2 class="main-head">Latest</h2>
-                        <span class="sub-head"><a href="<?php echo get_field('twitter_url'); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" /></a></span>
+                        <span class="sub-head"><a href="<?php echo get_field('twitter_url'); ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" /></a></span>
                         <hr>
                         <div class="">
                             <?php the_field('twitter_widget'); ?>

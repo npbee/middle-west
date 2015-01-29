@@ -6,7 +6,7 @@
 
 !.gitignore
 !.gitmodules
-wordpress/
+!wordpress/
 
 wp-content/*
 !wp-content/plugins/

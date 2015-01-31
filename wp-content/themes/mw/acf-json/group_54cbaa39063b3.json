@@ -1,0 +1,1139 @@
+{
+    "key": "group_54cbaa39063b3",
+    "title": "Artist Info",
+    "fields": [
+        {
+            "key": "field_54cba83e95cc5",
+            "label": "Show In Carousel",
+            "name": "show_in_carousel",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Check this box if you want this artist displayed in the carousel on the homepage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_54c2720ac78df",
+            "label": "Bio",
+            "name": "bio",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_54c2707960acc",
+            "label": "Bio",
+            "name": "bio",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "The biography for this artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_54c2723a7a29c",
+            "label": "Images",
+            "name": "bio_copy",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_54c1db1b0ef7c",
+            "label": "Large Featured Image",
+            "name": "large_featured_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "This is the featured image that's displayed on the home page and the artist's individual page.  This particular image displays for large screens.  It should be sized to: 1026 x 500 pixels.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all"
+        },
+        {
+            "key": "field_54c255d984377",
+            "label": "Medium Featured Image",
+            "name": "medium_featured_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "This is the featured image that's displayed on the home page and the artist's individual page.  This particular image displays for medium screens.  It should be sized to: 1320 x 880 pixels.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all"
+        },
+        {
+            "key": "field_54c2562584379",
+            "label": "Small Featured Image",
+            "name": "small_featured_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "This is the featured image that's displayed on the home page and the artist's individual page.  This particular image displays for small screens.  It should be sized to: 480 x 320 pixels.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all"
+        },
+        {
+            "key": "field_54c272532ce89",
+            "label": "Social",
+            "name": "bio_copy_copy",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_54c2577977077",
+            "label": "Twitter URL",
+            "name": "twitter_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "The URL for this artist's Twitter page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/www.twitter.com\/myartist...",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c2571277075",
+            "label": "Website URL",
+            "name": "website_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "The URL for this artist's website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "http:\/\/site.com....",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c2573b77076",
+            "label": "Facebook URL",
+            "name": "facebook_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "The URL for this artist's facebook page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/www.facebook.com\/myartist...",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c2579d77078",
+            "label": "Instagram URL",
+            "name": "instagram_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "The URL for this artist's Instagram page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/www.instagram.com\/myartist...",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c257d877079",
+            "label": "Tumblr Tag",
+            "name": "tumblr_tag",
+            "prefix": "",
+            "type": "text",
+            "instructions": "The tag used on Tumblr for this artist.  This tag will be used to pull in posts on the page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "my tag",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c25a7c01906",
+            "label": "Twitter Widget",
+            "name": "twitter_widget",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "The widget code for this artist's twitter feed.  It should have the following attributes:  \r\n- height: 500\r\n- data-chrome: noscrollbar nofooter noheader\r\n- data-tweet-limit: 5",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/boniverwi\" height=\"500\" data-widget-id=\"367781357130240001\" data-chrome=\"noscrollbar nofooter noheader\" data-tweet-limit=\"5\">Tweets by @boniverwi<\/a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=\/^http:\/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\":\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<     \/script>",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c25be7b6b60",
+            "label": "Bands In Town Widget",
+            "name": "bands_in_town_widget",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "The widget code for this artist's bandsintown profile.  It should have the following attributes:\r\ndata-separator-color=\"#d9d9d9\" \r\ndata-facebook-comments=\"false\" \r\ndata-link-color=\"#0989b8\" \r\ndata-force-narrow-layout=\"true\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "<script async type='text\/javascript' src='http:\/\/www.bandsintown.com\/javascripts\/bit_widget.js'><\/script><a href=\"http:\/\/www.bandsintown.com\/Bon&Iver\" class=\"bit-widget-placeholder\" data-artist=\"Bon Iver\" data-separator-color=\"#d9d9d9\" data-facebook-comments=\"false\" data-link-color=\"#0989b8\" data-force-narrow-layout=\"true\"><\/a>",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c25d644badb",
+            "label": "Show Twitter Widget",
+            "name": "show_twitter_widget",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Display the Twitter widget on the page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_54c408ddd4c72",
+            "label": "Show Bands In Town Widget",
+            "name": "show_bandsintown_widget",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Show the Bands In Town widget in the sidebar?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_54c272662ce8a",
+            "label": "Media",
+            "name": "bio_copy_copy_copy",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_54c266757c75e",
+            "label": "Albums",
+            "name": "albums",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "Album info",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 100,
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Album",
+            "sub_fields": [
+                {
+                    "key": "field_54c267ed06232",
+                    "label": "Album Info",
+                    "name": "album1",
+                    "prefix": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top"
+                },
+                {
+                    "key": "field_54c2689c44feb",
+                    "label": "Album Name",
+                    "name": "album_name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The name of this album.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Super cool album name...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c269d0148b9",
+                    "label": "Release Year",
+                    "name": "release_year",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The year that this album was released.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "2014...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c26a31dc755",
+                    "label": "Record Label",
+                    "name": "label",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The record label this album was released on.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Jagjaguwar...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c26f3f7c6de",
+                    "label": "Social Links",
+                    "name": "social_links",
+                    "prefix": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top"
+                },
+                {
+                    "key": "field_54c26d6d9a9af",
+                    "label": "Spotify Link",
+                    "name": "spotify_link",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The spotify link for this album.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "http:\/\/open.spotify.com\/album\/0ZMzEAuUIylHgetdWqzcHU...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c26d919a9b0",
+                    "label": "iTunes Link",
+                    "name": "itunes_link",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The iTunes link for this album.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "https:\/\/itunes.apple.com\/us\/album\/bon-iver\/id436243980...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c26db49a9b1",
+                    "label": "Amazon Link",
+                    "name": "amazon_link",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The Amazon link for this album.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "http:\/\/www.amazon.com\/Bon-Iver\/dp\/B004XE0P5E...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c26c988529a",
+                    "label": "Images",
+                    "name": "images",
+                    "prefix": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top"
+                },
+                {
+                    "key": "field_54c26becd7f38",
+                    "label": "thumbnail",
+                    "name": "thumbnail",
+                    "prefix": "",
+                    "type": "image",
+                    "instructions": "The thumbnail image for this album.  This should be sized to 600x600 pixels",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all"
+                },
+                {
+                    "key": "field_54c26c7c85299",
+                    "label": "Full Image",
+                    "name": "full_image",
+                    "prefix": "",
+                    "type": "image",
+                    "instructions": "The full-sized image for this album.  It should be sized to 1425\u2006\u00d7\u20061425.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all"
+                }
+            ]
+        },
+        {
+            "key": "field_54c26f74b1f26",
+            "label": "Videos",
+            "name": "videos",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "The video links for this artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_54c26f89b1f27",
+                    "label": "Embed URL",
+                    "name": "embed_url",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Video embed URL",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "http:\/\/www.youtube.com\/embed\/MjxA25Tj1Ks",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c2703011ab7",
+                    "label": "Thumbnail",
+                    "name": "thumbnail",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The thumbnail image for the video.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "http:\/\/img.youtube.com\/vi\/MjxA25Tj1Ks\/0.jpg",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54c2727b2ce8c",
+            "label": "Contact Info",
+            "name": "bio_copy_copy_copy_copy_copy",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_54c40e095e56a",
+            "label": "Management",
+            "name": "management",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "The management info for this artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Manager",
+            "sub_fields": [
+                {
+                    "key": "field_54c40e2d5e56b",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Name of the manager.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Kyle Frenette",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40e455e56c",
+                    "label": "Email",
+                    "name": "email",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Email contact for this manager.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "kyle@kyle.com",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54c40e6dc4fd3",
+            "label": "Licensing",
+            "name": "licensing",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "The licensing info for this artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Licensing Contact",
+            "sub_fields": [
+                {
+                    "key": "field_54c40e6dc4fd4",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Name of the licensing contact.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Chris Lakey",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40e6dc4fd5",
+                    "label": "Email",
+                    "name": "email",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Email contact for this manager.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "kyle@kyle.com",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40eabc4fd6",
+                    "label": "Company",
+                    "name": "company",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Company info for this contact.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Kobalt Music",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54c40ec6c4fd7",
+            "label": "Publicity",
+            "name": "publicity",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "The publicity info for this artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Publicity Contact",
+            "sub_fields": [
+                {
+                    "key": "field_54c40ec6c4fd8",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Name of the publicity contact.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Someone's name...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40ec6c4fd9",
+                    "label": "Email",
+                    "name": "email",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Email contact for this person.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "kyle@kyle.com",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40ec6c4fda",
+                    "label": "Company",
+                    "name": "company",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Email contact for this person.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Kobalt Music",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40efbc4fdb",
+                    "label": "Region",
+                    "name": "region",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Region that this contact is for.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "US",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54c40f14c4fdc",
+            "label": "Booking",
+            "name": "booking",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "The booking info for this artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_54c40f15c4fdd",
+                    "label": "Name",
+                    "name": "name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Name of the booking contact.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Adam Voith",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40f15c4fde",
+                    "label": "Email",
+                    "name": "email",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Email contact for this person.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "adam@billions.com",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40f15c4fdf",
+                    "label": "Company",
+                    "name": "company",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54c40f15c4fe0",
+                    "label": "Region",
+                    "name": "region",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "The region associated with this booking contact.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "US",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54c3c61e4247c",
+            "label": "Alcove",
+            "name": "alcove",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_54c3c6304247d",
+            "label": "Stream",
+            "name": "stream",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "Embed code for the stream object.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c3c6684247e",
+            "label": "Press",
+            "name": "press",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "Any press info for this artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_54c3c6ec4247f",
+            "label": "Downloads",
+            "name": "downloads",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "Any file downloads for the artist.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add File",
+            "sub_fields": [
+                {
+                    "key": "field_54c3c70e42480",
+                    "label": "File",
+                    "name": "file",
+                    "prefix": "",
+                    "type": "file",
+                    "instructions": "The file to be downloaded.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all"
+                }
+            ]
+        }
+    ],
+    "location": [],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "modified": 1422633529
+}

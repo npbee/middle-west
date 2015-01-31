@@ -64,3 +64,7 @@ function blankslate_comments_number( $count )
         return $count;
     }
 }
+?>
+<?php
+add_filter('show_admin_bar', '__return_false');
+?>

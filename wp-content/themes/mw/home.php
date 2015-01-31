@@ -45,9 +45,13 @@ Template Name: Home
                         );
                         $loop = new WP_Query($args);
                         while ($loop -> have_posts() ) : $loop->the_post();
-                            $large_image = get_field('large_featured_image');
-                            $medium_image = get_field('medium_featured_image');
-                            $small_image = get_field('small_featured_image');
+                            if ( get_field('show_in_carousel')) {
+                                $large_image = get_field('large_featured_image');
+                                $medium_image = get_field('medium_featured_image');
+                                $small_image = get_field('small_featured_image');
+                            } else {
+                                continue;
+                            }
                     ?>
                     <li>
                         <a href="<?php echo get_permalink(); ?>">

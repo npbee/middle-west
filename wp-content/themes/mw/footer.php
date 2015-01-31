@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="copyright">
-                    &copy; 2013 Middle West
+                &copy; <?php echo date('Y'); ?> Middle West
                 </div>
 
             </footer>

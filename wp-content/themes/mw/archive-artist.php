@@ -56,9 +56,11 @@
     if (have_posts()) : 
         query_posts('post_type=artist&orderby=title&order=ASC');
         while (have_posts()) : the_post();
+        $index = $wp_query->current_post;
+        $_index = $index === 3 ? 0 : $index;
         $image = get_field('medium_featured_image');
     ?>
-        <li class="col<?php echo ($wp_query->current_post + 1); ?>of3"><a href="<?php echo get_permalink(); ?>">
+        <li class="col<?php echo ($index + 1); ?>of3"><a href="<?php echo get_permalink(); ?>">
         <h2 class="caption"><?php echo the_title(); ?></h2>
         <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo $image['url'] ?>" alt="<?php echo the_title(); ?>"></a>
         </li>

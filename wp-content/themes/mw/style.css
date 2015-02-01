@@ -1599,6 +1599,7 @@ footer .social {
   .profile-card-v1 .profile-card__client-list {
     top: 60px; }
     .profile-card-v1 .profile-card__client-list a {
+      color: #0bade9;
       display: block;
       width: 100%;
       z-index: -1; }

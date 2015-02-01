@@ -1619,6 +1619,7 @@ footer .social {
             .profile-card__client-list {
                 top: 60px;
                 a {
+                    color: lighten($blue, 10%);
                     display: block;
                     width: 100%;
                     z-index: -1;

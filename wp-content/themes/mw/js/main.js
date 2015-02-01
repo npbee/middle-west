@@ -405,7 +405,7 @@ $(function() {
     mwm.flexslider();
     mwm.lazyload();
     mwm.mobileNav();
-    mwm.mailingList();
+    //mwm.mailingList();
     mwm.scrollable();
     mwm.soundcloud();
     mwm.tumblr();

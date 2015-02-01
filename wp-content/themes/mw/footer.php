@@ -4,16 +4,11 @@
                 <div class="mailing-list">
                     <!--[if lte IE 8]><label for="email">Sign up for the newsletter:</label><![endif]-->
                     <div class="mailing-list-container">
-                        <form>
+                        <form action="http://middlewestmgmt.us3.list-manage.com/subscribe/post">
+                            <input type="hidden" name="u" value="41155eea0059f0d47081cf8c3">
+                            <input type="hidden" name="id" value="ca515d83e7">
 
-                            <input type=hidden id="oid" name="oid" value="00Di0000000af6M">
-                            <input type=hidden name="retURL" value="http://www.middlewestmgmt.com">
-                            <input type=hidden name="List_Name__c" value="Middle West">
-
-                            <label class="error error--empty" for="email">This field is required</label>
-                            <label class="error error--invalid" for="email">Please enter a valid email address.</label>
-
-                            <input id="email" name="email" maxlength="80" type="email" placeholder="mailing list signup..." />
+                            <input id="email" name="MERGE0" maxlength="80" type="email" placeholder="mailing list signup..." />
                             <input id="submit" type="submit" value="Submit" />
 
                         </form>

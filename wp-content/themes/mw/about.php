@@ -43,26 +43,25 @@ Template Name: About
                     'orderby' => 'menu_order',
                     'order' => 'ASC'
                 );
+                $index = 0;
                 $loop = new WP_Query($args);
                 while ($loop -> have_posts() ) : $loop->the_post();
 
-                $index = $loop -> current_post === 3 ? 0 : $loop -> current_post;
+                $_index = $wp_query->current_post;
+                if ($_index % 3 == 0) {
+                    $index = 1;
+                } else {
+                    $index++;
+                }
+
                 $photo = get_field('photo');
                 $office = get_field('office');
                 $twitter_handle = get_field('twitter_handle');
                 $instagram_handle = get_field('instagram_handle');
                 $clients = get_field('client_list');
 
-                //$instagram_user_id = get_field('instagram_user_id');
-                //$social = get_employee_social_data($twitter_handle, $instagram_user_id);
-                //$instagram = $social['instagram'];
-                //$low_res = ($instagram -> images -> low_resolution -> url);
-                //$standard_res = ($instagram -> images -> standard_resolution -> url);
-                //$thumb = ($instagram -> images -> thumbnail -> url);
-                //$instagram_link = $instagram -> link; 
-                
             ?>
-            <div class="js-profile-card profile-card-v1 col<?php echo ($index + 1); ?>of3">
+            <div class="js-profile-card profile-card-v1 col<?php echo $index; ?>of3">
                 <span class="profile-card__close"></span>
                 <div class="profile-card__photo-wrapper">
                     <div class="profile-card__photo__image">

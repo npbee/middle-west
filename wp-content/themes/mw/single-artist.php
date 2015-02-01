@@ -92,7 +92,7 @@
                         <h2>Bio</h2>
                         <hr>
                         <div class="_expandable">
-                            <?php echo $bio ?>
+                            <?php echo $bio ? $bio : "Coming Soon..." ?>
                         </div>
                     </article>
 
@@ -104,6 +104,7 @@
                         <h2>Discography</h2>
                         <hr>
 
+                        <?php if (count($album_pages)) { ?>
                         <div class="flexslider-mini">
                             <ul class="slides">
                                 <?php 
@@ -139,12 +140,14 @@
                                 <?php } ?>
                             </ul>
                         </div>
+                        <?php } else echo "Coming Soon..." ?>
 
                 </article>
 
                 <div class="videos">
                     <h2>Videos</h2>
                     <hr>
+                        <?php if (count($video_pages)) { ?>
                         <div class="flexslider-mini">
                             <ul class="slides">
                                 <?php 
@@ -160,6 +163,7 @@
                                 <?php } ?>
                             </ul>
                         </div>
+                        <?php } else echo "Coming Soon..." ?>
                 </div>
 
                 <?php if (get_field('show_bandsintown_widget')) { ?>

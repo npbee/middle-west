@@ -379,11 +379,17 @@ var mwm = (function($, window, document) {
 
         profile: function() {
             var profiles = $('.js-profile-card');
-            profiles.each(function(index, profile) {
-                var twitterHandle = $(this).attr('data-twitter-handle');
-                var instagramHandle = $(this).attr('data-instagram-handle');
-                console.log(twitterHandle, instagramHandle);
+            profiles.on('click', '.profile-card__photo-wrapper', function(e) {
+                var $profile = $(this);
+                $profile.addClass('profile-card--open');
+                var closeBtn = $profile.parent('div').find('.profile-card__close');
+                closeBtn.show();
+                closeBtn.on('click', function(e) {
+                    $profile.removeClass('profile-card--open');
+                    $(this).hide();
+                });
             });
+
         }
 
 

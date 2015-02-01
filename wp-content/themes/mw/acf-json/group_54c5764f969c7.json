@@ -1,0 +1,131 @@
+{
+    "key": "group_54c5764f969c7",
+    "title": "Employee Info",
+    "fields": [
+        {
+            "key": "field_54c576688bc0f",
+            "label": "Photo",
+            "name": "photo",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Photo for the employee.  This photo should be SQUARE and at least 700 x 700 pixels.  ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_54c5769c8bc11",
+            "label": "Office",
+            "name": "office",
+            "prefix": "",
+            "type": "text",
+            "instructions": "The location that this employee works from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Minneapolis, MN",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c66a7e25e77",
+            "label": "Twitter Handle",
+            "name": "twitter_handle",
+            "prefix": "",
+            "type": "text",
+            "instructions": "This employee's Twitter handle (without the '@', please).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "kylefrenette",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c66aad25e78",
+            "label": "Instagram Handle",
+            "name": "instagram_handle",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Please enter your Instagram handle.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "kylefrenette",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54ce9918db021",
+            "label": "Client List",
+            "name": "client_list",
+            "prefix": "",
+            "type": "relationship",
+            "instructions": "Here you can add in clients that you would like to display on the 'About' page (up to 5).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "artist"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "max": 5,
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "employee"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1422828794
+}

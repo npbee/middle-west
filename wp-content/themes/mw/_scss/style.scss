@@ -258,7 +258,8 @@ p {margin: 1.5em 0}
     }
 }
 
-[data-icon]:before {
+[data-icon]:before,
+.icon-before {
     font-family: 'icomoon';
     content: attr(data-icon);
     speak:none;
@@ -550,6 +551,12 @@ article {
     .twitter-branding {
         float: right;
     }
+}
+
+.twitter-branding--white {
+    background: $black;
+    padding: 4px 2px;
+    border-radius: 3px;
 }
 
 /* --------------------=Bio */
@@ -1469,14 +1476,17 @@ footer .social {
     color: $black;
     display: block;
     margin-bottom: 5px;
+    padding-left: 5px;
+    position: relative;
+    line-height: 35px;
     &:hover {
         background: darken(#fff, 1%);
         text-decoration: none;
-        &:before {
+        &:after {
             color: lighten(#065977, 10%);
         }
     }
-    &:before {
+    &:after {
         background: $black;
         color: #fff;
         display: inline-block;
@@ -1485,18 +1495,32 @@ footer .social {
         width: 35px;
         text-align: center;
     }
+    &:before {
+        display: none;
+    }
+    &:after {
+        @extend .icon-before;
+        position: absolute;
+        right: 0;
+        float: right;
+        margin-right: 0;
+    }
 }
 
 
 /*------------------------------------*\
     $Profile Card (about page)
 \*------------------------------------*/
-$inner-wrapper-height: 60px;
+.profile-card--open {
+    @extend .profile-card__photo--hover;
+}
+
 .profile-card-v1 {
     overflow: hidden;
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
     clear: right;
     &:after {
         clear: both;
@@ -1511,210 +1535,115 @@ $inner-wrapper-height: 60px;
         }
     }
 
-    .profile-card__photo {
-        text-align: center;
-        &:after {
-            clear: both;
-            content: '';
-            display: block;
-            height: 1px;
-            background: $black;
-            width: 30px;
-            margin: 10px auto;
-        }
-    }
-
-        .profile-card__role {
-            font-style: italic;
-            margin: 0;
-        }
-
-        .profile-card__photo-wrapper {
-            position: relative;
+    .profile-card__photo-wrapper {
+        position: relative;
+        @include breakpoint(large) {
             &:hover {
-                @extend .profile-card__photo--hover;
-            }
-        }
-
-            .profile-card__photo--hover {
                 .profile-card__hidden {
-                    background: rgba($black, 0.7);
-                }
-                .profile-card__fact {
-                    top: 20%;
-                }
-                .profile-card__location {
-                    bottom: 20%;
+                    background: rgba($black, 0.8);
+                    z-index: 1;
+                    .profile-card__client-list-header {
+                        opacity: 1;
+                    }
+                    .profile-card__client-list {
+                        opacity: 1;
+                    }
                 }
             }
+        }
+    }
 
-            .profile-card__photo__image {
-                background: url('img/seamless_paper_texture.png');
-                border-radius: 50%;
-                margin-bottom: 2%;
-                /*max-width: 200px;*/
-                overflow: hidden;
-                img {
-                    opacity: 0.75;
-                }
-            }
-    
+        .profile-card__photo--hover {
             .profile-card__hidden {
-                @include transition(all 200ms);
-                background: rgba($black, 0);
-                border-radius: 50%;
-                color: #f7f7f7;
-                height: 100%;
-                overflow: hidden;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                .profile-card__fact,
-                .profile-card__location {
-                    position: absolute;
-                    margin: 0;
-                    text-align: center;
-                    width: 100%;
+                background: rgba($black, 0.8);
+                z-index: 1;
+                .profile-card__client-list-header {
+                    opacity: 1;
                 }
-                .profile-card__fact {
-                    @include transition(top 200ms);
-                    top: -50%;
-                }
-                .profile-card__location {
-                    @include transition(bottom 200ms);
-                    bottom: -50px;
+                .profile-card__client-list {
+                    opacity: 1;
                 }
             }
-            
-                .profile-card__fact {
-                    margin: 15px 0;
-                }
-
-                .profile-card__location {
-                    line-height: 2;
-                }
-
-    .profile-card__twitter,
-    .profile-card__instagram {
-        margin: 0 auto;
-        max-width: 80%;
-        clear: both;
-        font-size: 0.8em;
-        overflow: auto;
-        p {
-            margin: 0;
-        }
-        > span {
-            float: left;
-            width: 15%;
-        }
-        header {
-            margin-bottom: 15px;
-            > span,
-            > a {
-                display: inline-block;
-                width: 50%;
-            }
-            >a {
-                text-align: right;
-            }
-        }
-    }
-
-
-        .profile-card__twitter__tweet,
-        .profile-card__instagram__photo {
-            /*padding: 10px 0;*/
-            float: right;
-            width: 85%;
         }
 
-        .profile-card__instagram {
-            display: block;
-            margin: 0 auto;
-            span {
-                line-height: 1;
-            }
+        .profile-card__photo__image {
+            background: url('img/seamless_paper_texture.png');
+            border-radius: 50%;
+            margin-bottom: 2%;
+            /*max-width: 200px;*/
+            overflow: hidden;
             img {
+                opacity: 0.75;
+            }
+        }
+
+        .profile-card__hidden {
+            @include transition(all 200ms);
+            background: rgba($black, 0);
+            border-radius: 50%;
+            color: #f7f7f7;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            .profile-card__fact,
+            .profile-card__location {
+                position: absolute;
+                margin: 0;
+                text-align: center;
                 width: 100%;
             }
         }
 
-        .profile-card__twitter__tweet {
-            padding-bottom: 10px;
-        }
-
-
-
-
-
-}
-
-.profile-card-v2 {
-    background: url('img/seamless_paper_texture.png');
-    overflow: hidden;
-    position: relative;
-    margin: 20px 0;
-    &:hover {
-        .profile-card__wrapper {
-            margin-bottom: $inner-wrapper-height;
-        }
-    }
-
-    .profile-card__image {
-        opacity: 0.75;
-    }
-
-    .profile-card__role,
-    .profile-card__fact, 
-    .profile-card__location p {
-        margin: 0;
-    }
-
-    .profile-card__fact {
-        margin: 15px 0;
-    }
-
-    .profile-card__location,
-    .profile-card__social {
-        line-height: 2;
-    }
-
-    .profile-card__social {
-        text-align: right;
-        .rondo {
-            &:before {
-                font-size: 1.2em;
+            .profile-card__client-list-header,
+            .profile-card__client-list {
+                @include transition(opacity 300ms);
+                opacity: 0;
+                position: absolute;
+                width: 100%;
             }
-            display: inline-block;
-            color: #fff;
+
+            .profile-card__client-list-header {
+                top: 0;
+                line-height: 60px;
+                height: 60px;
+            }
+
+            .profile-card__client-list {
+                top: 60px;
+                a {
+                    display: block;
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+
+    .profile-card__name,
+    .profile-card__location {
+        margin: 0 0 5px 0;
+    }
+
+    .profile-card__social {
+        > span {
+            margin: 0 5px;
         }
     }
 
-    .profile-card__wrapper,
-    .profile-card__wrapper__inner {
-        @extend .caption;
-        font-size: 1em;
-        line-height: auto;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .profile-card__wrapper {
-        @include transition(margin-bottom 300ms);
-        &:hover {
-        }
-    }
-
-    .profile-card__wrapper__inner {
-        bottom: auto;
-        height: $inner-wrapper-height;
-        left: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        position: absolute;
-        top: 100%;
-        width: 100%;
+    .profile-card__close {
+        display: none;
+        cursor:pointer;
+        position:absolute;
+        right:5px;
+        top:5px;
+        background: url(img/icons/sprite.png) no-repeat 0 0;
+        background-size: 100px;
+        background-position:-50px 0px;
+        height:48px;
+        width:50px;
+        opacity:.8;
+        border-radius:3px;
+        z-index: 10;
     }
 }

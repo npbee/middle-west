@@ -253,7 +253,9 @@ p {
     text-decoration: none;
     color: #3e3739; }
 
-[data-icon]:before {
+[data-icon]:before,
+.icon-before,
+.download-link:after {
   font-family: 'icomoon';
   content: attr(data-icon);
   speak: none;
@@ -392,8 +394,7 @@ article {
   position: relative;
   min-height: 200px; }
 
-.caption, .profile-card-v2 .profile-card__wrapper,
-.profile-card-v2 .profile-card__wrapper__inner {
+.caption {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -404,8 +405,7 @@ article {
   font-size: 1.4em;
   line-height: 1; }
   @media only screen and (min-width: 750px) {
-    .caption, .profile-card-v2 .profile-card__wrapper,
-    .profile-card-v2 .profile-card__wrapper__inner {
+    .caption {
       font-size: 2em; } }
 
 /* --------------------=Social Links */
@@ -486,6 +486,11 @@ article {
   float: left; }
 .tweets .twitter-branding {
   float: right; }
+
+.twitter-branding--white {
+  background: #231f20;
+  padding: 4px 2px;
+  border-radius: 3px; }
 
 /* --------------------=Bio */
 .read-more, .read-less {
@@ -1481,13 +1486,16 @@ footer .social {
   border: 1px solid #231f20;
   color: #231f20;
   display: block;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  padding-left: 5px;
+  position: relative;
+  line-height: 35px; }
   .download-link:hover {
     background: #fcfcfc;
     text-decoration: none; }
-    .download-link:hover:before {
+    .download-link:hover:after {
       color: #087da8; }
-  .download-link:before {
+  .download-link:after {
     background: #231f20;
     color: #fff;
     display: inline-block;
@@ -1495,6 +1503,13 @@ footer .social {
     margin-right: 5px;
     width: 35px;
     text-align: center; }
+  .download-link:before {
+    display: none; }
+  .download-link:after {
+    position: absolute;
+    right: 0;
+    float: right;
+    margin-right: 0; }
 
 /*------------------------------------*\
     $Profile Card (about page)
@@ -1504,6 +1519,7 @@ footer .social {
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
   clear: right; }
   .profile-card-v1:after {
     clear: both;
@@ -1516,27 +1532,23 @@ footer .social {
     @media only screen and (min-width: 750px) {
       .profile-card-v1:after {
         display: none; } }
-  .profile-card-v1 .profile-card__photo {
-    text-align: center; }
-    .profile-card-v1 .profile-card__photo:after {
-      clear: both;
-      content: '';
-      display: block;
-      height: 1px;
-      background: #231f20;
-      width: 30px;
-      margin: 10px auto; }
-  .profile-card-v1 .profile-card__role {
-    font-style: italic;
-    margin: 0; }
   .profile-card-v1 .profile-card__photo-wrapper {
     position: relative; }
-  .profile-card-v1 .profile-card__photo--hover .profile-card__hidden, .profile-card-v1 .profile-card__photo-wrapper:hover .profile-card__hidden {
-    background: rgba(35, 31, 32, 0.7); }
-  .profile-card-v1 .profile-card__photo--hover .profile-card__fact, .profile-card-v1 .profile-card__photo-wrapper:hover .profile-card__fact {
-    top: 20%; }
-  .profile-card-v1 .profile-card__photo--hover .profile-card__location, .profile-card-v1 .profile-card__photo-wrapper:hover .profile-card__location {
-    bottom: 20%; }
+    @media only screen and (min-width: 750px) {
+      .profile-card-v1 .profile-card__photo-wrapper:hover .profile-card__hidden {
+        background: rgba(35, 31, 32, 0.8);
+        z-index: 1; }
+        .profile-card-v1 .profile-card__photo-wrapper:hover .profile-card__hidden .profile-card__client-list-header {
+          opacity: 1; }
+        .profile-card-v1 .profile-card__photo-wrapper:hover .profile-card__hidden .profile-card__client-list {
+          opacity: 1; } }
+  .profile-card-v1 .profile-card__photo--hover .profile-card__hidden, .profile-card-v1 .profile-card--open .profile-card__hidden {
+    background: rgba(35, 31, 32, 0.8);
+    z-index: 1; }
+    .profile-card-v1 .profile-card__photo--hover .profile-card__hidden .profile-card__client-list-header, .profile-card-v1 .profile-card--open .profile-card__hidden .profile-card__client-list-header {
+      opacity: 1; }
+    .profile-card-v1 .profile-card__photo--hover .profile-card__hidden .profile-card__client-list, .profile-card-v1 .profile-card--open .profile-card__hidden .profile-card__client-list {
+      opacity: 1; }
   .profile-card-v1 .profile-card__photo__image {
     background: url("img/seamless_paper_texture.png");
     border-radius: 50%;
@@ -1557,113 +1569,49 @@ footer .social {
     overflow: hidden;
     position: absolute;
     top: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
     .profile-card-v1 .profile-card__hidden .profile-card__fact,
     .profile-card-v1 .profile-card__hidden .profile-card__location {
       position: absolute;
       margin: 0;
       text-align: center;
       width: 100%; }
-    .profile-card-v1 .profile-card__hidden .profile-card__fact {
-      -moz-transition: top 200ms;
-      -o-transition: top 200ms;
-      -webkit-transition: top 200ms;
-      transition: top 200ms;
-      top: -50%; }
-    .profile-card-v1 .profile-card__hidden .profile-card__location {
-      -moz-transition: bottom 200ms;
-      -o-transition: bottom 200ms;
-      -webkit-transition: bottom 200ms;
-      transition: bottom 200ms;
-      bottom: -50px; }
-  .profile-card-v1 .profile-card__fact {
-    margin: 15px 0; }
+  .profile-card-v1 .profile-card__client-list-header,
+  .profile-card-v1 .profile-card__client-list {
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+    opacity: 0;
+    position: absolute;
+    width: 100%; }
+  .profile-card-v1 .profile-card__client-list-header {
+    top: 0;
+    line-height: 60px;
+    height: 60px; }
+  .profile-card-v1 .profile-card__client-list {
+    top: 60px; }
+    .profile-card-v1 .profile-card__client-list a {
+      display: block;
+      width: 100%;
+      z-index: -1; }
+  .profile-card-v1 .profile-card__name,
   .profile-card-v1 .profile-card__location {
-    line-height: 2; }
-  .profile-card-v1 .profile-card__twitter,
-  .profile-card-v1 .profile-card__instagram {
-    margin: 0 auto;
-    max-width: 80%;
-    clear: both;
-    font-size: 0.8em;
-    overflow: auto; }
-    .profile-card-v1 .profile-card__twitter p,
-    .profile-card-v1 .profile-card__instagram p {
-      margin: 0; }
-    .profile-card-v1 .profile-card__twitter > span,
-    .profile-card-v1 .profile-card__instagram > span {
-      float: left;
-      width: 15%; }
-    .profile-card-v1 .profile-card__twitter header,
-    .profile-card-v1 .profile-card__instagram header {
-      margin-bottom: 15px; }
-      .profile-card-v1 .profile-card__twitter header > span,
-      .profile-card-v1 .profile-card__twitter header > a,
-      .profile-card-v1 .profile-card__instagram header > span,
-      .profile-card-v1 .profile-card__instagram header > a {
-        display: inline-block;
-        width: 50%; }
-      .profile-card-v1 .profile-card__twitter header > a,
-      .profile-card-v1 .profile-card__instagram header > a {
-        text-align: right; }
-  .profile-card-v1 .profile-card__twitter__tweet,
-  .profile-card-v1 .profile-card__instagram__photo {
-    /*padding: 10px 0;*/
-    float: right;
-    width: 85%; }
-  .profile-card-v1 .profile-card__instagram {
-    display: block;
-    margin: 0 auto; }
-    .profile-card-v1 .profile-card__instagram span {
-      line-height: 1; }
-    .profile-card-v1 .profile-card__instagram img {
-      width: 100%; }
-  .profile-card-v1 .profile-card__twitter__tweet {
-    padding-bottom: 10px; }
-
-.profile-card-v2 {
-  background: url("img/seamless_paper_texture.png");
-  overflow: hidden;
-  position: relative;
-  margin: 20px 0; }
-  .profile-card-v2:hover .profile-card__wrapper {
-    margin-bottom: 60px; }
-  .profile-card-v2 .profile-card__image {
-    opacity: 0.75; }
-  .profile-card-v2 .profile-card__role,
-  .profile-card-v2 .profile-card__fact,
-  .profile-card-v2 .profile-card__location p {
-    margin: 0; }
-  .profile-card-v2 .profile-card__fact {
-    margin: 15px 0; }
-  .profile-card-v2 .profile-card__location,
-  .profile-card-v2 .profile-card__social {
-    line-height: 2; }
-  .profile-card-v2 .profile-card__social {
-    text-align: right; }
-    .profile-card-v2 .profile-card__social .rondo {
-      display: inline-block;
-      color: #fff; }
-      .profile-card-v2 .profile-card__social .rondo:before {
-        font-size: 1.2em; }
-  .profile-card-v2 .profile-card__wrapper,
-  .profile-card-v2 .profile-card__wrapper__inner {
-    font-size: 1em;
-    line-height: auto;
+    margin: 0 0 5px 0; }
+  .profile-card-v1 .profile-card__social > span {
+    margin: 0 5px; }
+  .profile-card-v1 .profile-card__close {
+    display: none;
+    cursor: pointer;
     position: absolute;
-    bottom: 0;
-    width: 100%; }
-  .profile-card-v2 .profile-card__wrapper {
-    -moz-transition: margin-bottom 300ms;
-    -o-transition: margin-bottom 300ms;
-    -webkit-transition: margin-bottom 300ms;
-    transition: margin-bottom 300ms; }
-  .profile-card-v2 .profile-card__wrapper__inner {
-    bottom: auto;
-    height: 60px;
-    left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    position: absolute;
-    top: 100%;
-    width: 100%; }
+    right: 5px;
+    top: 5px;
+    background: url(img/icons/sprite.png) no-repeat 0 0;
+    background-size: 100px;
+    background-position: -50px 0px;
+    height: 48px;
+    width: 50px;
+    opacity: .8;
+    border-radius: 3px;
+    z-index: 10; }

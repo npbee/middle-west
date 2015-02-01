@@ -40,7 +40,7 @@ Template Name: Home
                     <?php 
                         $args = array(
                             'post_type' => 'artist',
-                            'orderby' => 'title',
+                            'orderby' => 'menu_order',
                             'order' => 'ASC'
                         );
                         $loop = new WP_Query($args);

@@ -39,59 +39,56 @@ Template Name: About
             <h2>Employees</h2>
             <?php 
                 $args = array(
-                    'post_type' => 'employee'
+                    'post_type' => 'employee',
+                    'orderby' => 'menu_order',
+                    'order' => 'ASC'
                 );
                 $loop = new WP_Query($args);
                 while ($loop -> have_posts() ) : $loop->the_post();
 
                 $index = $loop -> current_post === 3 ? 0 : $loop -> current_post;
                 $photo = get_field('photo');
-                $role = get_field('position');
                 $office = get_field('office');
-                $about_fact = get_field('about_fact');
-                $twitter_widget = get_field('twitter_widget');
                 $twitter_handle = get_field('twitter_handle');
-                $instagram_user_id = get_field('instagram_user_id');
+                $instagram_handle = get_field('instagram_handle');
+                $clients = get_field('client_list');
 
-                $social = get_employee_social_data($twitter_handle, $instagram_user_id);
-
-                $instagram = $social['instagram'];
-                $low_res = ($instagram -> images -> low_resolution -> url);
-                $standard_res = ($instagram -> images -> standard_resolution -> url);
-                $thumb = ($instagram -> images -> thumbnail -> url);
-                $instagram_link = $instagram -> link; 
+                //$instagram_user_id = get_field('instagram_user_id');
+                //$social = get_employee_social_data($twitter_handle, $instagram_user_id);
+                //$instagram = $social['instagram'];
+                //$low_res = ($instagram -> images -> low_resolution -> url);
+                //$standard_res = ($instagram -> images -> standard_resolution -> url);
+                //$thumb = ($instagram -> images -> thumbnail -> url);
+                //$instagram_link = $instagram -> link; 
                 
             ?>
             <div class="js-profile-card profile-card-v1 col<?php echo ($index + 1); ?>of3">
-                <div class="profile-card__photo">
-                    <div class="profile-card__photo-wrapper">
-                        <div class="profile-card__photo__image">
-                            <img class="" src="<?php echo empty($photo['url']) ? '' : $photo['url']; ?>" />
-                        </div>
-                        <div class="profile-card__hidden">
-                            <p class="profile-card__fact"><?php echo $about_fact; ?></p>
-                            <p class="profile-card__location">
-                                <?php echo $office; ?>
-                            </p>
-                        </div>
+                <span class="profile-card__close"></span>
+                <div class="profile-card__photo-wrapper">
+                    <div class="profile-card__photo__image">
+                        <img class="" src="<?php echo empty($photo['url']) ? '' : $photo['url']; ?>" />
                     </div>
-                    <h3 class="profile-card__name"><?php the_title(); ?></h3>
-                    <p class="profile-card__role"><?php echo $role; ?></p>
+                    <div class="profile-card__hidden">
+                        <h4 class="profile-card__client-list-header">Clients</h4>
+                        <ul class="profile-card__client-list">
+                            <?php if ($clients): ?>
+                            <?php foreach($clients as $client): ?>
+                            <li>
+                                <a href="<?php echo get_permalink($client->ID); ?>"><?php echo get_the_title($client->ID); ?></a>
+                            </li>
+                            <?php endforeach; ?>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
                 </div>
-                <?php if (!empty($social['tweet'])) { ?>
-                <div class="profile-card__twitter">
-                    <span class="twitter-branding"><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
-                    <p class="profile-card__twitter__tweet"><?php echo $social['tweet']; ?></p>
+                <h3 class="profile-card__name"><?php the_title(); ?></h3>
+                <p class="profile-card__location">
+                    <?php echo $office; ?>
+                </p>
+                <div class="profile-card__social">
+                    <span class="twitter-branding "><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
+                    <span class="instagram-branding"><a href="https://instagram.com/<?php echo $instagram_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand--black.png" alt="instagram logo" /></a></span>
                 </div>
-                <?php } ?>
-                <?php if (!empty($instagram)) { ?>
-                <div class="profile-card__instagram">
-                    <span class="instagram-branding"><a href="https://instagram.com/<?php echo $instagram -> user -> username; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand.png" alt="instagram logo" /></a></span>
-                    <a class="profile-card__instagram__photo" href="<?php echo $instagram_link; ?>">
-                        <img src="<?php echo $low_res; ?>" />
-                    </a>
-                </div>
-                <?php } ?>
             </div>
             <?php 
                 endwhile;

@@ -2144,6 +2144,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/instagram-brand--black.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8172,
+		"inputAbbreviatedPath": "\/img\/icons\/instagram-brand--black.png",
+		"outputAbbreviatedPath": "\/img\/icons\/instagram-brand--black.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/instagram-brand.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2173,6 +2184,17 @@
 		"initialSize": 3113,
 		"inputAbbreviatedPath": "\/img\/icons\/sprite.png",
 		"outputAbbreviatedPath": "\/img\/icons\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/twitter-brand--white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21602,
+		"inputAbbreviatedPath": "\/img\/icons\/twitter-brand--white.png",
+		"outputAbbreviatedPath": "\/img\/icons\/twitter-brand--white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

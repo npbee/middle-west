@@ -762,8 +762,11 @@ html[xmlns] .slides {
   opacity: 0.8;
   left: 0px; }
 
-.flexslide:hover .flex-direction nav a {
+.flexslider:hover .flex-direction-nav a {
   z-index: 10; }
+
+.flexslider-mini .flex-direction-nav a {
+  z-index: 1; }
 
 @media only screen and (min-width: 750px) {
   .flexslider:hover .flex-next {

@@ -805,11 +805,18 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav .flex-next {background-position: -50px 0; }
 .flexslider:hover .flex-next {opacity: 0.8; right: 0px;}
 .flexslider:hover .flex-prev {opacity: 0.8; left: 0px;}
-.flexslide:hover {
-    .flex-direction nav a {
+.flexslider:hover {
+    .flex-direction-nav a {
         z-index: 10;
     }
 }
+
+.flexslider-mini {
+    .flex-direction-nav a {
+        z-index: 1;
+    }
+}
+
 @include breakpoint(large) {
     .flexslider:hover .flex-next {opacity: 0.8; right: -50px;}
     .flexslider:hover .flex-prev {opacity: 0.8; left: -50px;}

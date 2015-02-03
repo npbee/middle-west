@@ -36,7 +36,7 @@
     <?php 
     $index = 0;
     if (have_posts()) : 
-        query_posts('post_type=artist&orderby=title&order=ASC');
+        query_posts('post_type=artist&orderby=title&order=ASC&posts_per_page=-1');
         while (have_posts()) : the_post();
         $_index = $wp_query->current_post;
         if ($_index % 3 == 0) {

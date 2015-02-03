@@ -18,6 +18,8 @@ function open_album_lightbox() {
     $post = new WP_Query($args);
 
     function findAlbum($id, $array) {
+        $id = urldecode($id);
+        $id = stripslashes($id);
         foreach ($array as $key => $val) {
             if ($val['album_name'] === $id) {
                 return $key;

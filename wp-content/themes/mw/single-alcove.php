@@ -89,19 +89,19 @@
         <div class="main wrapper clearfix">
             <section class="col1_2of3">
 
-                    <div class="stream">
+                    <article class="stream">
                         <h2>STREAM</h2>
                         <hr>
                         <div>
-                        <?php echo $stream ?>
+                        <?php echo $stream ? $stream : "Coming Soon..."?>
                         </div>
-                    </div>
+                    </article>
 
                     <article class="press">
                         <h2>Press</h2>
                         <hr>
                         <div class="_expandable">
-                        <?php echo $press ?>
+                        <?php echo $press ? $press : "Coming Soon..." ?>
                         </div>
                     </article>
 
@@ -109,7 +109,7 @@
                         <h2>Bio</h2>
                         <hr>
                         <div class="_expandable">
-                            <?php echo $bio ?>
+                            <?php echo $bio ? $bio : "Coming Soon..." ?>
                         </div>
                     </article>
 
@@ -126,9 +126,9 @@
                                 foreach($downloads as $download) {
                                     $title = $download['file']['title'];
                                     $url = $download['file']['url'];
-                        ?>
+                            ?>
                         <a class="download-link" data-icon="&#x21;" href="<?php echo $url; ?>"><?php echo $title; ?></a>
-                        <?php } } ?>
+                            <?php } } else echo "Coming Soon..." ?>
                         </div>
 
                 </article>
@@ -136,6 +136,7 @@
                 <div class="videos">
                     <h2>Videos</h2>
                     <hr>
+                        <?php if (count($video_pages)) { ?>
                         <div class="flexslider-mini">
                             <ul class="slides">
                                 <?php 
@@ -151,6 +152,7 @@
                                 <?php } ?>
                             </ul>
                         </div>
+                        <?php } else echo "Coming Soon..." ?>
                 </div>
 
                 <?php if (get_field('show_bandsintown_widget')) { ?>

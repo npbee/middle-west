@@ -1,23 +1,4 @@
 <?php 
-    $large_image = get_field('large_featured_image');
-    $medium_image = get_field('medium_featured_image');
-    $small_image = get_field('small_featured_image');
-
-    $website_url = get_field('website_url');
-    $twitter_url = get_field('twitter_url');
-    $facebook_url = get_field('facebook_url');
-    $instagram_url = get_field('instagram_url');
-
-    $bio = get_field('bio');
-
-    $per_page = 2;
-
-    $album_pages = array_chunk(get_field('albums'), $per_page);
-    $video_pages = array_chunk(get_field('videos'), $per_page);
-    $booking_contacts = get_field('booking');
-    $licensing_contacts = get_field('licensing');
-    $publicity_contacts = get_field('publicity');
-    $management_contacts = get_field('management');
 
 ?>
 

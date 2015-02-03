@@ -1609,7 +1609,7 @@ footer .social {
   .profile-card-v1 .profile-card__name,
   .profile-card-v1 .profile-card__location {
     margin: 0 0 5px 0; }
-  .profile-card-v1 .profile-card__social > span {
+  .profile-card-v1 .profile-card__social > a {
     margin: 0 5px; }
   .profile-card-v1 .profile-card__close {
     display: none;

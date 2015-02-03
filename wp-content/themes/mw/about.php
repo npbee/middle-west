@@ -68,13 +68,11 @@ Template Name: About
                         <img class="" src="<?php echo empty($photo['url']) ? '' : $photo['url']; ?>" />
                     </div>
                     <div class="profile-card__hidden">
-                        <h4 class="profile-card__client-list-header">Clients</h4>
+                        <h3 class="profile-card__client-list-header">Clients</h3>
                         <ul class="profile-card__client-list">
                             <?php if ($clients): ?>
                             <?php foreach($clients as $client): ?>
-                            <li>
-                                <a href="<?php echo get_permalink($client->ID); ?>"><?php echo get_the_title($client->ID); ?></a>
-                            </li>
+                            <li><?php echo get_the_title($client->ID); ?></li>
                             <?php endforeach; ?>
                             <?php endif; ?>
                         </ul>
@@ -85,8 +83,8 @@ Template Name: About
                     <?php echo $office; ?>
                 </p>
                 <div class="profile-card__social">
-                    <span class="twitter-branding "><a href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/twitter-brand.png" alt="twitter logo" /></a></span>
-                    <span class="instagram-branding"><a href="https://instagram.com/<?php echo $instagram_handle; ?>" target="_blank"><img class="branding-icon" src="<?php bloginfo('template_url'); ?>/img/icons/instagram-brand--black.png" alt="instagram logo" /></a></span>
+                    <a class="rondo" data-icon="&#x22;" href="https://twitter.com/<?php echo $twitter_handle; ?>" target="_blank"><span class="hide">twitter</span></a>
+                    <a class="rondo" data-icon="&#x23;" href="http://instagram.com/<?php echo $instagram_handle; ?>" target="_blank"><span class="hide">instagram</span></a>
                 </div>
             </div>
             <?php 

@@ -30,7 +30,8 @@ Template Name: Shows
                                 $args = array(
                                     'post_type' => 'artist',
                                     'orderby' => 'title',
-                                    'order' => 'ASC'
+                                    'order' => 'ASC',
+                                    'posts_per_page' => '-1'
                                 );
                                 $loop = new WP_Query($args);
                                 while ($loop -> have_posts()): $loop->the_post();

@@ -99,6 +99,9 @@ var mwm = (function($, window, document) {
 
             for ( var i = 0; i < postCount; i++) {
                 (function(n) {
+                    if (!data.response.posts.length) {
+                        return;
+                    }
                     var full_date = data.response.posts[n].date;
                     var split_date = full_date.split('-');
                     var split_day = split_date[2].split(' ');
@@ -168,14 +171,17 @@ var mwm = (function($, window, document) {
                     url: 'http://api.tumblr.com/v2/blog/middlewestmgmt.tumblr.com/posts?api_key=5cHAhSpCdCiLOdeoWeJAAwCbqFUW4LCvfe9GxwVJXWcgUH4XSl&offset='+ offset + '&tag=' + mwmTumblr.tag,
                     data: { get_param: 'value'},
                     success: function(data) {
-                        if ( data.response.blog.posts - offset <= 5 ) {
+                        if ( data.response.blog.posts - offset <= 5 ||
+                            data.response.posts.length === 0 ) {
                             readmore = "";
-                            console.log("true");
                         } else {
                             readmore = "<a class='load-more-posts'>Load More Posts</a>";
                         }
                         for (i = 0; i < 5; i++) {
                             (function(n) {
+                            if (!data.response.posts.length) {
+                                return;
+                            }
                             var full_date = data.response.posts[n].date;
                             var split_date = full_date.split('-');
                             var split_day = split_date[2].split(' ');

@@ -32,8 +32,8 @@
             mwmTumblr = {};
             mwmTumblr.tag = "<?php the_field('tumblr_tag'); ?>";
             </script>
-        <script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/plugins-ck.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/main-ck.js"></script>
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

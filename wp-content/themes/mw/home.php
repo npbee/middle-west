@@ -68,6 +68,7 @@ Template Name: Home
                         </a>
                     </li>
                     <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
                 </ul>
             </div>
         </article>

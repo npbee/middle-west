@@ -193,6 +193,14 @@
                     <article class="contact">
                         <h2>Contact</h2>
                         <hr>
+                            <?php if (empty($management_contacts) && 
+                                    empty($licensing_contacts) &&
+                                    empty($publicity_contacts) &&
+                                    empty($booking_contacts)) {
+                                        echo "Coming Soon...";
+                                }
+                            ?>
+                        <?php if (!empty($management_contacts)) { ?>
                         <div class="">
                             <h3>Management</h3>
                                 <ul class="contacts">
@@ -204,6 +212,8 @@
                                     <?php } ?>
                                 </ul>
                         </div>
+                        <?php } ?>
+                        <?php if (!empty($licensing_contacts)) { ?>
                         <div class="">
                             <h3>Licensing</h3>
                                 <ul class="contacts">
@@ -216,6 +226,8 @@
                                     <?php } ?>
                                 </ul>
                         </div>
+                        <?php } ?>
+                        <?php if (!empty($publicity_contacts)) { ?>
                         <div class="">
                             <h3>Publicity</h3>
                                 <ul class="contacts">
@@ -227,6 +239,8 @@
                                     <?php } ?>
                                 </ul>
                         </div>
+                        <?php } ?>
+                        <?php if (!empty($booking_contacts)) { ?>
                         <div class="">
                             <h3>Booking</h3>
                                 <ul class="contacts">
@@ -238,6 +252,7 @@
                                     <?php } ?>
                                 </ul>
                         </div>
+                        <?php } ?>
                     </article>
 
                 </section> <!-- end sidebar -->

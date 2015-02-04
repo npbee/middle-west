@@ -730,8 +730,12 @@ article {
 
 
 /* --------------------=Contact */
+.contacts {
+    padding-bottom: 15px;
+}
+
 .contacts li{
-    padding-bottom: 1em;
+    padding-bottom: 5px;
 }
 .contacts span {
     display:block

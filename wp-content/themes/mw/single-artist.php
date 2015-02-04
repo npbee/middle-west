@@ -193,51 +193,51 @@
                     <article class="contact">
                         <h2>Contact</h2>
                         <hr>
-                        <?php foreach($management_contacts as $contact) { ?>
                         <div class="">
                             <h3>Management</h3>
                                 <ul class="contacts">
+                                    <?php foreach($management_contacts as $contact) { ?>
                                     <li>
                                         <span><?php echo $contact['name']; ?></span>
                                         <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
                                     </li>
+                                    <?php } ?>
                                 </ul>
                         </div>
-                        <?php } ?>
-                        <?php foreach($licensing_contacts as $contact) { ?>
                         <div class="">
                             <h3>Licensing</h3>
                                 <ul class="contacts">
+                                    <?php foreach($licensing_contacts as $contact) { ?>
                                     <li>
                                         <?php $separator = empty($contact['name']) ? ' ' : ': '; ?>
                                         <span><?php echo $contact['company'] . $separator . $contact['name']; ?></span>
                                         <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
                                     </li>
+                                    <?php } ?>
                                 </ul>
                         </div>
-                        <?php } ?>
-                        <?php foreach($publicity_contacts as $contact) { ?>
                         <div class="">
                             <h3>Publicity</h3>
                                 <ul class="contacts">
+                                    <?php foreach($publicity_contacts as $contact) { ?>
                                     <li>
                                         <span><?php echo $contact['region'] .  ' / ' . $contact['company'] . ': ' .  $contact['name']; ?></span>
                                         <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
                                     </li>
+                                    <?php } ?>
                                 </ul>
                         </div>
-                        <?php } ?>
-                        <?php foreach($booking_contacts as $contact) { ?>
                         <div class="">
                             <h3>Booking</h3>
                                 <ul class="contacts">
+                                    <?php foreach($booking_contacts as $contact) { ?>
                                     <li>
                                         <span><?php echo $contact['region'] .  ' / ' . $contact['company'] . ': ' .  $contact['name']; ?></span>
                                         <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
                                     </li>
+                                    <?php } ?>
                                 </ul>
                         </div>
-                        <?php } ?>
                     </article>
 
                 </section> <!-- end sidebar -->

@@ -41,7 +41,8 @@ Template Name: About
                 $args = array(
                     'post_type' => 'employee',
                     'orderby' => 'menu_order',
-                    'order' => 'ASC'
+                    'order' => 'ASC',
+                    'posts_per_page' => '-1'
                 );
                 $index = 0;
                 $loop = new WP_Query($args);

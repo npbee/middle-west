@@ -48,7 +48,7 @@ Template Name: About
                 $loop = new WP_Query($args);
                 while ($loop -> have_posts() ) : $loop->the_post();
 
-                $_index = $wp_query->current_post;
+                $_index = $loop->current_post;
                 if ($_index % 3 == 0) {
                     $index = 1;
                 } else {

@@ -6,6 +6,7 @@
    Author URI: http://npbee.me
     */
 add_action("wp_ajax_open_album_lightbox", "open_album_lightbox");
+add_action("wp_ajax_nopriv_open_album_lightbox", "open_album_lightbox");
 
 function open_album_lightbox() {
     $post_id = $_REQUEST['post_id'];

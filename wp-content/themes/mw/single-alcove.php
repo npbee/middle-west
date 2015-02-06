@@ -1,31 +1,30 @@
-<?php 
+<?php
     $posts = get_field('artist');
     if ($posts):
-        foreach($posts as $post):
-            setup_postdata($post);
-            $large_image = get_field('large_featured_image');
-            $medium_image = get_field('medium_featured_image');
-            $small_image = get_field('small_featured_image');
+        foreach($posts as $p):
+            $large_image = get_field('large_featured_image', $p->ID);
+            $medium_image = get_field('medium_featured_image', $p->ID);
+            $small_image = get_field('small_featured_image', $p->ID);
 
-            $website_url = get_field('website_url');
-            $twitter_url = get_field('twitter_url');
-            $facebook_url = get_field('facebook_url');
-            $instagram_url = get_field('instagram_url');
+            $website_url = get_field('website_url', $p->ID);
+            $twitter_url = get_field('twitter_url', $p->ID);
+            $facebook_url = get_field('facebook_url', $p->ID);
+            $instagram_url = get_field('instagram_url', $p->ID);
 
-            $bio = get_field('bio');
+            $bio = get_field('bio', $p->ID);
 
             $per_page = 2;
 
-            $album_pages = array_chunk(get_field('albums'), $per_page);
-            $video_pages = array_chunk(get_field('videos'), $per_page);
-            $booking_contacts = get_field('booking');
-            $licensing_contacts = get_field('licensing');
-            $publicity_contacts = get_field('publicity');
-            $management_contacts = get_field('management');
+            $album_pages = array_chunk(get_field('albums', $p->ID), $per_page);
+            $video_pages = array_chunk(get_field('videos', $p->ID), $per_page);
+            $booking_contacts = get_field('booking', $p->ID);
+            $licensing_contacts = get_field('licensing', $p->ID);
+            $publicity_contacts = get_field('publicity', $p->ID);
+            $management_contacts = get_field('management', $p->ID);
 
-            $stream = get_field('stream');
-            $downloads = get_field('downloads');
-            $press = get_field('press');
+            $stream = get_field('stream', $p->ID);
+            $downloads = get_field('downloads', $p->ID);
+            $press = get_field('press', $p->ID);
 ?>
 
 <?php get_header(); ?>
@@ -56,17 +55,20 @@
     </div>
 
     <div class="main-container">
+<?php if ( post_password_required() ) {
+  echo get_the_password_form();
+} else { ?>
         <article>
                 <div class="header-image">
-                    <h2 class="caption"><?php the_title(); ?></h2>
-                    <div data-picture data-alt="<?php the_title(); ?>">
+                    <h2 class="caption"><?php echo get_the_title($p->ID); ?></h2>
+                    <div data-picture data-alt="<?php echo get_the_title($p->ID); ?>">
                         <div data-src="<?php echo $small_image['url'] ?>"></div>
                         <div data-src="<?php echo $medium_image['url'] ?>" data-media="(min-width: 480px)"></div>
                         <div data-src="<?php echo $large_image['url'] ?>" data-media="(min-width: 660px)"></div>
                         <!--[if lte IE 8]><div data-src="<?php echo $small_image['url'] ?>"></div><![endif]-->
                     </div>
                     <noscript>
-                        <img src="<?php echo $small_image['url'] ?>" alt="<?php the_title() ?>" />
+                        <img src="<?php echo $small_image['url'] ?>" alt="<?php get_the_title($p->ID) ?>" />
                     </noscript>
                 </div>
 
@@ -139,11 +141,11 @@
                         <?php if (count($video_pages)) { ?>
                         <div class="flexslider-mini">
                             <ul class="slides">
-                                <?php 
-                                    foreach($video_pages as $page) { 
+                                <?php
+                                    foreach($video_pages as $page) {
                                 ?>
                                 <li>
-                                    <?php 
+                                    <?php
                                         foreach($page as $index=>$video) {
                                     ?>
                                         <a class="group-videos colorbox-extContent" href="<?php echo $video['embed_url']; ?>"><img src="<?php echo $video['thumbnail']; ?>" /></a>
@@ -157,7 +159,7 @@
 
                 <?php if (get_field('show_bandsintown_widget')) { ?>
                     <article class="shows">
-                    <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#<?php echo the_title(); ?>">Full Show List</a></span>
+                    <h2 class="main-head">Shows</h2><span class="sub-head"><a href="/shows/#<?php echo get_the_title($p->ID); ?>">Full Show List</a></span>
                         <hr>
                         <div class="scroll">
                             <div id="shows" class="shows scrollable">
@@ -234,6 +236,7 @@
 
 
 
+<?php } ?>
             </div> <!-- .main -->
         </div>
     </div>
@@ -241,5 +244,5 @@
 <?php
     endforeach;
     endif;
-    get_footer(); 
+    get_footer();
 ?>

@@ -50,6 +50,9 @@ function open_album_lightbox() {
             <?php if (!empty($album['itunes_link'])) { ?>
                 <a class="rondo" data-icon="&#x27;" href="<?php echo $album['amazon_link']; ?>" target="_blank"><span class="hide">amazon</span></a>
             <?php } ?>
+            <?php if (!empty($album['store_link'])) { ?>
+                <a class="rondo" data-icon="&#xe601;" href="<?php echo $album['store_link']; ?>" target="_blank"><span class="hide">store</span></a>
+            <?php } ?>
         </div>
         </div>
     <?php 

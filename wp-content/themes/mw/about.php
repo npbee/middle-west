@@ -34,9 +34,15 @@ Template Name: About
     <div class="main-container">
         <div class="main wrapper clearfix">
             <h2>About</h2>
-            <p>Middle West is an artist management firm dedicated to managing musicians as best it can in the most professional and diverse of ways within the ever-changing music industry. Founded by Kyle Frenette in 2010, Middle West specializes in artists' career development and business management.</p>
+            <p>Middle West is an artist management firm founded on the acute quiet of Midwestern work ethic. Independently strong since 2010, Middle West is dedicated to fostering good music and the musicians who make it in the most professional and diverse of ways within the ever-changing landscape of its industry.  With offices in Minneapolis, MN, Brooklyn, NY, and Durham, NC, Middle West also offers label and business management services to its artists.</p>
+
+            <p>Co-founded by Kyle Frenette on the strength and experience of Bon Iver, Middle West began as just an idea on how to structure a new type of artist management firm. It has since grown into an evolving experiment that’s mission is to cultivate the next generation of artist managers. Middle West strives to establish a collaborative and professional environment for its managers to flourish, perfect their skills and provide the absolute best services they can for their artists. This is accomplished by way of a shared brain trust between all managers and personnel as well as Middle West’s atypical linear business model in which all members of the greater team are encouraged to contribute, learn and grow alongside each other and as a whole within the firm.</p>
+
+            <blockquote><i>"That's my middle-west--not the wheat of the prairies or the lost Swede towns but the thrilling, returning trains of my youth and the street lamps of sleigh bells in the frosty dark and the shadows of holly wreaths thrown by lighten windows on the snow.  I am part of that. . . "</i> <br /><span style="float:right"><b>-F. Scott Fitzgerald</b></span></blockquote>
             
-            <h2>Employees</h2>
+            <br /><br />
+
+            <h2>Team</h2>
             <?php 
                 $args = array(
                     'post_type' => 'employee',
@@ -69,7 +75,7 @@ Template Name: About
                         <img class="" src="<?php echo empty($photo['url']) ? '' : $photo['url']; ?>" />
                     </div>
                     <div class="profile-card__hidden">
-                        <h3 class="profile-card__client-list-header">Clients</h3>
+                        <h3 class="profile-card__client-list-header">Artists</h3>
                         <ul class="profile-card__client-list">
                             <?php if ($clients): ?>
                             <?php foreach($clients as $client): ?>

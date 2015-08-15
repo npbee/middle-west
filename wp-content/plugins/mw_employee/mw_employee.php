@@ -17,7 +17,6 @@ function get_employee_social_data($twitter_handle, $instagram_user_id) {
         foreach($tweets as $tweet) {
             if ($tweet['text']) {
                 $the_tweet = $tweet['text'];
-
                 if(is_array($tweet['entities']['user_mentions'])){
                     foreach($tweet['entities']['user_mentions'] as $key => $user_mention){
                         $the_tweet = preg_replace(

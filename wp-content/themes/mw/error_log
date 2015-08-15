@@ -1,0 +1,14 @@
+[10-Feb-2015 02:44:56] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[10-Feb-2015 02:46:28] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[10-Feb-2015 02:51:18] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[20-Feb-2015 19:19:12] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[12-Mar-2015 09:21:48] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[29-Apr-2015 14:08:07] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[30-May-2015 09:40:38] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[30-May-2015 09:47:30] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[30-May-2015 09:50:57] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[30-May-2015 11:26:13] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[30-May-2015 11:27:44] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[30-May-2015 11:35:39] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/index.php on line 1
+[18-Jul-2015 20:00:52] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/404.php on line 1
+[19-Jul-2015 09:37:34] PHP Fatal error:  Call to undefined function  get_header() in /home1/middlewe/public_html/wordpress/wp-content/themes/mw/404.php on line 1

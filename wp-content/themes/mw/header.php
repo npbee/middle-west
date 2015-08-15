@@ -20,7 +20,7 @@
           })();
         </script>
 
-        <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>favicon.png" />
+        <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.png" />
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bloginfo('template_url'); ?>/apple-touch-icon-144x144-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php bloginfo('template_url'); ?>/apple-touch-icon-114x114-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bloginfo('template_url'); ?>/apple-touch-icon-72x72-precomposed.png" />

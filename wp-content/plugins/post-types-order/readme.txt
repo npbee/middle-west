@@ -3,22 +3,21 @@ Contributors: Nsp Code
 Donate link: http://www.nsp-code.com/donate.php
 Tags: post order, post type order, custom order, admin posts order
 Requires at least: 2.8
-Tested up to: 4.0
-Stable tag: 1.7.4
+Tested up to: 4.2.2
 
 Post Order and custom Post Type Objects (posts, any custom post types) using a Drag and Drop Sortable JavaScript AJAX interface. 
 
 == Description ==
 
-<strong>Over 700.000 DOWNLOADS and near PERFECT ratting out of 230 REVIEWS</strong>. <br />
+<strong>Over 1.000.000 DOWNLOADS and near PERFECT ratting out of 150 REVIEWS</strong>. <br />
 A powerful plugin, Order Posts and Post Types Objects using a Drag and Drop Sortable JavaScript capability.
-It allow to reorder the posts for any custom post types you defined, including the default Posts. Also you can have the admin posts interface sorted per your new sort. <strong>Post Order</strong> has never been easier.
+It allow to reorder the posts for any custom post types you defined, including the default Posts. Also you can have the admin posts interface sorted per your new sort. Post Order has never been easier.
 
 = Usage =
 This was built considering for everyone to be able to use no matter the WordPress experience, so it's very easy:
 
 * Install the plugin through the Install Plugins interface or by uploading the `post-types-order` folder to your `/wp-content/plugins/` directory.
-* Activate the <b>Post Order</b> plugin.
+* Activate the Post Order plugin.
 * A new setting page will be created within Settings > Post Types Order, you should check with that, and make a first options save. 
 * Using the AutoSort option as ON you don't need to worry about any code changes, the plugin will do the post order update on fly. 
 * Use the Re-Order interface which appear to every custom post type (non-hierarchical) to change the post order to a new one.
@@ -28,6 +27,8 @@ This was built considering for everyone to be able to use no matter the WordPres
 
 As you can see just a matter of drag and drop and post ordering will change on front side right away.
 If for some reason the post order does not update on your front side, you either do something wrong or the theme code you are using does not use a standard query per WordPress Codex rules and regulations. But we can still help, use the forum to report your issue as there are many peoples who gladly help or get in touch with us.
+
+<br />Check out the advanced version of this plugin at <a target="_blank" href="http://www.nsp-code.com/premium-plugins/wordpress-plugins/advanced-post-types-order/">Advanced Post Types Order</a>
 
 <br />
 <br />This plugin is developed by <a target="_blank" href="http://www.nsp-code.com">Nsp-Code</a>
@@ -42,7 +43,7 @@ If for some reason the post order does not update on your front side, you either
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif).
+1. The ReOrder interface through which the sort can be created.
 
 == Frequently Asked Questions  ==
 
@@ -54,7 +55,7 @@ Absolutely you can! Unlike many other plugins, you don't have to do any code cha
 
 = What kind of posts/pages this plugin allow me to sort? =
 
-You can sort ALL post types that you have defined into your wordpress as long they are not hierarhically defined: Posts (default WordPress custom post type), Movies, Reviews, Data etc..
+You can sort ALL post types that you have defined into your wordpress as long they are not <strong>hierarhically</strong> defined: Posts (default WordPress custom post type), Movies, Reviews, Data etc..
 
 = Ok, i understand about the template post types order, how about the admin interface? =
 
@@ -66,14 +67,36 @@ All ideas are welcome and i put them on my list to be implemented into the new v
 
 == Change Log ==
 
+= 1.8.2 =
+  - Media Uploaded To after sort fix
+
+= 1.8.1 =
+  - Next / Previous sorting apply bug fix for custom taxonomies
+  - Portuguese translation update - Pedro Mendon?a - http://www.pedromendonca.pt
+  - Options - phrase translation fix  
+
+= 1.7.9 =
+  - Next / Previous sorting apply option
+  - Filter for Next / Previous sorting applpy
+  - Help updates
+  - Appearance /css updates
+  - Admin columns sort fix
+  - Media re-order
+
+= 1.7.7 =
+  - Next / Previous post link functionality update
+  - Code improvements  
+  - Norvegian translation update - Bjorn Johansen bjornjohansen.no
+  - Czech translation - dUDLAJ; Martin Kucera - http://jsemweb.cz/
+
 = 1.7.4 =
   - Japanese translation - Git6 Sosuke Watanabe  - http://git6.com/  
-  - Portuguese translation update - Pedro Mendonça - http://www.pedromendonca.pt 
+  - Portuguese translation update - Pedro Mendon?a - http://www.pedromendonca.pt 
   - Chinese translation - Coolwp coolwp.com@gmail.com
 
 = 1.7.0 =
-  - Swedish translation - Onlinebyrån - http://onlinebyran.se
-  - Portuguese translation - Pedro Mendonça - http://www.pedromendonca.pt
+  - Swedish translation - Onlinebyran - http://onlinebyran.se
+  - Portuguese translation - Pedro Mendon?a - http://www.pedromendonca.pt
   - AJAX save filter
 
 = 1.6.8 = 
@@ -81,7 +104,6 @@ All ideas are welcome and i put them on my list to be implemented into the new v
  - "re-order" menu item allow translation 
  - Hungarian translation - Adam Laki - http://codeguide.hu/
  - Minor admin style improvments
-
 
 = 1.6.5 = 
  - Updates/Fixes
@@ -97,7 +119,7 @@ All ideas are welcome and i put them on my list to be implemented into the new v
 
 = 1.6.2 = 
  - Updates/Fixes
- - Turkish - Türkçe translation
+ - Turkish - T?rk?e translation
  
 = 1.6.1 = 
  - Updates/Fixes
@@ -168,6 +190,6 @@ Make sure you get the latest version.
 
 == Localization ==
 
-Available in English, Brazilian Portuguese, Spanish, Romanian, Italian, Dusth, Hebrew, German, Norwegian (norsk), Turkish (türkçe), Swedish, Hungarian, Portuguese, Chinese
+Available in English, Brazilian Portuguese, Spanish, Romanian, Italian, Dusth, Hebrew, German, Norwegian (norsk), Turkish (t?rk?e), Swedish, Hungarian, Portuguese, Chinese, Czech
 Want to contribute with a translation to your language? Please contact us at electronice_delphi@yahoo.com
 http://www.nsp-code.com

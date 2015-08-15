@@ -233,8 +233,9 @@
                                 <ul class="contacts">
                                     <?php foreach($publicity_contacts as $contact) { ?>
                                     <li>
-                                        <span><?php echo $contact['region'] .  ' / ' . $contact['company'] . ': ' .  $contact['name']; ?></span>
+                                        <span><?php echo $contact['company'] . ': ' .  $contact['name']; ?></span>
                                         <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
+					<span><?php echo $contact['region']; ?></span>
                                     </li>
                                     <?php } ?>
                                 </ul>
@@ -246,8 +247,9 @@
                                 <ul class="contacts">
                                     <?php foreach($booking_contacts as $contact) { ?>
                                     <li>
-                                        <span><?php echo $contact['region'] .  ' / ' . $contact['company'] . ': ' .  $contact['name']; ?></span>
+                                        <span><?php echo $contact['company'] . ': ' .  $contact['name']; ?></span>
                                         <span><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></span>
+					<span><?php echo $contact['region']; ?></span>
                                     </li>
                                     <?php } ?>
                                 </ul>

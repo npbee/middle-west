@@ -96,11 +96,11 @@ p {
     width: 1026px;
     margin: 0 auto; } }
 
-.wrapper {
+.wrapper, .post-password-form {
   width: 90%;
   margin: 0 auto; }
   @media only screen and (min-width: 1140px) {
-    .wrapper {
+    .wrapper, .post-password-form {
       width: 100%; } }
 
 /* ======================================
@@ -402,11 +402,11 @@ article {
   background: rgba(0, 0, 0, 0.5);
   color: #f7f7f7;
   padding: 10px 13px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1; }
   @media only screen and (min-width: 750px) {
     .caption {
-      font-size: 2em; } }
+      font-size: 1.7em; } }
 
 /* --------------------=Social Links */
 .social {
@@ -858,7 +858,7 @@ html[xmlns] .slides {
   text-decoration: none; }
 
 /*----------------------------------------=FOOTER */
-footer.wrapper {
+footer.wrapper, footer.post-password-form {
   position: relative; }
 
 .footer-container {
@@ -903,6 +903,54 @@ footer .social {
       width: 25%;
       float: right; } }
 
+.post-password-form label,
+.post-password-form input {
+  display: block; }
+.post-password-form input[type='email'],
+.post-password-form input[type='text'],
+.post-password-form input[type='password'] {
+  -webkit-appearance: none;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  width: 300px;
+  height: 35px;
+  margin-bottom: 10px;
+  -moz-transition: border 200ms, width 200ms;
+  -o-transition: border 200ms, width 200ms;
+  -webkit-transition: border 200ms, width 200ms;
+  transition: border 200ms, width 200ms; }
+  .post-password-form input[type='email']:focus,
+  .post-password-form input[type='text']:focus,
+  .post-password-form input[type='password']:focus {
+    outline: none;
+    border: 1px solid #231f20; }
+  @media only screen and (min-width: 1140px) {
+    .post-password-form input[type='email'],
+    .post-password-form input[type='text'],
+    .post-password-form input[type='password'] {
+      padding-left: 5px;
+      text-align: left; } }
+.post-password-form input[type='submit'] {
+  padding: 10px;
+  background: #231f20;
+  border: none;
+  border-radius: 3px;
+  color: #f7f7f7;
+  cursor: pointer;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  height: 35px;
+  z-index: 100;
+  -webkit-appearance: none; }
+  @media only screen and (min-width: 1140px) {
+    .post-password-form input[type='submit'] {
+      width: 100px; } }
+  .post-password-form input[type='submit']:hover {
+    background: #312b2c; }
+
 .mailing-list {
   text-align: center;
   margin: 15px 0; }
@@ -918,7 +966,9 @@ footer .social {
       float: left;
       width: 25%;
       border-radius: 3px; } }
-  .mailing-list input[type='email'] {
+  .mailing-list input[type='email'],
+  .mailing-list input[type='text'],
+  .mailing-list input[type='password'] {
     -webkit-appearance: none;
     padding: 10px;
     border: 1px solid #d9d9d9;
@@ -930,11 +980,15 @@ footer .social {
     -o-transition: border 200ms, width 200ms;
     -webkit-transition: border 200ms, width 200ms;
     transition: border 200ms, width 200ms; }
-    .mailing-list input[type='email']:focus {
+    .mailing-list input[type='email']:focus,
+    .mailing-list input[type='text']:focus,
+    .mailing-list input[type='password']:focus {
       outline: none;
       border: 1px solid #231f20; }
     @media only screen and (min-width: 1140px) {
-      .mailing-list input[type='email'] {
+      .mailing-list input[type='email'],
+      .mailing-list input[type='text'],
+      .mailing-list input[type='password'] {
         width: 70%;
         padding-left: 5px;
         text-align: left; } }
